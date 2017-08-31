@@ -15,8 +15,22 @@
 		<script type="text/javascript">
 			function openifram(url){
 				$("#iframe").attr("src","/web/"+url);
-				$(this).parent().src("background","gray");
 			}
+			
+			$(function(){
+				//让iframe高度适应
+				$("#iframe").load(function () {
+				    var mainheight = $(this).contents().find("body").height() + 50;
+				    $(this).height(mainheight);
+				});
+				//点击菜单变色
+				$(".container-fluid a").each(function(){
+					$(this).click(function(){
+						$(".sidebar li").css("background","#f5f5f5");
+						$(this).parent().css("background","#e6e6e6");
+					});
+				});
+			});
 		</script>
 	</head>
 	<body>   
@@ -33,10 +47,10 @@
 	        </div>
 	        <div id="navbar" class="navbar-collapse collapse">
 	          <ul class="nav navbar-nav navbar-right">
-	          	<li><a href="#">名字</a></li>
-	            <li><a href="#">当前时间</a></li>
-	            <li><a href="#">当前IP</a></li>
-	            <li><a href="#">安全退出</a></li>
+	          	<li><a href="#">当前帐号：<?php echo (session('uid')); ?></a></li>
+	            <li><a href="#">当前时间:<?php echo (session('time')); ?></a></li>
+	            <li><a href="#">登录地区：<?php echo (session('local')); ?></a></li>
+	            <li><a href="/web/index.php/Admin/Login/logout">安全退出</a></li>
 	          </ul>
 	        </div>
 	      </div>
@@ -57,23 +71,12 @@
 	        			</ul><?php endforeach; endif; else: echo "" ;endif; ?>
 		        </div>
 		        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
-		          	<iframe id="iframe" name="iframe" src="" >
+		        	<!--访问默认的统计方法-->
+		          	<iframe id="iframe" name="iframe" src="/web/index.php/Admin/Admin/tongji">
+		          		
 					</iframe>
 		        </div>
 	      	</div>
-    	</div>
-        <!--<div data-options="region:'west',title:'系统菜单',split:true" style="width:180px;">
-        	<ul class="easyui-tree" animate='true' lines='true'> 
-        		<?php if(is_array($rows)): $i = 0; $__LIST__ = $rows;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$row1): $mod = ($i % 2 );++$i; if($row1["level"] == 1): ?><li>
-        					<span><?php echo ($row1["name"]); ?></span>
-        					<ul>
-        						<?php $mid1 = $row1["id"]; ?>
-        						<?php if(is_array($rows)): $i = 0; $__LIST__ = $rows;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$row2): $mod = ($i % 2 );++$i; if($row2["level"] == 2 AND $row2["parentid"] == $mid1): ?><li>
-        									<a onclick="javascript:addTabs('<?php echo ($row2["name"]); ?>','<?php echo ($row2["url"]); ?>')"><?php echo ($row2["name"]); ?></a>
-        								</li><?php endif; endforeach; endif; else: echo "" ;endif; ?>
-        					</ul>
-        				</li><?php endif; endforeach; endif; else: echo "" ;endif; ?>	
-            </ul> 
-        </div>   -->  		
+    	</div>	
 	</body>
 </html>

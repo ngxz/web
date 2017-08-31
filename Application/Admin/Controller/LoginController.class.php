@@ -18,14 +18,16 @@
 	        $uid = I("uid");
 	        $pwd = I("pwd");
 	        if (!uid){
-	            $this->redirect("/");
+	            $this->redirect("Login:loginpage");
 	            exit();
 	        }else {
 	            $mod = M("tb_admin");
 	            $res = $mod->where("uid = '$uid'")->find();
 	            if (md5($pwd) == $res['pwd']){
+	                $tname = $res['tname'];
 	                //保存session
 	                $_SESSION['uid']=$uid;
+	                $_SESSION['tname']=$tname;
 	                $sta["status"] = 1;
 	            }else {
 	                //提示失败状态码
@@ -40,11 +42,14 @@
 	        $rows = M("tb_menus")->select();
 	        //获取登录地ip
 	        $ip = get_client_ip();
+	        //获取ip时间等
 	        $Ips = new \Org\Net\IpLocation('UTFWry.dat'); // 实例化类 参数表示IP地址库文件
-	        $local = $Ips->getlocation($ip); // 获取某个IP地址所在的位置
-	        $local = mb_convert_encoding($local, "utf-8", "gb2312"); // 编码转换，否则乱码
-	        $local = $local['country']."-".$local['area'];
-	        
+	        $local = $Ips->getlocation(); // 获取某个IP地址所在的位置
+// 	        $local = mb_convert_encoding($local, "utf-8", "gb2312"); // 编码转换，否则乱码
+ 	        $local = $local['country'];
+	        $time = date("y-m-d H:i:s");
+	        $_SESSION['time']=$time;
+	        $_SESSION['local']=$local;
 	        $this->assign("rows",$rows);
 	        $this->display("Admin:welcome");
 	    }
@@ -53,7 +58,7 @@
 	     */
 	    public function logout(){
 	        session(null);
-	        $this->redirect("/");
+	        $this->redirect("Login:loginpage");
 	    }
 	}
 ?>

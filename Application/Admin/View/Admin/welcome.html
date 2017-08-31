@@ -15,8 +15,22 @@
 		<script type="text/javascript">
 			function openifram(url){
 				$("#iframe").attr("src","__ROOT__/"+url);
-				$(this).parent().src("background","gray");
 			}
+			
+			$(function(){
+				//让iframe高度适应
+				$("#iframe").load(function () {
+				    var mainheight = $(this).contents().find("body").height() + 50;
+				    $(this).height(mainheight);
+				});
+				//点击菜单变色
+				$(".container-fluid a").each(function(){
+					$(this).click(function(){
+						$(".sidebar li").css("background","#f5f5f5");
+						$(this).parent().css("background","#e6e6e6");
+					});
+				});
+			});
 		</script>
 	</head>
 	<body>   
@@ -33,10 +47,10 @@
 	        </div>
 	        <div id="navbar" class="navbar-collapse collapse">
 	          <ul class="nav navbar-nav navbar-right">
-	          	<li><a href="#">名字</a></li>
-	            <li><a href="#">当前时间</a></li>
-	            <li><a href="#">当前IP</a></li>
-	            <li><a href="#">安全退出</a></li>
+	          	<li><a href="#">当前帐号：{$Think.session.uid}</a></li>
+	            <li><a href="#">当前时间:{$Think.session.time}</a></li>
+	            <li><a href="#">登录地区：{$Think.session.local}</a></li>
+	            <li><a href="__ROOT__/index.php/Admin/Login/logout">安全退出</a></li>
 	          </ul>
 	        </div>
 	      </div>
@@ -65,31 +79,12 @@
 	        		</volist>
 		        </div>
 		        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
-		          	<iframe id="iframe" name="iframe" src="" >
+		        	<!--访问默认的统计方法-->
+		          	<iframe id="iframe" name="iframe" src="__ROOT__/index.php/Admin/Admin/tongji">
+		          		
 					</iframe>
 		        </div>
 	      	</div>
-    	</div>
-        <!--<div data-options="region:'west',title:'系统菜单',split:true" style="width:180px;">
-        	<ul class="easyui-tree" animate='true' lines='true'> 
-        		<volist name="rows" id="row1">
-        			<if condition="$row1.level eq 1">
-        				<li>
-        					<span>{$row1.name}</span>
-        					<ul>
-        						<assign name="mid1" value="$row1.id"/>
-        						<volist name="rows" id="row2">
-        							<if condition="$row2.level eq 2 AND $row2.parentid eq $mid1">
-        								<li>
-        									<a onclick="javascript:addTabs('{$row2.name}','{$row2.url}')">{$row2.name}</a>
-        								</li>
-        							</if>
-        						</volist>
-        					</ul>
-        				</li>
-        			</if>
-        		</volist>	
-            </ul> 
-        </div>   -->  		
+    	</div>	
 	</body>
 </html>

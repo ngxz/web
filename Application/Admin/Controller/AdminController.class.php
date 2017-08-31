@@ -4,9 +4,10 @@ namespace Admin\Controller;
 use Think\Controller;
 class AdminController extends Controller{
     /**
-     * 查看所有文章内容
+     * 按频道查看文章内容
      */
     public function searchArticle($stitle='',$stime=''){
+        $channelid = I("channelid","");
         $query = array();
         if ($stitle != "" && $stitle != null){
             $query['title'] = array("LIKE","%$stitle%");
@@ -20,7 +21,7 @@ class AdminController extends Controller{
         $page = getpage($total,8);
         $show = $page->show();//显示分页
         //联表查询
-        $rows = $mod->join("tb_channel c on c.id = tb_article.channelid","INNER")->where($query)->limit($page->firstRow.','.$page->listRows)->order("time desc")->select();
+        $rows = $mod->join("tb_channel c on c.id = tb_article.channelid","INNER")->where($query)->where("channelid = '$channelid'")->limit($page->firstRow.','.$page->listRows)->order("time desc")->select();
         $data = array("total"=>$total,"rows"=>$rows,"show"=>$show,"stitle"=>$stitle,"stime"=>$stime);
         $this->assign("data",$data);
         $this->display(allarticle);
@@ -81,6 +82,18 @@ class AdminController extends Controller{
             M("tb_article")->where("channel_id = '$channel_id'")->field("content,title,summary,img_url,time")->where("id='$newsId'")->save($data);
             $this->searchArticle($channel_id);
         }
+    }
+    //默认的统计方法
+    public function tongji(){
+        $this->display();
+    }
+    //增加文章
+    public function add(){
+        $this->display();
+    }
+    //修改文章
+    public function edit(){
+        $this->display();
     }
 }
 
