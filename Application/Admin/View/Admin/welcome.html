@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>欢迎界面</title>
+		<link rel="icon" href="__PUBLIC__/img/favicon.ico" type="image/x-icon">
+		<link rel="stylesheet" href="__PUBLIC__/bs/css/bootstrap.min.css">
+		<link rel="stylesheet" href="__PUBLIC__/css/global.css" />
+		<link rel="stylesheet" href="__PUBLIC__/css/dashboard.css" />
+		<style type="text/css">
+			#iframe{width:100%;height:auto;min-height:90%; border:none;margin:0;padding:0;}
+		</style>
+		<script type="text/javascript" src="__PUBLIC__/js/jquery-1.9.1.min.js"></script>
+		<script type="text/javascript" src="__PUBLIC__/bs/js/bootstrap.min.js"></script>
+		<script type="text/javascript">
+			function openifram(url){
+				$("#iframe").attr("src","__ROOT__/"+url);
+				$(this).parent().src("background","gray");
+			}
+		</script>
+	</head>
+	<body>   
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+	      <div class="container-fluid">
+	        <div class="navbar-header">
+	          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+	            <span class="sr-only">Toggle navigation</span>
+	            <span class="icon-bar"></span>
+	            <span class="icon-bar"></span>
+	            <span class="icon-bar"></span>
+	          </button>
+	          <a class="navbar-brand" href="#">站点logo</a>
+	        </div>
+	        <div id="navbar" class="navbar-collapse collapse">
+	          <ul class="nav navbar-nav navbar-right">
+	          	<li><a href="#">名字</a></li>
+	            <li><a href="#">当前时间</a></li>
+	            <li><a href="#">当前IP</a></li>
+	            <li><a href="#">安全退出</a></li>
+	          </ul>
+	        </div>
+	      </div>
+	    </nav>
+	    <div class="container-fluid">
+	      	<div class="row">
+		        <div class="col-sm-3 col-md-2 sidebar" style="padding-left: 30px;">
+		        	<volist name="rows" id="row1">
+		        		<ul>
+	        			<if condition="$row1.level eq 1">
+	        				<li>
+	        					<span>{$row1.name}</span>
+	        					<ul class="nav nav-sidebar">
+	        						<assign name="mid1" value="$row1.id"/>
+	        						<volist name="rows" id="row2">
+	        							<if condition="$row2.level eq 2 AND $row2.parentid eq $mid1">
+	        								<li>
+	        									<a onclick="javascript:openifram('{$row2.url}')">{$row2.name}</a>
+	        								</li>
+	        							</if>
+	        						</volist>
+	        					</ul>
+	        				</li>
+	        			</if>
+	        			</ul>
+	        		</volist>
+		        </div>
+		        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+		          	<iframe id="iframe" name="iframe" src="" >
+					</iframe>
+		        </div>
+	      	</div>
+    	</div>
+        <!--<div data-options="region:'west',title:'系统菜单',split:true" style="width:180px;">
+        	<ul class="easyui-tree" animate='true' lines='true'> 
+        		<volist name="rows" id="row1">
+        			<if condition="$row1.level eq 1">
+        				<li>
+        					<span>{$row1.name}</span>
+        					<ul>
+        						<assign name="mid1" value="$row1.id"/>
+        						<volist name="rows" id="row2">
+        							<if condition="$row2.level eq 2 AND $row2.parentid eq $mid1">
+        								<li>
+        									<a onclick="javascript:addTabs('{$row2.name}','{$row2.url}')">{$row2.name}</a>
+        								</li>
+        							</if>
+        						</volist>
+        					</ul>
+        				</li>
+        			</if>
+        		</volist>	
+            </ul> 
+        </div>   -->  		
+	</body>
+</html>

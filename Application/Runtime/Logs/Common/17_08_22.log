@@ -1,0 +1,206 @@
+[ 2017-08-22T16:08:02+08:00 ] ::1 /web/Public/easyui/themes/icon.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Public
+
+�:Public
+
+[ 2017-08-22T16:08:02+08:00 ] ::1 /web/Public/easyui/locale/easyui-lang-zh_CN.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Public
+
+[ 2017-08-22T16:08:02+08:00 ] ::1 /web/Public/easyui/jquery.easyui.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Public
+
+[ 2017-08-22T16:08:02+08:00 ] ::1 /web/%7B%E6%8C%87%E5%AE%9A%E8%8F%9C%E5%8D%95%E9%A1%B5%E9%9D%A2%E7%9A%84%E5%9C%B0%E5%9D%80%7D
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:{指定菜单页面的地址}
+
+[ 2017-08-22T16:09:17+08:00 ] ::1 /web/%7B%E6%8C%87%E5%AE%9A%E8%8F%9C%E5%8D%95%E9%A1%B5%E9%9D%A2%E7%9A%84%E5%9C%B0%E5%9D%80%7D
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:{指定菜单页面的地址}
+
+[ 2017-08-22T16:12:54+08:00 ] ::1 /web/%7B%E6%8C%87%E5%AE%9A%E8%8F%9C%E5%8D%95%E9%A1%B5%E9%9D%A2%E7%9A%84%E5%9C%B0%E5%9D%80%7D
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:{指定菜单页面的地址}
+
+[ 2017-08-22T16:13:09+08:00 ] ::1 /web/%7B%E6%8C%87%E5%AE%9A%E8%8F%9C%E5%8D%95%E9%A1%B5%E9%9D%A2%E7%9A%84%E5%9C%B0%E5%9D%80%7D
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:{指定菜单页面的地址}
+
+[ 2017-08-22T16:13:52+08:00 ] ::1 /web/%7B%E6%8C%87%E5%AE%9A%E8%8F%9C%E5%8D%95%E9%A1%B5%E9%9D%A2%E7%9A%84%E5%9C%B0%E5%9D%80%7D
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:{指定菜单页面的地址}
+
+[ 2017-08-22T16:16:11+08:00 ] ::1 /web/%7B%E6%8C%87%E5%AE%9A%E8%8F%9C%E5%8D%95%E9%A1%B5%E9%9D%A2%E7%9A%84%E5%9C%B0%E5%9D%80%7D
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:{指定菜单页面的地址}
+
+[ 2017-08-22T16:17:49+08:00 ] ::1 /web/%7B%E6%8C%87%E5%AE%9A%E8%8F%9C%E5%8D%95%E9%A1%B5%E9%9D%A2%E7%9A%84%E5%9C%B0%E5%9D%80%7D
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:{指定菜单页面的地址}
+
+[ 2017-08-22T16:18:51+08:00 ] ::1 /web/%7B%E6%8C%87%E5%AE%9A%E8%8F%9C%E5%8D%95%E9%A1%B5%E9%9D%A2%E7%9A%84%E5%9C%B0%E5%9D%80%7D
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:{指定菜单页面的地址}
+
+[ 2017-08-22T16:21:20+08:00 ] ::1 /web/%7B%E6%8C%87%E5%AE%9A%E8%8F%9C%E5%8D%95%E9%A1%B5%E9%9D%A2%E7%9A%84%E5%9C%B0%E5%9D%80%7D
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:{指定菜单页面的地址}
+
+[ 2017-08-22T16:22:14+08:00 ] ::1 /web/%7B%E6%8C%87%E5%AE%9A%E8%8F%9C%E5%8D%95%E9%A1%B5%E9%9D%A2%E7%9A%84%E5%9C%B0%E5%9D%80%7D
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:{指定菜单页面的地址}
+
+[ 2017-08-22T16:22:58+08:00 ] ::1 /web/%7B%E6%8C%87%E5%AE%9A%E8%8F%9C%E5%8D%95%E9%A1%B5%E9%9D%A2%E7%9A%84%E5%9C%B0%E5%9D%80%7D
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:{指定菜单页面的地址}
+
+[ 2017-08-22T16:23:36+08:00 ] ::1 /web/%7B%E6%8C%87%E5%AE%9A%E8%8F%9C%E5%8D%95%E9%A1%B5%E9%9D%A2%E7%9A%84%E5%9C%B0%E5%9D%80%7D
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:{指定菜单页面的地址}
+
+[ 2017-08-22T16:24:07+08:00 ] ::1 /web/%7B%E6%8C%87%E5%AE%9A%E8%8F%9C%E5%8D%95%E9%A1%B5%E9%9D%A2%E7%9A%84%E5%9C%B0%E5%9D%80%7D
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:{指定菜单页面的地址}
+
+[ 2017-08-22T16:25:44+08:00 ] ::1 /web/%7B%E6%8C%87%E5%AE%9A%E8%8F%9C%E5%8D%95%E9%A1%B5%E9%9D%A2%E7%9A%84%E5%9C%B0%E5%9D%80%7D
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:{指定菜单页面的地址}
+
+[ 2017-08-22T16:28:49+08:00 ] ::1 /web/%7B%E6%8C%87%E5%AE%9A%E8%8F%9C%E5%8D%95%E9%A1%B5%E9%9D%A2%E7%9A%84%E5%9C%B0%E5%9D%80%7D
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:{指定菜单页面的地址}
+
+[ 2017-08-22T16:30:31+08:00 ] ::1 /web/%7B%E6%8C%87%E5%AE%9A%E8%8F%9C%E5%8D%95%E9%A1%B5%E9%9D%A2%E7%9A%84%E5%9C%B0%E5%9D%80%7D
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:{指定菜单页面的地址}
+
+[ 2017-08-22T16:41:16+08:00 ] ::1 /web/Public/bootstrap/dist/css/bootstrap.min.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+ERR: 无法加载模块:Public
+
+[ 2017-08-22T16:41:16+08:00 ] ::1 /web/Public/kind/themes/default/default.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Public
+
+[ 2017-08-22T16:41:16+08:00 ] ::1 /web/Public/bootstrap/dist/js/bootstrap.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Public
+
+[ 2017-08-22T16:41:16+08:00 ] ::1 /web/Public/kind/kindeditor-min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Public
+
+[ 2017-08-22T16:41:16+08:00 ] ::1 /web/Public/kind/lang/zh_CN.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Public
+
+[ 2017-08-22T16:42:13+08:00 ] ::1 /web/Public/bootstrap/dist/css/bootstrap.min.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Public
+
+[ 2017-08-22T16:42:13+08:00 ] ::1 /web/Public/bootstrap/dist/js/bootstrap.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Public
+
+[ 2017-08-22T16:42:13+08:00 ] ::1 /web/Public/kind/themes/default/default.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Public
+
+[ 2017-08-22T16:42:13+08:00 ] ::1 /web/Public/kind/kindeditor-min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Public
+
+[ 2017-08-22T16:42:13+08:00 ] ::1 /web/Public/kind/lang/zh_CN.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Public
+
+[ 2017-08-22T16:43:12+08:00 ] ::1 /web/Public/bootstrap/dist/css/bootstrap.min.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Public
+
+[ 2017-08-22T16:43:12+08:00 ] ::1 /web/Public/kind/themes/default/default.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Public
+
+[ 2017-08-22T16:43:12+08:00 ] ::1 /web/Public/kind/kindeditor-min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Public
+
+[ 2017-08-22T16:43:12+08:00 ] ::1 /web/Public/kind/lang/zh_CN.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Public
+
+[ 2017-08-22T16:43:12+08:00 ] ::1 /web/Public/bootstrap/dist/js/bootstrap.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Public
+
