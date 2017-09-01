@@ -20,7 +20,7 @@
 			$(function(){
 				//让iframe高度适应
 				$("#iframe").load(function () {
-				    var mainheight = $(this).contents().find("body").height() + 50;
+				    var mainheight = $(this).contents().find("body").height() + 800;
 				    $(this).height(mainheight);
 				});
 				//点击菜单变色

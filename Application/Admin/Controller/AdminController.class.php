@@ -17,12 +17,13 @@ class AdminController extends Controller{
         }
         $mod = M("tb_article");
         //总数目
-        $total = $mod->where($query)->count();
+        $total = $mod->where($query)->where("channelid = '$channelid'")->count();
         $page = getpage($total,8);
         $show = $page->show();//显示分页
         //联表查询
-        $rows = $mod->join("tb_channel c on c.id = tb_article.channelid","INNER")->where($query)->where("channelid = '$channelid'")->limit($page->firstRow.','.$page->listRows)->order("time desc")->select();
-        $data = array("total"=>$total,"rows"=>$rows,"show"=>$show,"stitle"=>$stitle,"stime"=>$stime);
+        $sql = "select c.name,a.id,a.title,a.author,a.summary,a.time,a.content,a.imgurl from tb_article a join tb_channel c on a.channelid = c.id";
+        $rows = $mod->where($sql)->where($query)->where("channelid = '$channelid'")->limit($page->firstRow.','.$page->listRows)->order("time desc")->select();
+        $data = array("total"=>$total,"rows"=>$rows,"page"=>$show,"stitle"=>$stitle,"stime"=>$stime);
         $this->assign("data",$data);
         $this->display(allarticle);
     }
@@ -30,22 +31,28 @@ class AdminController extends Controller{
      * 删除某条文章
      * @param unknown $no
      */
-    public function deleteArticle($no,$channel_id){
-        M("tb_article")->where("channel_id = '$channel_id'")->where("id = '$no'")->delete();
+    public function deleteArticle($newsId){
+        foreach ($newsId as $id){
+            $res = M("tb_article")->where("id = '$id'")->delete();
+        }
+        $res?$sta['status']=1:$sta['status']=0;
+        $this->ajaxReturn($sta);
     }
     /**
      * 查询一条文章
      * @param unknown $no
      */
-    public function searchArticleOne($no,$channel_id){
-        $rows = M("tb_article")->where("channel_id = '$channel_id'")->where("id = '$no'")->select();
-        $this->ajaxReturn($rows);
+    public function searchArticleOne($newsId){
+        $rows = M("tb_article")->where("id = '$newsId'")->find();
+        $this->assign("newsId",$newsId);
+        $this->assign("rows",$rows);
+        $this->display("edit");
     }
     /**
      * 新增修改文章
      * 
      */
-    public function addArticle($ctr,$channel_id,$title,$author,$summary,$newsId,$content,$time){
+    public function addArticle($ctr,$channelid,$url='',$title,$author,$summary,$newsId='',$content,$time){
         //文件上传
         $upload = new \Think\Upload();// 实例化上传类
         $upload->maxSize   =     3145728 ;// 设置附件上传大小
@@ -58,6 +65,7 @@ class AdminController extends Controller{
         $imgurl = "/Uploads/".$info['pic']['savepath'].$info['pic']['savename'];
         if(!$info) {// 上传错误提示错误信息
             $imgurl = "没有上传图片哦！";
+            
             //$this->error($upload->getError());
         }else{// 上传成功
             //$this->success('上传成功！');
@@ -65,23 +73,25 @@ class AdminController extends Controller{
         }
         //传入的数组
         $data = array(
-            'channel_id'=>$channel_id,
+            'channelid'=>$channelid,
             'content'=>$content,
             'title'=>$title,
             'author'=>$author,
             'summary'=>$summary,
-            'img_url'=>$imgurl,
+            'url'=>$url,
+            'imgurl'=>$imgurl,
             'time'=>$time
         );
         if ($ctr > 0){
 			//新增数据
-            M("tb_article")->where("channel_id = '$channel_id'")->field("content,title,summary,img_url,time,channel_id")->add($data);
-            $this->searchArticle($channel_id);
+            $res = M("tb_article")->field("content,author,title,summary,url,imgurl,time,channelid")->add($data);
+            $res?$sta['status']=1:$sta['status']=0;
         }else {
 			//修改数据
-            M("tb_article")->where("channel_id = '$channel_id'")->field("content,title,summary,img_url,time")->where("id='$newsId'")->save($data);
-            $this->searchArticle($channel_id);
+            $res = M("tb_article")->field("content,author,title,summary,url,imgurl,time,channelid")->where("id='$newsId'")->save($data);
+            $res?$sta['status']=1:$sta['status']=0;
         }
+        $this->ajaxReturn($sta);
     }
     //默认的统计方法
     public function tongji(){

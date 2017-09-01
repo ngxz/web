@@ -47,7 +47,7 @@
 	        $local = $Ips->getlocation(); // 获取某个IP地址所在的位置
 // 	        $local = mb_convert_encoding($local, "utf-8", "gb2312"); // 编码转换，否则乱码
  	        $local = $local['country'];
-	        $time = date("y-m-d H:i:s");
+	        $time = date("Y-m-d H:i:s");
 	        $_SESSION['time']=$time;
 	        $_SESSION['local']=$local;
 	        $this->assign("rows",$rows);

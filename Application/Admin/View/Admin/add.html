@@ -15,6 +15,7 @@
 			  width:100%!important;
 			  height:200%!important;
 			}
+			.ke-edit,.ke-edit-iframe{height: 200%!important;}
 		</style>
 		<script type="text/javascript" src="__PUBLIC__/js/jquery-1.9.1.min.js"></script>
 		<script type="text/javascript" src="__PUBLIC__/bs/js/bootstrap.min.js"></script>
@@ -65,16 +66,35 @@
 				    });
 				
 			});
+			//提交函数
+			function add(){
+				$.post("__ROOT__/index.php/Admin/Admin/addArticle",{
+					"title":$("#title").val(),
+					"summary":$("#summary").val(),
+					"author":$("#author").val(),
+					"time":$("#time").val(),
+					"url":$("#url").val(),
+					"content":$("#content").val(),
+					"channelid":$("#channelid").val(),
+					"ctr":$("#ctr").val()
+				},function(data){
+					if(data.status == 1){
+						alert("添加成功！");
+					}else{
+						alert("添加失败！");
+					}
+				},"json");
+			}
 		</script>
 	</head>
 	<body>
-        <form action="__ROOT__/Admin/Admin/addArticle" method="post" class="text-center" enctype="multipart/form-data">
+        <form class="text-center" enctype="multipart/form-data">
         	<input type="hidden" name="ctr" id="ctr" value="1"/>
         	<input type="hidden" name="newsId" id="newsId"/>
         	<div class="form-group">
         		<div class="input-group ">
 					<div class="input-group-addon">所属频道</div>
-					<select name="channel_id" id="channel_id" class="form-control" style="width:170px">
+					<select name="channelid" id="channelid" class="form-control" style="width:237px">
 						<option value="-1">选择频道</option>
 						<option value="1">资讯中心</option>
 						<option value="2">WEB前端</option>
@@ -100,7 +120,7 @@
 			</div>
 			<div class="form-group">
 				<div class="input-group ">
-					<div class="input-group-addon">发布时间</div>
+					<div class="input-group-addon">修改时间</div>
 					<input id="time" name="time" type="text" class="form-control input-append date" placeholder="日期必填" readonly/>
 					<span class="glyphicon form-control-feedback"></span>
 				</div>
@@ -114,10 +134,8 @@
 			</div>
 			<div class="form-group">
 				<div class="input-group ">
-					<div class="input-group-addon">图片地址</div>
-					<input type="file" name="pic" id="pic" style="display:none;" onchange="filenamechange()"/>
-					<input style="width:45%;"  class="form-control" type="text" name="img_url" id="img_url" placeholder="请选择文件" readonly>
-					<input type="button" class="btn btn-primary" onclick="btnclick()" value="上传文件"/>
+					<div class="input-group-addon">原文地址</div>
+					<input class="form-control" type="text" name="url" id="url" placeholder="转载的地址">
 					<span class="glyphicon form-control-feedback"></span>
 				</div>
 			</div>
@@ -130,7 +148,7 @@
 			</div>
 			<div class="submitBtn">
 	        	<button type="button" class="btn btn-default"><span aria-hidden="true">取消</span></button>
-	        	<input type="submit" class="btn btn-primary" value="确认">
+	        	<input type="button" class="btn btn-primary" value="确认" onclick="add()">
 	      	</div>
        </form>
 	</body>

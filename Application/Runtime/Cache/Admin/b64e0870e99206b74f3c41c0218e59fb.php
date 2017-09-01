@@ -15,7 +15,6 @@
 			  width:100%!important;
 			  height:200%!important;
 			}
-			.ke-edit,.ke-edit-iframe{height: 200%!important;}
 		</style>
 		<script type="text/javascript" src="/web/Public/js/jquery-1.9.1.min.js"></script>
 		<script type="text/javascript" src="/web/Public/bs/js/bootstrap.min.js"></script>
@@ -56,32 +55,35 @@
 			$(function(){
 				$("#time").datetimepicker({
 				   format:'yyyy-mm-dd hh:mm:ss',
-				        weekStart: 1,
-				        todayBtn:  1,
-						autoclose: 1,
-						todayHighlight: 1,
-						startView: 2,
-						forceParse: 0,
-				        showMeridian: 1
-				    });
+			        weekStart: 1,
+			        todayBtn:  1,
+					autoclose: 1,
+					todayHighlight: 1,
+					startView: 2,
+					forceParse: 0,
+			        showMeridian: 1
+				});
+				//默认选中频道
+				var i = <?php echo ($rows["channelid"]); ?>;
+				$("#channelid option").eq(i).attr("selected","selected");
 				
 			});
 			//提交函数
-			function add(){
+			function edit(){
 				$.post("/web/index.php/Admin/Admin/addArticle",{
 					"title":$("#title").val(),
 					"summary":$("#summary").val(),
 					"author":$("#author").val(),
 					"time":$("#time").val(),
-					"url":$("#url").val(),
 					"content":$("#content").val(),
 					"channelid":$("#channelid").val(),
-					"ctr":$("#ctr").val()
+					"ctr":0,
+					"newsId":<?php echo ($newsId); ?>
 				},function(data){
 					if(data.status == 1){
-						alert("添加成功！");
+						alert("修改成功！");
 					}else{
-						alert("添加失败！");
+						alert("修改失败！");
 					}
 				},"json");
 			}
@@ -89,14 +91,14 @@
 	</head>
 	<body>
         <form class="text-center" enctype="multipart/form-data">
-        	<input type="hidden" name="ctr" id="ctr" value="1"/>
-        	<input type="hidden" name="newsId" id="newsId"/>
+        	<!--<input type="hidden" name="ctr" id="ctr" value="0"/>
+        	<input type="hidden" name="newsId" id="newsId" value="<?php echo ($newsId); ?>"/>-->
         	<div class="form-group">
         		<div class="input-group ">
 					<div class="input-group-addon">所属频道</div>
 					<select name="channelid" id="channelid" class="form-control" style="width:237px">
 						<option value="-1">选择频道</option>
-						<option value="1">资讯中心</option>
+						<option value="1">新闻中心</option>
 						<option value="2">WEB前端</option>
 						<option value="3">PHP学习</option>
 						<option value="4">留言板</option>
@@ -107,48 +109,50 @@
         	<div class="form-group">
 				<div class="input-group ">
 					<div class="input-group-addon">文章标题</div>
-					<input id="title" name="title" type="text" class="form-control" placeholder="标题必填" />
+					<input id="title" name="title" type="text" class="form-control" value="<?php echo ($rows["title"]); ?>" placeholder="标题必填" />
 					<span class="glyphicon form-control-feedback"></span>
 				</div>
 			</div>
 			<div class="form-group">
 				<div class="input-group ">
 					<div class="input-group-addon">文章摘要</div>
-					<input id="summary" name="summary" type="text" class="form-control"/>
+					<input id="summary" name="summary" type="text" value="<?php echo ($rows["summary"]); ?>" class="form-control"/>
 					<span class="glyphicon form-control-feedback"></span>
 				</div>
 			</div>
 			<div class="form-group">
 				<div class="input-group ">
 					<div class="input-group-addon">修改时间</div>
-					<input id="time" name="time" type="text" class="form-control input-append date" placeholder="日期必填" readonly/>
+					<input id="time" name="time" type="text" class="form-control input-append date" value="<?php echo ($rows["time"]); ?>" placeholder="日期必填" readonly/>
 					<span class="glyphicon form-control-feedback"></span>
 				</div>
 			</div>
 			<div class="form-group">
 				<div class="input-group ">
 					<div class="input-group-addon">文章作者</div>
-					<input id="author" name="author" type="text" class="form-control" value="<?php echo ($_SESSION['u']['uname']); ?>" />
+					<input id="author" name="author" type="text" class="form-control" value="<?php echo ($rows["author"]); ?>" value="<?php echo ($_SESSION['u']['uname']); ?>" />
 					<span class="glyphicon form-control-feedback"></span>
 				</div>
 			</div>
 			<div class="form-group">
 				<div class="input-group ">
-					<div class="input-group-addon">原文地址</div>
-					<input class="form-control" type="text" name="url" id="url" placeholder="转载的地址">
+					<div class="input-group-addon">图片地址</div>
+					<input type="file" name="pic" id="pic" style="display:none;" onchange="filenamechange()"/>
+					<input style="width:63%;"  class="form-control" type="text" name="img_url" id="img_url" value="<?php echo ($rows["imgurl"]); ?>" placeholder="请选择文件" readonly>
+					<input type="button" class="btn btn-primary" onclick="btnclick()" value="上传文件"/>
 					<span class="glyphicon form-control-feedback"></span>
 				</div>
 			</div>
 			<div class="form-group1">
 				<div class="input-group ">
 					<div class="input-group-addon">文章内容</div>
-					<textarea id="content" name="content" type="text" style="width: 100px;height:100px;" class="form-control"/></textarea>
+					<textarea id="content" name="content" type="text" style="width: 100px;height:100px;" class="form-control"/><?php echo ($rows["content"]); ?></textarea>
 					<span class="glyphicon form-control-feedback"></span>
 				</div>
 			</div>
 			<div class="submitBtn">
 	        	<button type="button" class="btn btn-default"><span aria-hidden="true">取消</span></button>
-	        	<input type="button" class="btn btn-primary" value="确认" onclick="add()">
+	        	<input type="button" class="btn btn-primary" value="确认" onclick="edit()">
 	      	</div>
        </form>
 	</body>
