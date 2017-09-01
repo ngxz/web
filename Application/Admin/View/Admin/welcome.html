@@ -9,6 +9,7 @@
 		<link rel="stylesheet" href="__PUBLIC__/css/dashboard.css" />
 		<style type="text/css">
 			#iframe{width:100%;height:auto;min-height:90%; border:none;margin:0;padding:0;}
+			#navbar ul li{background-color: #222222!important;}
 		</style>
 		<script type="text/javascript" src="__PUBLIC__/js/jquery-1.9.1.min.js"></script>
 		<script type="text/javascript" src="__PUBLIC__/bs/js/bootstrap.min.js"></script>
@@ -47,7 +48,7 @@
 	        </div>
 	        <div id="navbar" class="navbar-collapse collapse">
 	          <ul class="nav navbar-nav navbar-right">
-	          	<li><a href="#">当前帐号：{$Think.session.uid}</a></li>
+	          	<li><a onclick="javascript:openifram('index.php/Admin/Login/adminMessage')">当前帐号：{$Think.session.uid}</a></li>
 	            <li><a href="#">登录时间:{$Think.session.time}</a></li>
 	            <li><a href="#">登录地区：{$Think.session.local}</a></li>
 	            <li><a href="__ROOT__/index.php/Admin/Login/logout">安全退出</a></li>
