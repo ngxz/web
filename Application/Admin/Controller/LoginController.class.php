@@ -23,6 +23,7 @@
 	        }else {
 	            $mod = M("tb_admin");
 	            $res = $mod->where("uid = '$uid'")->find();
+	            
 	            if (md5($pwd) == $res['pwd']){
 	                $tname = $res['tname'];
 	                //保存session
