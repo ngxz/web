@@ -17,7 +17,7 @@
 				<div class="nav floatr">
 					<ul>
 						<li class="navActive"><a href="/web">首页</a></li>
-						<li><a href="#">站内新闻</a></li>
+						<li><a href="/web/Index/index/news.html">站内新闻</a></li>
 						<li><a href="#">WEB前端</a></li>
 						<li><a href="#">PHP学习</a></li>
 						<li><a href="#">留言板</a></li>
@@ -32,7 +32,7 @@
 				<div class="ban">
 					<h1>标题</h1>
 					<p>句子</p>
-					<a href="#" class="btn-white btn-big">关于我</a>
+					<a href="/web/Index/index/about.html" class="btn-white btn-big">关于我</a>
 				</div>
 			</div>
 		</div>
