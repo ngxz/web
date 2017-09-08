@@ -1,4 +1,43 @@
 *{margin: 0;padding: 0;}
-ul,li{list-style: none;}
+body{font-family: "微软雅黑";}
+ul,li,ol{list-style: none;}
 a{text-decoration: none;color: #000;cursor: pointer;}
+/*浮动*/
+.floatl{float: left;}
+.floatr{float: right;}
+/*title*/
+h1,h2,h3,h4,h5,h6 {margin:0;padding:0;font-size:14px;}
 
+/*居中*/
+.container{width: 1050px;margin: 0 auto;}
+/*按钮*/
+input{border: none;cursor: pointer;}
+/*白色按钮*/
+.btn-white{background-color: #fff;color: #000;border-radius: 5px;border: 1px darkgray solid;}
+.btn-white:hover{opacity: 0.8;}
+/*大按钮*/
+.btn-big{padding: 10px 15px;font-size: 22px;}
+/*中按钮*/
+.btn-mid{padding: 5px 7.5px;}
+
+
+/*以下为顶部和底部通用样式*/
+/*nav*/
+.navBoxbg{background: #000;height: 50px;}
+.navBox{overflow: hidden;}
+.nav ul li{float: left;}
+.logo a,.nav ul li a{display: block;height: 50px;width: 80px;color:#fff;text-align: center;line-height: 50px;}
+/*nav活动样式*/
+.navActive{background: #333333;}
+
+/*底部*/
+.footerBoxbg{background-color: #000;height: 160px;}
+
+.footerBox{padding-top: 3%;}
+
+.link{margin: 12px 0;overflow: hidden;}
+.link li{float: left;margin: 0 12px;}
+.link li:first-child{margin-left: 0;}
+.link li a{color: #fff;}
+
+.beian{color: #fff;}

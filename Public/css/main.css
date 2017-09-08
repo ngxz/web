@@ -1,0 +1,45 @@
+.navBoxbg{background: #000;height: 50px;}
+.navBox{overflow: hidden;}
+.nav ul li{float: left;}
+.logo a,.nav ul li a{display: block;height: 50px;width: 80px;color:#fff;text-align: center;line-height: 50px;}
+/*nav活动样式*/
+.navActive{background: #333333;}
+
+/*banner*/
+.ban{height: 550px;text-align: center;background: url(../img/indexBanner_bg.jpg) no-repeat center center;color: #fff;}
+.ban h1{font-size: 26px;padding-top: 10%;}
+.ban p{margin: 1% auto;font-size: 22px;}
+.ban a{color:#666;}
+
+/*内容样式*/
+.indexChannel{font-size: 30px;}
+.storyTitle{font-size: 22px;}
+.storyTitle a:hover{color:#555;}
+.storyContent{font-size: 16px;}
+/*故事*/
+.storyBox{margin-top: 30px;}
+.story ul li{margin: 12px 0;}
+
+
+/*图片区*/
+.photoBox{margin-top: 30px;}
+.photo{margin: 20px 0;}
+.photo ul{overflow: hidden;}
+.photo ul li{float: left;height: 260px;width: 220px;margin: 0 21px;background:#dadada;cursor: pointer;position: relative;}
+.photo ul li img{width:220px;}
+.photo ul li p{font-size: 16px;text-align: center;line-height: 36px;}
+
+
+/*图片下隐藏的内容*/
+.photo ul li span{width:220px; height: 260px;position: absolute;text-align: center;line-height: 260px;top: 260px;left: 0;background: lightgray;opacity: 0.8;}
+/*底部*/
+.footerBoxbg{background-color: #000;height: 160px;}
+
+.footerBox{padding-top: 3%;}
+
+.link{margin: 12px 0;overflow: hidden;}
+.link li{float: left;margin: 0 12px;}
+.link li:first-child{margin-left: 0;}
+.link li a{color: #fff;}
+
+.beian{color: #fff;}

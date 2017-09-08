@@ -24,16 +24,20 @@
 	</head>
 	<body>
 		<div>
-			<form>
-			  <div class="form-group">
-			    <label for="account">帐号</label>
-			    <input type="text" class="form-control" id="uid" placeholder="">
-			  </div>
-			  <div class="form-group">
-			    <label for="pwd">密码</label>
-			    <input type="password" class="form-control" id="pwd" placeholder="">
-			  </div>
-			  <div class="form-group">
+			<form style="width: 200px;margin: 100px auto;padding: 20px; background:lightgray;">
+			  	<div class="form-group">
+			  		<div class="input-group">
+				  		<label for="account">帐号</label>
+				    	<input type="text" class="form-control" id="uid" required placeholder="">
+			  		</div>
+			  	</div>
+			  	<div class="form-group">
+			    	<div class="input-group">
+			    		<label for="pwd">密码</label>
+			    		<input type="password" class="form-control" id="pwd" required placeholder="">
+			    	</div>
+			  	</div>
+			  <div class="form-group text-center">
 			    <input type="button" class="btn btn-default" value="登录" onclick="login()">
 			  </div>
 			</form>
