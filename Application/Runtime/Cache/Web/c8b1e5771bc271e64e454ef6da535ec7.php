@@ -17,10 +17,10 @@
 				<div class="nav floatr">
 					<ul>
 						<li class="navActive"><a href="/web">首页</a></li>
-						<li><a href="/web/Index/index/news.html">站内新闻</a></li>
-						<li><a href="#">WEB前端</a></li>
-						<li><a href="#">PHP学习</a></li>
-						<li><a href="#">留言板</a></li>
+						<li><a href="/web/Index/New/news.html">站内新闻</a></li>
+						<li><a href="/web/Index/Web/web.html">WEB前端</a></li>
+						<li><a href="/web/Index/PHP/php.html">PHP学习</a></li>
+						<li><a href="/web/Index/Feed/feed.html">留言板</a></li>
 						<li><a href="/web/Index/index/about.html">关于我</a></li>
 					</ul>
 				</div>
@@ -99,7 +99,7 @@
 						<li><a href="#">链接</a></li>
 					</ul>
 					<!--备案信息-->
-					<p class="beian">本站由某某独立制作</p>
+					<p class="beian">本站由某某制作</p>
 					<p class="beian">渝ICP101010</p>
 				</div>
 			</div>
