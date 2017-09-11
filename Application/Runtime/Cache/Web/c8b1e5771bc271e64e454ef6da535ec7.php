@@ -19,7 +19,7 @@
 						<li class="navActive"><a href="/web">首页</a></li>
 						<li><a href="/web/Index/New/news.html">站内新闻</a></li>
 						<li><a href="/web/Index/Web/web.html">WEB前端</a></li>
-						<li><a href="/web/Index/PHP/php.html">PHP学习</a></li>
+						<li><a href="/web/Index/Php/php.html">PHP学习</a></li>
 						<li><a href="/web/Index/Feed/feed.html">留言板</a></li>
 						<li><a href="/web/Index/index/about.html">关于我</a></li>
 					</ul>

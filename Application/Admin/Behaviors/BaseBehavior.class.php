@@ -9,7 +9,7 @@ class BaseBehavior extends Behavior{
             $islogin = $_SESSION['uid']?1:0;
             if (!$islogin){
                 echo "<script type='text/javascript'>";
-                echo "window.top.location.href='".U('/Admin/Login/loginpage')."';";
+                echo "window.top.location.href='".U('Admin/Login/loginpage')."';";
                 echo "</script>";
                 exit();
              }

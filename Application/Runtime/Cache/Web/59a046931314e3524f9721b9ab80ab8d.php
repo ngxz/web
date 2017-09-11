@@ -11,11 +11,13 @@
             table tr{height:24px;}
             table tr td span{margin-left:50px;}
             table tr td{padding-left:20px;}
-            .about{overflow: hidden;}
+            .about{overflow: hidden;margin-top: 15px;margin-bottom: 50px;}
             .about li a{font-size:16px;margin:5px;}
 			.about ul li{text-align:center;margin-top:5px;}
             .about img{height:165px;}
             .myNote p{text-indent: 2em;margin-left:20px;}
+            /*面包屑距离顶部*/
+			.bread{margin-top: 50px;}
        	</style>
 		<script type="text/javascript" src="/web/Public/js/jquery-1.9.1.min.js" ></script>
 		<script type="text/javascript" src="/web/Public/js/main.js" ></script>
@@ -27,19 +29,20 @@
 				<div class="logo floatl"><a href="/web">Yuanrb.com</a></div>
 				<div class="nav floatr">
 					<ul>
-						<li class="navActive"><a href="/web">首页</a></li>
-						<li><a href="#">站内新闻</a></li>
-						<li><a href="#">WEB前端</a></li>
-						<li><a href="#">PHP学习</a></li>
-						<li><a href="#">留言板</a></li>
-						<li><a href="/web/Web/Index/about.html">关于我</a></li>
+						<li><a href="/web">首页</a></li>
+						<li><a href="/web/Index/New/news.html">站内新闻</a></li>
+						<li><a href="/web/Index/Web/web.html">WEB前端</a></li>
+						<li><a href="/web/Index/Php/php.html">PHP学习</a></li>
+						<li><a href="/web/Index/Feed/feed.html">留言板</a></li>
+						<li class="navActive"><a href="/web/Index/index/about.html">关于我</a></li>
 					</ul>
 				</div>
 			</div>
 		</div>
-		
 		<!--本页独立内容-->
 		<div class="container">
+			<!--面包屑-->
+			<div class="bread">当前位置：<a href="/web/Index/index/about.html">关于我</a></div>
 			<div class="about">
 				<!-- 主体左边 -->
 				<div class="floatl">

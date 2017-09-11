@@ -5,19 +5,9 @@
 		<title>WEB文章</title>
 		<link rel="icon" href="/web/Public/img/favicon.ico" type="image/x-icon">
 		<link rel="stylesheet" href="/web/Public/css/global.css" />
-		<!--<link rel="stylesheet" href="/web/Public/css/main.css" />-->
+		<link rel="stylesheet" href="/web/Public/css/list.css" />
 		<script type="text/javascript" src="/web/Public/js/jquery-1.9.1.min.js" ></script>
 		<script type="text/javascript" src="/web/Public/js/main.js" ></script>
-		<style type="text/css">
-			/*分页修饰*/
-			.pages{text-align: center;margin: 10px 0;}
-			.pages a,.pages span {display:inline-block;padding:2px 5px;margin:0 1px;border:1px solid #f0f0f0;-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px;}
-			.pages a,.pages li {display:inline-block;text-decoration:none;color:#58A0D3;padding: 5px 10px;border:1px solid #f0f0f0;}
-			.pages a.first,.pages a.prev,.pages a.next,.pages a.end{padding: 5px 10px;margin:0;}
-			.pages a:hover{border-color:#50A8E6;}
-			.pages a.num{padding: 5px 10px;}
-			.pages span.current{padding: 5px 10px;background:#50A8E6;color:#FFF;font-weight:700;border-color:#50A8E6;}
-		</style>
 	</head>
 	<body>
 		<!--导航部分-->
@@ -29,19 +19,46 @@
 						<li><a href="/web">首页</a></li>
 						<li><a href="/web/Index/New/news.html">站内新闻</a></li>
 						<li class="navActive"><a href="/web/Index/Web/web.html">WEB前端</a></li>
-						<li><a href="/web/Index/PHP/php.html">PHP学习</a></li>
+						<li><a href="/web/Index/Php/php.html">PHP学习</a></li>
 						<li><a href="/web/Index/Feed/feed.html">留言板</a></li>
 						<li><a href="/web/Index/index/about.html">关于我</a></li>
 					</ul>
 				</div>
 			</div>
 		</div>
-		<div>
-			<?php echo ($data["web"]); ?>
+		<!--web内容-->
+		<div class="webBoxbg">
+			<div class="webBox container">
+				<!--面包屑-->
+				<div class="bread">当前位置：<a href="/web/Index/Web/web.html"><?php echo ($channel["name"]); ?></a>-WEB文章列表</div>
+				<ul class="listUl">
+					<?php if(is_array($data["web"])): $i = 0; $__LIST__ = $data["web"];if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$web): $mod = ($i % 2 );++$i;?><li class="listLi">
+							<div class="listTitle"><a href="/web/index/detail/article/channelid/2/id/<?php echo ($web["id"]); ?>"><?php echo ($web["title"]); ?></a></div>
+							<div class="listTime"><?php echo ($web["time"]); ?></div>
+							<div class="listContent"><?php echo ($web["summary"]); ?></div>
+						</li><?php endforeach; endif; else: echo "" ;endif; ?>
+				</ul>
+			</div>
 		</div>
 		<!--分页-->
 		<div class="pages">
 			<?php echo ($data["show"]); ?>
+		</div>
+		<!--底部-->
+		<div class="footerBoxbg">
+			<div class="footerBox container">
+				<div class="footer">
+					<!--友情链接-->
+					<ul class="link">
+						<li><a href="#">链接</a></li>
+						<li><a href="#">链接</a></li>
+						<li><a href="#">链接</a></li>
+					</ul>
+					<!--备案信息-->
+					<p class="beian">本站由某某制作</p>
+					<p class="beian">渝ICP101010</p>
+				</div>
+			</div>
 		</div>
 	</body>
 </html>

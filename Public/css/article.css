@@ -1,0 +1,17 @@
+/*本文件为文章详情的修饰*/
+/*整体*/
+.articleBox{margin-top: 50px;margin-bottom: 50px;}
+/*标题*/
+.title{font-size: 30px;text-align: center;}
+
+/*时间和分享*/
+.article{overflow: hidden;}
+.time{float: left;margin-left: 30%;color: darkgray;}
+.bdsharebuttonbox{float:left;margin-top: -4px;}
+.share{}
+/*文章的内容*/
+.content{display: block;text-indent: 2em;margin: 20px 0;}
+
+/*翻篇按钮*/
+.preNext{margin-top: 80px;}
+.preNext p{}

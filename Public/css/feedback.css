@@ -1,0 +1,26 @@
+/*此文件是feedback专门css*/
+/*title是最新留言标题修饰*/
+.title{font-size: 32px;margin-top: 15px;}
+
+.feedForm{margin-bottom: 50px;margin-top: 40px;}
+/*面包屑距离顶部*/
+.bread{margin-top: 50px;}
+
+/*以下是留言列表和内容修饰*/
+.feedTitle{font-size: 20px;}
+.feedTime{font-size: 12px;color: darkgray;margin-left: 20px;}
+.feedContent{margin-left: 20px;}
+.feedBox ul li{margin: 15px 0;}
+
+/*留言表单修饰*/
+#title,#mail,#code{border: 1px solid lightgray;height: 30px;width: 200px;border-radius: 5px;margin: 10px 0;}
+/*文本域单独*/
+#content{resize: none;border: 1px solid lightgray;height: 60px;width: 200px;border-radius: 5px;cursor: pointer;margin: 5px 0;}
+.formContent label{float: left;margin-right: 5px;}
+/*验证码单独*/
+#code{width: 80px;}
+.formCode{position: relative;}
+.formCode img{width:;position:absolute;left:140px;}
+/*表单按钮*/
+.formSend input{font-size:16px;padding: 8px 18px;border-radius: 8px;margin: 10px 5px;outline: none;}
+

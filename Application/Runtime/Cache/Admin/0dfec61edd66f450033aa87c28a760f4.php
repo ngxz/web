@@ -9,12 +9,12 @@
 		<script type="text/javascript" src="/web/Public/bs/js/bootstrap.min.js"></script>
 		<script type="text/javascript">
 			function login(){
-				$.post("/web/index.php/Admin/Login/login",{
+				$.post("/web/Admin/Login/login",{
 					"uid":$("#uid").val(),
 					"pwd":$("#pwd").val()
 				},function(data){
 					if(data.status == 1){
-						window.location.href = "/web/index.php/Admin/Login/home";
+						window.location.href = "/web/Admin/Login/home";
 					}else if(data.status == 2){
 						alert("密码有误哦！");
 					}

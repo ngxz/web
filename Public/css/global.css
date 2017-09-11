@@ -30,6 +30,17 @@ input{border: none;cursor: pointer;}
 /*nav活动样式*/
 .navActive{background: #333333;}
 
+/*每个翻页按钮的修饰*/
+/*分页修饰*/
+.pages{text-align: center;margin: 10px 0;}
+.pages a,.pages span {display:inline-block;padding:2px 5px;margin:0 1px;border:1px solid #f0f0f0;-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px;}
+.pages a,.pages li {display:inline-block;text-decoration:none;color:#58A0D3;padding: 5px 10px;border:1px solid #f0f0f0;}
+.pages a.first,.pages a.prev,.pages a.next,.pages a.end{padding: 5px 10px;margin:0;}
+.pages a:hover{border-color:#50A8E6;}
+.pages a.num{padding: 5px 10px;}
+.pages span.current{padding: 5px 10px;background:#50A8E6;color:#FFF;font-weight:700;border-color:#50A8E6;}
+
+
 /*底部*/
 .footerBoxbg{background-color: #000;height: 160px;}
 

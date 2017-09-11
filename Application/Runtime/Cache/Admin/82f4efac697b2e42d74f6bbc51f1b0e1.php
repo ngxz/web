@@ -68,7 +68,7 @@
 			});
 			//提交函数
 			function add(){
-				$.post("/web/index.php/Admin/Admin/addArticle",{
+				$.post("/web/Admin/Admin/addArticle",{
 					"title":$("#title").val(),
 					"summary":$("#summary").val(),
 					"author":$("#author").val(),
