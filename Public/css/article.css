@@ -2,7 +2,7 @@
 /*整体*/
 .articleBox{margin-top: 50px;margin-bottom: 50px;}
 /*标题*/
-.title{font-size: 30px;text-align: center;}
+.title{font-size: 30px;text-align: center;margin: 20px 0;}
 
 /*时间和分享*/
 .article{overflow: hidden;}
@@ -10,7 +10,10 @@
 .bdsharebuttonbox{float:left;margin-top: -4px;}
 .share{}
 /*文章的内容*/
-.content{display: block;text-indent: 2em;margin: 20px 0;}
+.content{display: block;text-indent: 2em;margin: 20px 0;overflow: hidden;}
+
+/*内容中的图片*/
+.articleImg{float: right;}
 
 /*翻篇按钮*/
 .preNext{margin-top: 80px;}

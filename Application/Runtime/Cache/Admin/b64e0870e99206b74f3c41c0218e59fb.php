@@ -70,11 +70,12 @@
 			});
 			//提交函数
 			function edit(){
-				$.post("/web/index.php/Admin/Admin/addArticle",{
+				$.post("/web/Admin/Admin/addArticle",{
 					"title":$("#title").val(),
 					"summary":$("#summary").val(),
 					"author":$("#author").val(),
 					"time":$("#time").val(),
+					"url":$("#url").val(),
 					"content":$("#content").val(),
 					"channelid":$("#channelid").val(),
 					"ctr":0,
@@ -136,10 +137,8 @@
 			</div>
 			<div class="form-group">
 				<div class="input-group ">
-					<div class="input-group-addon">图片地址</div>
-					<input type="file" name="pic" id="pic" style="display:none;" onchange="filenamechange()"/>
-					<input style="width:63%;"  class="form-control" type="text" name="img_url" id="img_url" value="<?php echo ($rows["imgurl"]); ?>" placeholder="请选择文件" readonly>
-					<input type="button" class="btn btn-primary" onclick="btnclick()" value="上传文件"/>
+					<div class="input-group-addon">转载地址</div>
+					<input type="text" name="url" id="url" class="form-control" value="<?php echo ($rows["url"]); ?>"/>
 					<span class="glyphicon form-control-feedback"></span>
 				</div>
 			</div>

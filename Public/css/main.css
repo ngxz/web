@@ -1,3 +1,4 @@
+/*本文件是首页css*/
 .navBoxbg{background: #000;height: 50px;}
 .navBox{overflow: hidden;}
 .nav ul li{float: left;}
@@ -15,10 +16,10 @@
 .indexChannel{font-size: 30px;}
 .storyTitle{font-size: 22px;}
 .storyTitle a:hover{color:#555;}
-.storyContent{font-size: 16px;}
+.storyContent{font-size: 16px;margin: 8px 0;}
 /*故事*/
 .storyBox{margin-top: 30px;}
-.story ul li{margin: 12px 0;}
+.story ul li{margin: 12px 0;list-style:square;margin-left: 20px;}
 
 
 /*图片区*/

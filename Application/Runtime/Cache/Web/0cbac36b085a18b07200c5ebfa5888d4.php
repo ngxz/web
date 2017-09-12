@@ -52,7 +52,14 @@
 					</span>
 				</div>
 				<!--文章内容单独出来-->
-				<div class="content"><?php echo ($row["content"]); ?></div>
+				<div class="content">
+					<?php echo ($row["content"]); ?>
+					<!--
+					此处考虑到有图的文章公用此详情，判断图片地址为空则不显示图片，否则显示。
+					-->
+					<?php if($row["imgurl"] == ""): else: ?>
+						<img class="articleImg" src="/web/Public<?php echo ($row["imgurl"]); ?>" /><?php endif; ?>
+				</div>
 				<!--上一条-->
 				<!--
 					注意：以下翻篇地址中，

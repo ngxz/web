@@ -64,8 +64,7 @@ class AdminController extends Controller{
         $info   =   $upload->upload();
         $imgurl = "/Uploads/".$info['pic']['savepath'].$info['pic']['savename'];
         if(!$info) {// 上传错误提示错误信息
-            $imgurl = "没有上传图片哦！";
-            
+            $imgurl = "";
             //$this->error($upload->getError());
         }else{// 上传成功
             //$this->success('上传成功！');
@@ -104,6 +103,68 @@ class AdminController extends Controller{
     //修改文章
     public function edit(){
         $this->display();
+    }
+    /**
+     * 后台查询图片
+     * @param unknown $channelid
+     */
+    public function photo($channelid=''){
+        $mod = M("tb_article");
+        //总数目
+        $total = $mod->where("channelid = '$channelid'")->count();
+        $page = getpage($total,8);
+        $show = $page->show();//显示分页
+        //联表查询
+        $sql = "select c.name,a.id,a.title,a.author,a.summary,a.time,a.content,a.imgurl from tb_article a join tb_channel c on a.channelid = c.id";
+        $rows = $mod->where($sql)->where("channelid = '$channelid'")->limit($page->firstRow.','.$page->listRows)->order("time desc")->select();
+        $data = array("total"=>$total,"rows"=>$rows,"page"=>$show);
+        $this->assign("data",$data);
+        $this->display("photo");
+    }
+    /**
+     * 增加图片文字
+     */
+    public function addPhoto(){
+        $this->display();
+    }
+    /**
+     * 只负责图片及文字的新增
+     */
+    public function addPhotos($title,$summary,$time,$author,$newsId,$content){
+        //文件上传
+        $upload = new \Think\Upload();// 实例化上传类
+        $upload->maxSize   =     3145728 ;// 设置附件上传大小
+        $upload->exts      =     array('jpg', 'gif', 'png', 'jpeg');// 设置附件上传类型
+        $upload->rootPath  =     './Public/Uploads/'; // 设置附件上传根目录
+        $upload->savePath  =     ''; // 设置附件上传（子）目录
+        $upload->saveName = time().'_'.mt_rand();
+        // 上传文件
+        $info   =   $upload->upload();
+        $imgurl = "/Uploads/".$info['pic']['savepath'].$info['pic']['savename'];
+        if(!$info) {// 上传错误提示错误信息
+            //$imgurl = "没有上传图片哦！";
+            $this->error($upload->getError());
+            exit();
+        }
+        //传入的数组
+        $data = array(
+            'channelid'=>5,
+            'content'=>$content,
+            'title'=>$title,
+            'author'=>$author,
+            'summary'=>$summary,
+            'url'=>"图片类无",
+            'imgurl'=>$imgurl,
+            'time'=>$time
+        );
+        //新增数据
+        $res = M("tb_article")->field("content,author,title,summary,url,imgurl,time,channelid")->add($data);
+        if ($res){
+            echo "成功！";
+            $this->photo("5");
+        }else {
+            echo "失败！";
+        }
     }
 }
 

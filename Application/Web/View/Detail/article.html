@@ -52,7 +52,16 @@
 					</span>
 				</div>
 				<!--文章内容单独出来-->
-				<div class="content">{$row.content}</div>
+				<div class="content">
+					{$row.content}
+					<!--
+					此处考虑到有图的文章公用此详情，判断图片地址为空则不显示图片，否则显示。
+					-->
+					<if condition='$row.imgurl eq ""'>	
+					<else />
+						<img class="articleImg" src="__PUBLIC__{$row.imgurl}" />
+					</if>
+				</div>
 				<!--上一条-->
 				<!--
 					注意：以下翻篇地址中，

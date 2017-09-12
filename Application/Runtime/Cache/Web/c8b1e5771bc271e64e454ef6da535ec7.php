@@ -42,18 +42,10 @@
 				<div class="indexChannel">故事</div>
 				<div class="story">
 					<ul>
-						<li>
-							<div class="storyTitle"><a href="#">文章标题</a></div>
-							<div class="storyContent">内容截取</div>
-						</li>
-						<li>
-							<div class="storyTitle"><a href="#">文章标题</a></div>
-							<div class="storyContent">内容截取</div>
-						</li>
-						<li>
-							<div class="storyTitle"><a href="#">文章标题</a></div>
-							<div class="storyContent">内容截取</div>
-						</li>
+						<?php if(is_array($news)): $i = 0; $__LIST__ = $news;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$new): $mod = ($i % 2 );++$i;?><li>
+								<div class="storyTitle"><a href="/web/index/detail/article/channelid/1/id/<?php echo ($new["id"]); ?>"><?php echo ($new["title"]); ?></a></div>
+								<div class="storyContent">摘要 : <?php echo ($new["summary"]); ?></div>
+							</li><?php endforeach; endif; else: echo "" ;endif; ?>
 					</ul>
 				</div>
 			</div>
@@ -64,26 +56,11 @@
 				<div class="indexChannel">照片</div>
 				<div class="photo">
 					<ul>
-						<li>
-							<img src="/web/Public/img/favicon.ico" />
-							<p>图片标题</p>
-							<span>隐藏的图片内容</span>
-						</li>
-						<li>
-							<img src="/web/Public/img/favicon.ico" />
-							<p>图片标题</p>
-							<span>隐藏的图片内容</span>
-						</li>
-						<li>
-							<img src="/web/Public/img/favicon.ico" />
-							<p>图片标题</p>
-							<span>隐藏的图片内容</span>
-						</li>
-						<li>
-							<img src="/web/Public/img/favicon.ico" />
-							<p>图片标题</p>
-							<span>隐藏的图片内容</span>
-						</li>
+						<?php if(is_array($photos)): $i = 0; $__LIST__ = $photos;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$photo): $mod = ($i % 2 );++$i;?><li>
+								<img src="/web/Public<?php echo ($photo["imgurl"]); ?>" />
+								<p><?php echo ($photo["title"]); ?></p>
+								<span><a href="/web/index/detail/article/channelid/5/id/<?php echo ($photo["id"]); ?>"><?php echo ($photo["content"]); ?></a></span>
+							</li><?php endforeach; endif; else: echo "" ;endif; ?>
 					</ul>
 				</div>
 			</div>

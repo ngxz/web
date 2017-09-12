@@ -50,7 +50,7 @@
 			}
 			//文件名
 			function filenamechange(){
-				$("#img_url").val($("#pic").val());
+				$("#url").val($("#pic").val());
 			}
 			//
 			$(function(){
@@ -66,43 +66,11 @@
 				    });
 				
 			});
-			//提交函数
-			function add(){
-				$.post("/web/Admin/Admin/addArticle",{
-					"title":$("#title").val(),
-					"summary":$("#summary").val(),
-					"author":$("#author").val(),
-					"time":$("#time").val(),
-					"url":$("#url").val(),
-					"content":$("#content").val(),
-					"channelid":$("#channelid").val(),
-					"ctr":$("#ctr").val()
-				},function(data){
-					if(data.status == 1){
-						alert("添加成功！");
-					}else{
-						alert("添加失败！");
-					}
-				},"json");
-			}
 		</script>
 	</head>
 	<body>
-        <form class="text-center" enctype="multipart/form-data">
-        	<input type="hidden" name="ctr" id="ctr" value="1"/>
+        <form class="text-center" method="post" action="/web/Admin/Admin/addPhotos" enctype="multipart/form-data">
         	<input type="hidden" name="newsId" id="newsId"/>
-        	<div class="form-group">
-        		<div class="input-group ">
-					<div class="input-group-addon">所属频道</div>
-					<select name="channelid" id="channelid" class="form-control" style="width:237px">
-						<option value="-1">选择频道</option>
-						<option value="1">资讯中心</option>
-						<option value="2">WEB前端</option>
-						<option value="3">PHP学习</option>
-						<option value="4">留言板</option>
-					</select>
-				</div>
-        	</div>
         	<div class="form-group">
 				<div class="input-group ">
 					<div class="input-group-addon">文章标题</div>
@@ -133,8 +101,11 @@
 			</div>
 			<div class="form-group">
 				<div class="input-group ">
-					<div class="input-group-addon">原文地址</div>
-					<input class="form-control" type="text" name="url" id="url" placeholder="转载的地址,原创请填写#">
+					<div class="input-group-addon">图片地址</div>
+					
+					<input type="file" name="pic" id="pic" style="display:none;" onchange="filenamechange()"/>
+					<input style="width:55%;"  class="form-control" type="text" name="url" id="url" placeholder="方形图片" readonly>
+					<input type="button" class="btn btn-primary" onclick="btnclick()" value="上传文件"/>
 					<span class="glyphicon form-control-feedback"></span>
 				</div>
 			</div>
@@ -147,7 +118,7 @@
 			</div>
 			<div class="submitBtn">
 	        	<button type="button" class="btn btn-default"><span aria-hidden="true">取消</span></button>
-	        	<input type="button" class="btn btn-primary" value="确认" onclick="add()">
+	        	<input type="submit" class="btn btn-primary" value="确认" onclick="add()">
 	      	</div>
        </form>
 	</body>

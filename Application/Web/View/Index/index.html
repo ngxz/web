@@ -42,18 +42,12 @@
 				<div class="indexChannel">故事</div>
 				<div class="story">
 					<ul>
-						<li>
-							<div class="storyTitle"><a href="#">文章标题</a></div>
-							<div class="storyContent">内容截取</div>
-						</li>
-						<li>
-							<div class="storyTitle"><a href="#">文章标题</a></div>
-							<div class="storyContent">内容截取</div>
-						</li>
-						<li>
-							<div class="storyTitle"><a href="#">文章标题</a></div>
-							<div class="storyContent">内容截取</div>
-						</li>
+						<volist name="news" id="new">
+							<li>
+								<div class="storyTitle"><a href="__ROOT__/index/detail/article/channelid/1/id/{$new.id}">{$new.title}</a></div>
+								<div class="storyContent">摘要 : {$new.summary}</div>
+							</li>
+						</volist>
 					</ul>
 				</div>
 			</div>
@@ -64,26 +58,13 @@
 				<div class="indexChannel">照片</div>
 				<div class="photo">
 					<ul>
-						<li>
-							<img src="__PUBLIC__/img/favicon.ico" />
-							<p>图片标题</p>
-							<span>隐藏的图片内容</span>
-						</li>
-						<li>
-							<img src="__PUBLIC__/img/favicon.ico" />
-							<p>图片标题</p>
-							<span>隐藏的图片内容</span>
-						</li>
-						<li>
-							<img src="__PUBLIC__/img/favicon.ico" />
-							<p>图片标题</p>
-							<span>隐藏的图片内容</span>
-						</li>
-						<li>
-							<img src="__PUBLIC__/img/favicon.ico" />
-							<p>图片标题</p>
-							<span>隐藏的图片内容</span>
-						</li>
+						<volist name="photos" id="photo">
+							<li>
+								<img src="__PUBLIC__{$photo.imgurl}" />
+								<p>{$photo.title}</p>
+								<span><a href="__ROOT__/index/detail/article/channelid/5/id/{$photo.id}">{$photo.content}</a></span>
+							</li>
+						</volist>
 					</ul>
 				</div>
 			</div>
