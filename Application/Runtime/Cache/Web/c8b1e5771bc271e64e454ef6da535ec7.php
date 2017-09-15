@@ -13,15 +13,15 @@
 		<!--导航部分-->
 		<div class="navBoxbg">
 			<div class="navBox container">
-				<div class="logo floatl"><a href="/web">Yuanrb.com</a></div>
+				<div class="logo floatl"><a href="/web/">Yuanrb.com</a></div>
 				<div class="nav floatr">
 					<ul>
-						<li class="navActive"><a href="/web">首页</a></li>
-						<li><a href="/web/Index/New/news.html">站内新闻</a></li>
-						<li><a href="/web/Index/Web/web.html">WEB前端</a></li>
-						<li><a href="/web/Index/Php/php.html">PHP学习</a></li>
-						<li><a href="/web/Index/Feed/feed.html">留言板</a></li>
-						<li><a href="/web/Index/index/about.html">关于我</a></li>
+						<li class="navActive"><a href="/web/">首页</a></li>
+						<li><a href="/web/New/news.html">站内新闻</a></li>
+						<li><a href="/web/Web/web.html">WEB前端</a></li>
+						<li><a href="/web/Php/php.html">PHP学习</a></li>
+						<li><a href="/web/Feed/feed.html">留言板</a></li>
+						<li><a href="/web/index/about.html">关于我</a></li>
 					</ul>
 				</div>
 			</div>
@@ -32,7 +32,7 @@
 				<div class="ban">
 					<h1>标题</h1>
 					<p>句子</p>
-					<a href="/web/Index/index/about.html" class="btn-white btn-big">关于我</a>
+					<a href="/web/index/about.html" class="btn-white btn-big">关于我</a>
 				</div>
 			</div>
 		</div>
@@ -43,7 +43,7 @@
 				<div class="story">
 					<ul>
 						<?php if(is_array($news)): $i = 0; $__LIST__ = $news;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$new): $mod = ($i % 2 );++$i;?><li>
-								<div class="storyTitle"><a href="/web/index/detail/article/channelid/1/id/<?php echo ($new["id"]); ?>"><?php echo ($new["title"]); ?></a></div>
+								<div class="storyTitle"><a href="/web/detail/article/channelid/1/id/<?php echo ($new["id"]); ?>"><?php echo ($new["title"]); ?></a></div>
 								<div class="storyContent">摘要 : <?php echo ($new["summary"]); ?></div>
 							</li><?php endforeach; endif; else: echo "" ;endif; ?>
 					</ul>
@@ -59,7 +59,7 @@
 						<?php if(is_array($photos)): $i = 0; $__LIST__ = $photos;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$photo): $mod = ($i % 2 );++$i;?><li>
 								<img src="/web/Public<?php echo ($photo["imgurl"]); ?>" />
 								<p><?php echo ($photo["title"]); ?></p>
-								<span><a href="/web/index/detail/article/channelid/5/id/<?php echo ($photo["id"]); ?>"><?php echo ($photo["content"]); ?></a></span>
+								<span><a href="/web/detail/article/channelid/5/id/<?php echo ($photo["id"]); ?>"><?php echo ($photo["content"]); ?></a></span>
 							</li><?php endforeach; endif; else: echo "" ;endif; ?>
 					</ul>
 				</div>
@@ -76,8 +76,8 @@
 						<li><a href="#">链接</a></li>
 					</ul>
 					<!--备案信息-->
-					<p class="beian">本站由某某制作</p>
-					<p class="beian">渝ICP101010</p>
+					<p class="beian">本站由袁茹兵制作</p>
+					<p class="beian">渝ICP备17011601号</p>
 				</div>
 			</div>
 		</div>

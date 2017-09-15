@@ -13,15 +13,15 @@
 		<!--导航部分-->
 		<div class="navBoxbg">
 			<div class="navBox container">
-				<div class="logo floatl"><a href="__ROOT__">Yuanrb.com</a></div>
+				<div class="logo floatl"><a href="__ROOT__/">Yuanrb.com</a></div>
 				<div class="nav floatr">
 					<ul>
-						<li class="navActive"><a href="__ROOT__">首页</a></li>
-						<li><a href="__ROOT__/Index/New/news.html">站内新闻</a></li>
-						<li><a href="__ROOT__/Index/Web/web.html">WEB前端</a></li>
-						<li><a href="__ROOT__/Index/Php/php.html">PHP学习</a></li>
-						<li><a href="__ROOT__/Index/Feed/feed.html">留言板</a></li>
-						<li><a href="__ROOT__/Index/index/about.html">关于我</a></li>
+						<li class="navActive"><a href="__ROOT__/">首页</a></li>
+						<li><a href="__ROOT__/New/news.html">站内新闻</a></li>
+						<li><a href="__ROOT__/Web/web.html">WEB前端</a></li>
+						<li><a href="__ROOT__/Php/php.html">PHP学习</a></li>
+						<li><a href="__ROOT__/Feed/feed.html">留言板</a></li>
+						<li><a href="__ROOT__/index/about.html">关于我</a></li>
 					</ul>
 				</div>
 			</div>
@@ -32,7 +32,7 @@
 				<div class="ban">
 					<h1>标题</h1>
 					<p>句子</p>
-					<a href="__ROOT__/Index/index/about.html" class="btn-white btn-big">关于我</a>
+					<a href="__ROOT__/index/about.html" class="btn-white btn-big">关于我</a>
 				</div>
 			</div>
 		</div>
@@ -44,7 +44,7 @@
 					<ul>
 						<volist name="news" id="new">
 							<li>
-								<div class="storyTitle"><a href="__ROOT__/index/detail/article/channelid/1/id/{$new.id}">{$new.title}</a></div>
+								<div class="storyTitle"><a href="__ROOT__/detail/article/channelid/1/id/{$new.id}">{$new.title}</a></div>
 								<div class="storyContent">摘要 : {$new.summary}</div>
 							</li>
 						</volist>
@@ -62,7 +62,7 @@
 							<li>
 								<img src="__PUBLIC__{$photo.imgurl}" />
 								<p>{$photo.title}</p>
-								<span><a href="__ROOT__/index/detail/article/channelid/5/id/{$photo.id}">{$photo.content}</a></span>
+								<span><a href="__ROOT__/detail/article/channelid/5/id/{$photo.id}">{$photo.content}</a></span>
 							</li>
 						</volist>
 					</ul>
@@ -80,8 +80,8 @@
 						<li><a href="#">链接</a></li>
 					</ul>
 					<!--备案信息-->
-					<p class="beian">本站由某某制作</p>
-					<p class="beian">渝ICP101010</p>
+					<p class="beian">本站由袁茹兵制作</p>
+					<p class="beian">渝ICP备17011601号</p>
 				</div>
 			</div>
 		</div>
