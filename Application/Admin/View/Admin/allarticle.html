@@ -28,7 +28,7 @@
 		<script type="text/javascript">
 		//新增
 		function add(){
-			location.href = "__ROOT__/Admin/Admin/add";
+			location.href = "__ROOT__/admin.php/Admin/add";
 		}
 		//编辑函数
 		function edit(){
@@ -37,7 +37,7 @@
 					alert("请选择一项进行操作！");
 					return;
 				}
-				location.href = "__ROOT__/Admin/Admin/searchArticleOne/newsId/"+num.val();
+				location.href = "__ROOT__/admin.php/Admin/searchArticleOne/newsId/"+num.val();
 		}
 		//删除新闻
  		function hide(){
@@ -51,7 +51,7 @@
 				return;
 			}
 			if(confirm('确认删除吗？')){
-				$.post("__ROOT__/Admin/Admin/deleteArticle",{
+				$.post("__ROOT__/admin.php/Admin/deleteArticle",{
 					"newsId":checkeds
 				},function(data){
 					if(data.status == 1){
@@ -80,7 +80,7 @@
     		  <button type="button" class="btn btn-default" onclick="edit()"><span class="glyphicon glyphicon-edit"></span>修改</button>
     		  <button type="button" class="btn btn-default" onclick="hide();"><span class="glyphicon glyphicon-trash"></span>删除</button>
     		  <!-- 条件搜索 -->
-	   		  <form id="searchForm" action="__ROOT__/Admin/Admin/searchArticle" method="post">
+	   		  <form id="searchForm" action="__ROOT__/admin.php/Admin/searchArticle" method="post">
 	   		  		<div class="input-group">
 	   		  			<input type="hidden" name="channel_id" id="channel_id" value="{$page.channel_id}"/>
 		   		  		<input type="text" class="form-control" id="stitle" name="stitle" value="{$page.scontent}" placeholder="标题关键字">
