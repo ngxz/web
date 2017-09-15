@@ -23,7 +23,7 @@ input{border: none;cursor: pointer;}
 
 /*以下为顶部和底部通用样式*/
 /*nav*/
-.navBoxbg{background: #000;height: 50px;}
+.navBoxbg{min-width:1050px;background: #000;height: 50px;}
 .navBox{overflow: hidden;}
 .nav ul li{float: left;}
 .logo a,.nav ul li a{display: block;height: 50px;width: 80px;color:#fff;text-align: center;line-height: 50px;}
@@ -42,7 +42,7 @@ input{border: none;cursor: pointer;}
 
 
 /*底部*/
-.footerBoxbg{background-color: #000;height: 160px;}
+.footerBoxbg{min-width:1050px;background-color: #000;height: 160px;}
 
 .footerBox{padding-top: 3%;}
 

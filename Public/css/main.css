@@ -1,5 +1,5 @@
 /*本文件是首页css*/
-.navBoxbg{background: #000;height: 50px;}
+.navBoxbg{min-width:1050px;background: #000;height: 50px;}
 .navBox{overflow: hidden;}
 .nav ul li{float: left;}
 .logo a,.nav ul li a{display: block;height: 50px;width: 80px;color:#fff;text-align: center;line-height: 50px;}
@@ -7,7 +7,7 @@
 .navActive{background: #333333;}
 
 /*banner*/
-.ban{height: 550px;text-align: center;background: url(../img/indexBanner_bg.jpg) no-repeat center center;color: #fff;}
+.ban{min-width:1050px;height: 550px;text-align: center;background: url(../img/indexBanner_bg.jpg) no-repeat center center;color: #fff;}
 .ban h1{font-size: 26px;padding-top: 10%;}
 .ban p{margin: 1% auto;font-size: 22px;}
 .ban a{color:#666;}
@@ -34,7 +34,7 @@
 /*图片下隐藏的内容*/
 .photo ul li span{width:220px; height: 260px;position: absolute;text-align: center;line-height: 260px;top: 260px;left: 0;background: lightgray;opacity: 0.8;}
 /*底部*/
-.footerBoxbg{background-color: #000;height: 160px;}
+.footerBoxbg{min-width:1050px;background-color: #000;height: 160px;}
 
 .footerBox{padding-top: 3%;}
 
