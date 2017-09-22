@@ -3,10 +3,10 @@
 	<head>
 		<meta charset="UTF-8">
 		<title></title>
-		<link rel="stylesheet" href="/web/Public/bs/css/bootstrap.min.css">
-		<link rel="stylesheet" href="/web/Public/css/global.css" />
-		<link rel="stylesheet" href="/web/Public/css/bootstrap-datetimepicker.css">
-		<link rel="stylesheet" type="text/css" href="/web/Public/kind/themes/default/default.css">
+		<link rel="stylesheet" href="/Public/bs/css/bootstrap.min.css">
+		<link rel="stylesheet" href="/Public/css/global.css" />
+		<link rel="stylesheet" href="/Public/css/bootstrap-datetimepicker.css">
+		<link rel="stylesheet" type="text/css" href="/Public/kind/themes/default/default.css">
 		<style type="text/css">
 			form{padding: 20px;}
 			.form-group{width: 30%;display: inline-block;}
@@ -17,12 +17,12 @@
 			}
 			.ke-edit,.ke-edit-iframe{height: 200%!important;}
 		</style>
-		<script type="text/javascript" src="/web/Public/js/jquery-1.9.1.min.js"></script>
-		<script type="text/javascript" src="/web/Public/bs/js/bootstrap.min.js"></script>
-		<script type="text/javascript" src="/web/Public/js/bootstrap-datetimepicker.min.js"></script>
-		<script type="text/javascript" src="/web/Public/js/locales/bootstrap-datetimepicker.zh-CN.js"></script>
-		<script type="text/javascript" src="/web/Public/kind/kindeditor-min.js"></script>
-		<script type="text/javascript" src="/web/Public/kind/lang/zh_CN.js"></script>
+		<script type="text/javascript" src="/Public/js/jquery-1.9.1.min.js"></script>
+		<script type="text/javascript" src="/Public/bs/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="/Public/js/bootstrap-datetimepicker.min.js"></script>
+		<script type="text/javascript" src="/Public/js/locales/bootstrap-datetimepicker.zh-CN.js"></script>
+		<script type="text/javascript" src="/Public/kind/kindeditor-min.js"></script>
+		<script type="text/javascript" src="/Public/kind/lang/zh_CN.js"></script>
 		<script type="text/javascript">
 			//kind插件
 			KindEditor.ready(function(K) {  
@@ -69,7 +69,7 @@
 		</script>
 	</head>
 	<body>
-        <form class="text-center" method="post" action="/web/Admin/Admin/addPhotos" enctype="multipart/form-data">
+        <form class="text-center" method="post" action="/admin.php/Admin/addPhotos" enctype="multipart/form-data">
         	<input type="hidden" name="newsId" id="newsId"/>
         	<div class="form-group">
 				<div class="input-group ">

@@ -104,7 +104,7 @@
 						<td>{$row.title}</td>
 						<td>{$row.author}</td>
 						<td>{$row.summary}</td>
-						<td>{$row.content}</td>
+						<td>{$row.content|msubstr=0,60,'utf-8',true}</td>
 						<td>{$row.imgurl}</td>
 						<td>{$row.time}</td>
 					</tr>

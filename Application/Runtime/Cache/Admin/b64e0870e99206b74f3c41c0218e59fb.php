@@ -70,7 +70,7 @@
 			});
 			//提交函数
 			function edit(){
-				$.post("/web/Admin/Admin/addArticle",{
+				$.post("/web/admin.php/Admin/addArticle",{
 					"title":$("#title").val(),
 					"summary":$("#summary").val(),
 					"author":$("#author").val(),
