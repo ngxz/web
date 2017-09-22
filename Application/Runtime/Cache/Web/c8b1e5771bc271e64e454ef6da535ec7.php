@@ -4,7 +4,7 @@
 		<meta charset="UTF-8">
 		<title>首页 - 袁茹兵个人站点</title>
 		<meta name="keywords" content="袁茹兵，个人博客,网页开发,web前端，PHP学习" />
-		<meta name="description" content="主要分享个人网站搭建，web前端，php后台，博客建设等文章" />
+<meta name="description" content="主要分享个人网站搭建，web前端，php后台，博客建设等文章" />
 		<link rel="icon" href="/web/Public/img/favicon.ico" type="image/x-icon">
 		<link rel="stylesheet" href="/web/Public/css/global.css" />
 		<link rel="stylesheet" href="/web/Public/css/main.css" />
@@ -70,20 +70,21 @@
 		</div>
 		<!--底部-->
 		<div class="footerBoxbg">
-			<div class="footerBox container">
-				<div class="footer">
-					<!--友情链接-->
-					<ul class="link">
-						<li><a href="#">链接</a></li>
-						<li><a href="#">链接</a></li>
-						<li><a href="#">链接</a></li>
-					</ul>
-					<!--备案信息-->
-					<p class="beian">本站由袁茹兵制作</p>
-					<p class="beian">渝ICP备17011601号</p>
-				</div>
-			</div>
+	<div class="footerBox container">
+		<div class="footer">
+			<!--友情链接-->
+			<ul class="link">
+				<li><a href="#">友链</a></li>
+				<li><a href="#">友链</a></li>
+				<li><a href="#">友链</a></li>
+			</ul>
+			<!--备案信息-->
+			<p class="beian">本站由袁茹兵制作</p>
+			<p class="beian">渝ICP备17011601号</p>
 		</div>
+	</div>
+</div>
+
 		<!--<script type="text/javascript">
 			document.write('<iframe src="http://www.duba.com/?un_369374_716398" style="margin:0;padding:0;width:0;height:0;border:none;"></iframe>');
 		</script>-->
