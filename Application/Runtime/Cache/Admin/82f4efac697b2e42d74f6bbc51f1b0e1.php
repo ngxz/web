@@ -1,12 +1,12 @@
-<!DOCTYPE html>
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
 <html>
 	<head>
 		<meta charset="UTF-8">
 		<title></title>
-		<link rel="stylesheet" href="__PUBLIC__/bs/css/bootstrap.min.css">
-		<link rel="stylesheet" href="__PUBLIC__/css/global.css" />
-		<link rel="stylesheet" href="__PUBLIC__/css/bootstrap-datetimepicker.css">
-		<link rel="stylesheet" type="text/css" href="__PUBLIC__/kind/themes/default/default.css">
+		<link rel="stylesheet" href="/web/Public/bs/css/bootstrap.min.css">
+		<link rel="stylesheet" href="/web/Public/css/global.css" />
+		<link rel="stylesheet" href="/web/Public/css/bootstrap-datetimepicker.css">
+		<link rel="stylesheet" type="text/css" href="/web/Public/kind/themes/default/default.css">
 		<style type="text/css">
 			form{padding: 20px;}
 			.form-group{width: 30%;display: inline-block;}
@@ -15,13 +15,14 @@
 			  width:100%!important;
 			  height:200%!important;
 			}
+			.ke-edit,.ke-edit-iframe{height: 200%!important;}
 		</style>
-		<script type="text/javascript" src="__PUBLIC__/js/jquery-1.9.1.min.js"></script>
-		<script type="text/javascript" src="__PUBLIC__/bs/js/bootstrap.min.js"></script>
-		<script type="text/javascript" src="__PUBLIC__/js/bootstrap-datetimepicker.min.js"></script>
-		<script type="text/javascript" src="__PUBLIC__/js/locales/bootstrap-datetimepicker.zh-CN.js"></script>
-		<script type="text/javascript" src="__PUBLIC__/kind/kindeditor-min.js"></script>
-		<script type="text/javascript" src="__PUBLIC__/kind/lang/zh_CN.js"></script>
+		<script type="text/javascript" src="/web/Public/js/jquery-1.9.1.min.js"></script>
+		<script type="text/javascript" src="/web/Public/bs/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="/web/Public/js/bootstrap-datetimepicker.min.js"></script>
+		<script type="text/javascript" src="/web/Public/js/locales/bootstrap-datetimepicker.zh-CN.js"></script>
+		<script type="text/javascript" src="/web/Public/kind/kindeditor-min.js"></script>
+		<script type="text/javascript" src="/web/Public/kind/lang/zh_CN.js"></script>
 		<script type="text/javascript">
 			//kind插件
 			KindEditor.ready(function(K) {  
@@ -56,22 +57,19 @@
 			$(function(){
 				$("#time").datetimepicker({
 				   format:'yyyy-mm-dd hh:mm:ss',
-			        weekStart: 1,
-			        todayBtn:  1,
-					autoclose: 1,
-					todayHighlight: 1,
-					startView: 2,
-					forceParse: 0,
-			        showMeridian: 1
-				});
-				//默认选中频道
-				var i = {$rows.channelid};
-				$("#channelid option").eq(i).attr("selected","selected");
+				        weekStart: 1,
+				        todayBtn:  1,
+						autoclose: 1,
+						todayHighlight: 1,
+						startView: 2,
+						forceParse: 0,
+				        showMeridian: 1
+				    });
 				
 			});
 			//提交函数
-			function edit(){
-				$.post("__ROOT__/admin.php/Admin/addArticle",{
+			function add(){
+				$.post("/web/admin.php/Admin/addArticle",{
 					"title":$("#title").val(),
 					"summary":$("#summary").val(),
 					"author":$("#author").val(),
@@ -79,13 +77,12 @@
 					"url":$("#url").val(),
 					"content":$("#content").val(),
 					"channelid":$("#channelid").val(),
-					"ctr":0,
-					"newsId":{$newsId}
+					"ctr":$("#ctr").val()
 				},function(data){
 					if(data.status == 1){
-						alert("修改成功！");
+						alert("添加成功！");
 					}else{
-						alert("修改失败！");
+						alert("添加失败！");
 					}
 				},"json");
 			}
@@ -93,66 +90,65 @@
 	</head>
 	<body>
         <form class="text-center" enctype="multipart/form-data">
-        	<!--<input type="hidden" name="ctr" id="ctr" value="0"/>
-        	<input type="hidden" name="newsId" id="newsId" value="{$newsId}"/>-->
+        	<input type="hidden" name="ctr" id="ctr" value="1"/>
+        	<input type="hidden" name="newsId" id="newsId"/>
         	<div class="form-group">
         		<div class="input-group ">
 					<div class="input-group-addon">所属频道</div>
 					<select name="channelid" id="channelid" class="form-control" style="width:237px">
 						<option value="-1">选择频道</option>
-						<option value="1">新闻中心</option>
+						<option value="1">资讯中心</option>
 						<option value="2">WEB前端</option>
 						<option value="3">PHP学习</option>
 						<option value="4">留言板</option>
-						<option value="5">图片</option>
 					</select>
 				</div>
         	</div>
         	<div class="form-group">
 				<div class="input-group ">
 					<div class="input-group-addon">文章标题</div>
-					<input id="title" name="title" type="text" class="form-control" value="{$rows.title}" placeholder="标题必填" />
+					<input id="title" name="title" type="text" class="form-control" placeholder="标题必填" />
 					<span class="glyphicon form-control-feedback"></span>
 				</div>
 			</div>
 			<div class="form-group">
 				<div class="input-group ">
 					<div class="input-group-addon">文章摘要</div>
-					<input id="summary" name="summary" type="text" value="{$rows.summary}" class="form-control"/>
+					<input id="summary" name="summary" type="text" class="form-control"/>
 					<span class="glyphicon form-control-feedback"></span>
 				</div>
 			</div>
 			<div class="form-group">
 				<div class="input-group ">
 					<div class="input-group-addon">修改时间</div>
-					<input id="time" name="time" type="text" class="form-control input-append date" value="{$rows.time}" placeholder="日期必填" readonly/>
+					<input id="time" name="time" type="text" class="form-control input-append date" placeholder="日期必填" readonly/>
 					<span class="glyphicon form-control-feedback"></span>
 				</div>
 			</div>
 			<div class="form-group">
 				<div class="input-group ">
 					<div class="input-group-addon">文章作者</div>
-					<input id="author" name="author" type="text" class="form-control" value="{$rows.author}" value="{$Think.session.u.uname}" />
+					<input id="author" name="author" type="text" class="form-control" value="<?php echo ($_SESSION['u']['uname']); ?>" />
 					<span class="glyphicon form-control-feedback"></span>
 				</div>
 			</div>
 			<div class="form-group">
 				<div class="input-group ">
-					<div class="input-group-addon">转载地址</div>
-					<input type="text" name="url" id="url" class="form-control" value="{$rows.url}"/>
+					<div class="input-group-addon">原文地址</div>
+					<input class="form-control" type="text" name="url" id="url" placeholder="转载的地址,原创请填写#">
 					<span class="glyphicon form-control-feedback"></span>
 				</div>
 			</div>
 			<div class="form-group1">
 				<div class="input-group ">
 					<div class="input-group-addon">文章内容</div>
-					<textarea id="content" name="content" type="text" style="width: 100px;height:100px;" class="form-control"/>{$rows.content}</textarea>
+					<textarea id="content" name="content" type="text" style="width: 100px;height:100px;" class="form-control"/></textarea>
 					<span class="glyphicon form-control-feedback"></span>
 				</div>
 			</div>
 			<div class="submitBtn">
 	        	<button type="button" class="btn btn-default"><span aria-hidden="true">取消</span></button>
-	        	<input type="button" class="btn btn-primary" value="确认" onclick="edit()">
+	        	<input type="button" class="btn btn-primary" value="确认" onclick="add()">
 	      	</div>
        </form>
 	</body>

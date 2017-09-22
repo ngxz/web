@@ -2873,3 +2873,1882 @@ INFO: [ app_end ] --START--
 INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
 INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
 
+[ 2017-09-22T14:51:50+08:00 ] ::1 /web/admin.php/Admin/searchArticle/channelid/2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: PRAGMA table_info( tb_article ) [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 42 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 43 行.
+NOTIC: [8] Undefined index: null D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 45 行.
+NOTIC: [8] Undefined index: default D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 46 行.
+NOTIC: [8] Undefined index: dey D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 47 行.
+NOTIC: [8] Undefined index: extra D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 48 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 42 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 43 行.
+NOTIC: [8] Undefined index: null D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 45 行.
+NOTIC: [8] Undefined index: default D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 46 行.
+NOTIC: [8] Undefined index: dey D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 47 行.
+NOTIC: [8] Undefined index: extra D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 48 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 42 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 43 行.
+NOTIC: [8] Undefined index: null D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 45 行.
+NOTIC: [8] Undefined index: default D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 46 行.
+NOTIC: [8] Undefined index: dey D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 47 行.
+NOTIC: [8] Undefined index: extra D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 48 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 42 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 43 行.
+NOTIC: [8] Undefined index: null D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 45 行.
+NOTIC: [8] Undefined index: default D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 46 行.
+NOTIC: [8] Undefined index: dey D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 47 行.
+NOTIC: [8] Undefined index: extra D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 48 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 42 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 43 行.
+NOTIC: [8] Undefined index: null D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 45 行.
+NOTIC: [8] Undefined index: default D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 46 行.
+NOTIC: [8] Undefined index: dey D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 47 行.
+NOTIC: [8] Undefined index: extra D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 48 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 42 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 43 行.
+NOTIC: [8] Undefined index: null D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 45 行.
+NOTIC: [8] Undefined index: default D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 46 行.
+NOTIC: [8] Undefined index: dey D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 47 行.
+NOTIC: [8] Undefined index: extra D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 48 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 42 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 43 行.
+NOTIC: [8] Undefined index: null D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 45 行.
+NOTIC: [8] Undefined index: default D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 46 行.
+NOTIC: [8] Undefined index: dey D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 47 行.
+NOTIC: [8] Undefined index: extra D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 48 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 42 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 43 行.
+NOTIC: [8] Undefined index: null D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 45 行.
+NOTIC: [8] Undefined index: default D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 46 行.
+NOTIC: [8] Undefined index: dey D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 47 行.
+NOTIC: [8] Undefined index: extra D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 48 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 42 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 43 行.
+NOTIC: [8] Undefined index: null D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 45 行.
+NOTIC: [8] Undefined index: default D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 46 行.
+NOTIC: [8] Undefined index: dey D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 47 行.
+NOTIC: [8] Undefined index: extra D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 48 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 42 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 43 行.
+NOTIC: [8] Undefined index: null D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 45 行.
+NOTIC: [8] Undefined index: default D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 46 行.
+NOTIC: [8] Undefined index: dey D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 47 行.
+NOTIC: [8] Undefined index: extra D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 48 行.
+SQL: SELECT COUNT(*) AS tp_count FROM tb_article WHERE ( channelid = '2' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM tb_article WHERE ( channelid = '2' ) ORDER BY time desc LIMIT 8 OFFSET 0   [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant allarticle - assumed 'allarticle' D:\wamp\www\web\Application\Admin\Controller\AdminController.class.php 第 28 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: page D:\wamp\www\web\Application\Runtime\Cache\Admin\cd83b6b4d7c17ce8df7512e5df2e51e4.php 第 84 行.
+NOTIC: [8] Undefined variable: page D:\wamp\www\web\Application\Runtime\Cache\Admin\cd83b6b4d7c17ce8df7512e5df2e51e4.php 第 85 行.
+NOTIC: [8] Undefined variable: page D:\wamp\www\web\Application\Runtime\Cache\Admin\cd83b6b4d7c17ce8df7512e5df2e51e4.php 第 86 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-09-22T14:51:52+08:00 ] ::1 /web/admin.php/Admin/searchArticle/channelid/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: PRAGMA table_info( tb_article ) [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 42 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 43 行.
+NOTIC: [8] Undefined index: null D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 45 行.
+NOTIC: [8] Undefined index: default D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 46 行.
+NOTIC: [8] Undefined index: dey D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 47 行.
+NOTIC: [8] Undefined index: extra D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 48 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 42 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 43 行.
+NOTIC: [8] Undefined index: null D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 45 行.
+NOTIC: [8] Undefined index: default D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 46 行.
+NOTIC: [8] Undefined index: dey D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 47 行.
+NOTIC: [8] Undefined index: extra D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 48 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 42 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 43 行.
+NOTIC: [8] Undefined index: null D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 45 行.
+NOTIC: [8] Undefined index: default D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 46 行.
+NOTIC: [8] Undefined index: dey D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 47 行.
+NOTIC: [8] Undefined index: extra D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 48 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 42 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 43 行.
+NOTIC: [8] Undefined index: null D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 45 行.
+NOTIC: [8] Undefined index: default D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 46 行.
+NOTIC: [8] Undefined index: dey D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 47 行.
+NOTIC: [8] Undefined index: extra D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 48 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 42 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 43 行.
+NOTIC: [8] Undefined index: null D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 45 行.
+NOTIC: [8] Undefined index: default D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 46 行.
+NOTIC: [8] Undefined index: dey D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 47 行.
+NOTIC: [8] Undefined index: extra D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 48 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 42 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 43 行.
+NOTIC: [8] Undefined index: null D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 45 行.
+NOTIC: [8] Undefined index: default D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 46 行.
+NOTIC: [8] Undefined index: dey D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 47 行.
+NOTIC: [8] Undefined index: extra D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 48 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 42 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 43 行.
+NOTIC: [8] Undefined index: null D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 45 行.
+NOTIC: [8] Undefined index: default D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 46 行.
+NOTIC: [8] Undefined index: dey D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 47 行.
+NOTIC: [8] Undefined index: extra D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 48 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 42 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 43 行.
+NOTIC: [8] Undefined index: null D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 45 行.
+NOTIC: [8] Undefined index: default D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 46 行.
+NOTIC: [8] Undefined index: dey D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 47 行.
+NOTIC: [8] Undefined index: extra D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 48 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 42 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 43 行.
+NOTIC: [8] Undefined index: null D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 45 行.
+NOTIC: [8] Undefined index: default D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 46 行.
+NOTIC: [8] Undefined index: dey D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 47 行.
+NOTIC: [8] Undefined index: extra D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 48 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 42 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 43 行.
+NOTIC: [8] Undefined index: null D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 45 行.
+NOTIC: [8] Undefined index: default D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 46 行.
+NOTIC: [8] Undefined index: dey D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 47 行.
+NOTIC: [8] Undefined index: extra D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 48 行.
+SQL: SELECT COUNT(*) AS tp_count FROM tb_article WHERE ( channelid = '1' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM tb_article WHERE ( channelid = '1' ) ORDER BY time desc LIMIT 8 OFFSET 0   [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant allarticle - assumed 'allarticle' D:\wamp\www\web\Application\Admin\Controller\AdminController.class.php 第 28 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: page D:\wamp\www\web\Application\Runtime\Cache\Admin\cd83b6b4d7c17ce8df7512e5df2e51e4.php 第 84 行.
+NOTIC: [8] Undefined variable: page D:\wamp\www\web\Application\Runtime\Cache\Admin\cd83b6b4d7c17ce8df7512e5df2e51e4.php 第 85 行.
+NOTIC: [8] Undefined variable: page D:\wamp\www\web\Application\Runtime\Cache\Admin\cd83b6b4d7c17ce8df7512e5df2e51e4.php 第 86 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-09-22T14:51:54+08:00 ] ::1 /web/admin.php/Admin/searchArticleOne/newsId/29
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: PRAGMA table_info( tb_article ) [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 42 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 43 行.
+NOTIC: [8] Undefined index: null D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 45 行.
+NOTIC: [8] Undefined index: default D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 46 行.
+NOTIC: [8] Undefined index: dey D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 47 行.
+NOTIC: [8] Undefined index: extra D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 48 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 42 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 43 行.
+NOTIC: [8] Undefined index: null D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 45 行.
+NOTIC: [8] Undefined index: default D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 46 行.
+NOTIC: [8] Undefined index: dey D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 47 行.
+NOTIC: [8] Undefined index: extra D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 48 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 42 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 43 行.
+NOTIC: [8] Undefined index: null D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 45 行.
+NOTIC: [8] Undefined index: default D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 46 行.
+NOTIC: [8] Undefined index: dey D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 47 行.
+NOTIC: [8] Undefined index: extra D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 48 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 42 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 43 行.
+NOTIC: [8] Undefined index: null D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 45 行.
+NOTIC: [8] Undefined index: default D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 46 行.
+NOTIC: [8] Undefined index: dey D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 47 行.
+NOTIC: [8] Undefined index: extra D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 48 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 42 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 43 行.
+NOTIC: [8] Undefined index: null D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 45 行.
+NOTIC: [8] Undefined index: default D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 46 行.
+NOTIC: [8] Undefined index: dey D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 47 行.
+NOTIC: [8] Undefined index: extra D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 48 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 42 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 43 行.
+NOTIC: [8] Undefined index: null D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 45 行.
+NOTIC: [8] Undefined index: default D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 46 行.
+NOTIC: [8] Undefined index: dey D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 47 行.
+NOTIC: [8] Undefined index: extra D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 48 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 42 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 43 行.
+NOTIC: [8] Undefined index: null D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 45 行.
+NOTIC: [8] Undefined index: default D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 46 行.
+NOTIC: [8] Undefined index: dey D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 47 行.
+NOTIC: [8] Undefined index: extra D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 48 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 42 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 43 行.
+NOTIC: [8] Undefined index: null D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 45 行.
+NOTIC: [8] Undefined index: default D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 46 行.
+NOTIC: [8] Undefined index: dey D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 47 行.
+NOTIC: [8] Undefined index: extra D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 48 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 42 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 43 行.
+NOTIC: [8] Undefined index: null D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 45 行.
+NOTIC: [8] Undefined index: default D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 46 行.
+NOTIC: [8] Undefined index: dey D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 47 行.
+NOTIC: [8] Undefined index: extra D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 48 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 42 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 43 行.
+NOTIC: [8] Undefined index: null D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 45 行.
+NOTIC: [8] Undefined index: default D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 46 行.
+NOTIC: [8] Undefined index: dey D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 47 行.
+NOTIC: [8] Undefined index: extra D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 48 行.
+SQL: SELECT * FROM tb_article WHERE ( id = '29' ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: u D:\wamp\www\web\Application\Runtime\Cache\Admin\b64e0870e99206b74f3c41c0218e59fb.php 第 134 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-09-22T14:58:05+08:00 ] ::1 /web/admin.php/Admin/searchArticle/channelid/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: PRAGMA table_info( tb_article ) [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 42 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 43 行.
+NOTIC: [8] Undefined index: null D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 45 行.
+NOTIC: [8] Undefined index: default D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 46 行.
+NOTIC: [8] Undefined index: dey D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 47 行.
+NOTIC: [8] Undefined index: extra D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 48 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 42 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 43 行.
+NOTIC: [8] Undefined index: null D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 45 行.
+NOTIC: [8] Undefined index: default D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 46 行.
+NOTIC: [8] Undefined index: dey D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 47 行.
+NOTIC: [8] Undefined index: extra D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 48 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 42 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 43 行.
+NOTIC: [8] Undefined index: null D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 45 行.
+NOTIC: [8] Undefined index: default D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 46 行.
+NOTIC: [8] Undefined index: dey D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 47 行.
+NOTIC: [8] Undefined index: extra D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 48 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 42 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 43 行.
+NOTIC: [8] Undefined index: null D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 45 行.
+NOTIC: [8] Undefined index: default D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 46 行.
+NOTIC: [8] Undefined index: dey D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 47 行.
+NOTIC: [8] Undefined index: extra D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 48 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 42 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 43 行.
+NOTIC: [8] Undefined index: null D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 45 行.
+NOTIC: [8] Undefined index: default D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 46 行.
+NOTIC: [8] Undefined index: dey D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 47 行.
+NOTIC: [8] Undefined index: extra D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 48 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 42 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 43 行.
+NOTIC: [8] Undefined index: null D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 45 行.
+NOTIC: [8] Undefined index: default D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 46 行.
+NOTIC: [8] Undefined index: dey D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 47 行.
+NOTIC: [8] Undefined index: extra D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 48 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 42 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 43 行.
+NOTIC: [8] Undefined index: null D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 45 行.
+NOTIC: [8] Undefined index: default D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 46 行.
+NOTIC: [8] Undefined index: dey D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 47 行.
+NOTIC: [8] Undefined index: extra D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 48 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 42 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 43 行.
+NOTIC: [8] Undefined index: null D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 45 行.
+NOTIC: [8] Undefined index: default D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 46 行.
+NOTIC: [8] Undefined index: dey D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 47 行.
+NOTIC: [8] Undefined index: extra D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 48 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 42 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 43 行.
+NOTIC: [8] Undefined index: null D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 45 行.
+NOTIC: [8] Undefined index: default D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 46 行.
+NOTIC: [8] Undefined index: dey D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 47 行.
+NOTIC: [8] Undefined index: extra D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 48 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 42 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 43 行.
+NOTIC: [8] Undefined index: null D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 45 行.
+NOTIC: [8] Undefined index: default D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 46 行.
+NOTIC: [8] Undefined index: dey D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 47 行.
+NOTIC: [8] Undefined index: extra D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 48 行.
+SQL: SELECT COUNT(*) AS tp_count FROM tb_article WHERE ( channelid = '1' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM tb_article WHERE ( channelid = '1' ) ORDER BY time desc LIMIT 8 OFFSET 0   [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant allarticle - assumed 'allarticle' D:\wamp\www\web\Application\Admin\Controller\AdminController.class.php 第 28 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: page D:\wamp\www\web\Application\Runtime\Cache\Admin\cd83b6b4d7c17ce8df7512e5df2e51e4.php 第 84 行.
+NOTIC: [8] Undefined variable: page D:\wamp\www\web\Application\Runtime\Cache\Admin\cd83b6b4d7c17ce8df7512e5df2e51e4.php 第 85 行.
+NOTIC: [8] Undefined variable: page D:\wamp\www\web\Application\Runtime\Cache\Admin\cd83b6b4d7c17ce8df7512e5df2e51e4.php 第 86 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-09-22T14:58:07+08:00 ] ::1 /web/admin.php/Admin/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: u D:\wamp\www\web\Application\Runtime\Cache\Admin\82f4efac697b2e42d74f6bbc51f1b0e1.php 第 131 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-09-22T14:58:23+08:00 ] ::1 /web/admin.php/Admin/searchArticle/channelid/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: PRAGMA table_info( tb_article ) [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 42 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 43 行.
+NOTIC: [8] Undefined index: null D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 45 行.
+NOTIC: [8] Undefined index: default D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 46 行.
+NOTIC: [8] Undefined index: dey D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 47 行.
+NOTIC: [8] Undefined index: extra D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 48 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 42 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 43 行.
+NOTIC: [8] Undefined index: null D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 45 行.
+NOTIC: [8] Undefined index: default D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 46 行.
+NOTIC: [8] Undefined index: dey D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 47 行.
+NOTIC: [8] Undefined index: extra D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 48 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 42 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 43 行.
+NOTIC: [8] Undefined index: null D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 45 行.
+NOTIC: [8] Undefined index: default D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 46 行.
+NOTIC: [8] Undefined index: dey D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 47 行.
+NOTIC: [8] Undefined index: extra D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 48 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 42 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 43 行.
+NOTIC: [8] Undefined index: null D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 45 行.
+NOTIC: [8] Undefined index: default D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 46 行.
+NOTIC: [8] Undefined index: dey D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 47 行.
+NOTIC: [8] Undefined index: extra D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 48 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 42 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 43 行.
+NOTIC: [8] Undefined index: null D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 45 行.
+NOTIC: [8] Undefined index: default D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 46 行.
+NOTIC: [8] Undefined index: dey D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 47 行.
+NOTIC: [8] Undefined index: extra D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 48 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 42 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 43 行.
+NOTIC: [8] Undefined index: null D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 45 行.
+NOTIC: [8] Undefined index: default D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 46 行.
+NOTIC: [8] Undefined index: dey D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 47 行.
+NOTIC: [8] Undefined index: extra D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 48 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 42 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 43 行.
+NOTIC: [8] Undefined index: null D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 45 行.
+NOTIC: [8] Undefined index: default D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 46 行.
+NOTIC: [8] Undefined index: dey D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 47 行.
+NOTIC: [8] Undefined index: extra D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 48 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 42 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 43 行.
+NOTIC: [8] Undefined index: null D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 45 行.
+NOTIC: [8] Undefined index: default D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 46 行.
+NOTIC: [8] Undefined index: dey D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 47 行.
+NOTIC: [8] Undefined index: extra D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 48 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 42 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 43 行.
+NOTIC: [8] Undefined index: null D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 45 行.
+NOTIC: [8] Undefined index: default D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 46 行.
+NOTIC: [8] Undefined index: dey D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 47 行.
+NOTIC: [8] Undefined index: extra D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 48 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 42 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 43 行.
+NOTIC: [8] Undefined index: null D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 45 行.
+NOTIC: [8] Undefined index: default D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 46 行.
+NOTIC: [8] Undefined index: dey D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 47 行.
+NOTIC: [8] Undefined index: extra D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 48 行.
+SQL: SELECT COUNT(*) AS tp_count FROM tb_article WHERE ( channelid = '1' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM tb_article WHERE ( channelid = '1' ) ORDER BY time desc LIMIT 8 OFFSET 0   [ RunTime:0.0010s ]
+NOTIC: [8] Use of undefined constant allarticle - assumed 'allarticle' D:\wamp\www\web\Application\Admin\Controller\AdminController.class.php 第 28 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: page D:\wamp\www\web\Application\Runtime\Cache\Admin\cd83b6b4d7c17ce8df7512e5df2e51e4.php 第 84 行.
+NOTIC: [8] Undefined variable: page D:\wamp\www\web\Application\Runtime\Cache\Admin\cd83b6b4d7c17ce8df7512e5df2e51e4.php 第 85 行.
+NOTIC: [8] Undefined variable: page D:\wamp\www\web\Application\Runtime\Cache\Admin\cd83b6b4d7c17ce8df7512e5df2e51e4.php 第 86 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-09-22T14:58:23+08:00 ] ::1 /web/admin.php/Login/home
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ islogin ] --START--
+INFO: Run Admin\Behaviors\BaseBehavior [ RunTime:0.001000s ]
+INFO: [ islogin ] --END-- [ RunTime:0.002000s ]
+SQL: PRAGMA table_info( tb_menus ) [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 42 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 43 行.
+NOTIC: [8] Undefined index: null D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 45 行.
+NOTIC: [8] Undefined index: default D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 46 行.
+NOTIC: [8] Undefined index: dey D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 47 行.
+NOTIC: [8] Undefined index: extra D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 48 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 42 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 43 行.
+NOTIC: [8] Undefined index: null D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 45 行.
+NOTIC: [8] Undefined index: default D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 46 行.
+NOTIC: [8] Undefined index: dey D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 47 行.
+NOTIC: [8] Undefined index: extra D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 48 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 42 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 43 行.
+NOTIC: [8] Undefined index: null D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 45 行.
+NOTIC: [8] Undefined index: default D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 46 行.
+NOTIC: [8] Undefined index: dey D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 47 行.
+NOTIC: [8] Undefined index: extra D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 48 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 42 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 43 行.
+NOTIC: [8] Undefined index: null D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 45 行.
+NOTIC: [8] Undefined index: default D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 46 行.
+NOTIC: [8] Undefined index: dey D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 47 行.
+NOTIC: [8] Undefined index: extra D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 48 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 42 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 43 行.
+NOTIC: [8] Undefined index: null D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 45 行.
+NOTIC: [8] Undefined index: default D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 46 行.
+NOTIC: [8] Undefined index: dey D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 47 行.
+NOTIC: [8] Undefined index: extra D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 48 行.
+SQL: SELECT * FROM tb_menus  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-09-22T14:58:24+08:00 ] ::1 /web/admin.php/Admin/tongji
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-09-22T14:58:25+08:00 ] ::1 /web/admin.php/Admin/searchArticle/channelid/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: PRAGMA table_info( tb_article ) [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 42 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 43 行.
+NOTIC: [8] Undefined index: null D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 45 行.
+NOTIC: [8] Undefined index: default D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 46 行.
+NOTIC: [8] Undefined index: dey D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 47 行.
+NOTIC: [8] Undefined index: extra D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 48 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 42 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 43 行.
+NOTIC: [8] Undefined index: null D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 45 行.
+NOTIC: [8] Undefined index: default D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 46 行.
+NOTIC: [8] Undefined index: dey D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 47 行.
+NOTIC: [8] Undefined index: extra D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 48 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 42 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 43 行.
+NOTIC: [8] Undefined index: null D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 45 行.
+NOTIC: [8] Undefined index: default D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 46 行.
+NOTIC: [8] Undefined index: dey D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 47 行.
+NOTIC: [8] Undefined index: extra D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 48 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 42 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 43 行.
+NOTIC: [8] Undefined index: null D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 45 行.
+NOTIC: [8] Undefined index: default D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 46 行.
+NOTIC: [8] Undefined index: dey D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 47 行.
+NOTIC: [8] Undefined index: extra D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 48 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 42 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 43 行.
+NOTIC: [8] Undefined index: null D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 45 行.
+NOTIC: [8] Undefined index: default D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 46 行.
+NOTIC: [8] Undefined index: dey D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 47 行.
+NOTIC: [8] Undefined index: extra D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 48 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 42 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 43 行.
+NOTIC: [8] Undefined index: null D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 45 行.
+NOTIC: [8] Undefined index: default D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 46 行.
+NOTIC: [8] Undefined index: dey D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 47 行.
+NOTIC: [8] Undefined index: extra D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 48 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 42 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 43 行.
+NOTIC: [8] Undefined index: null D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 45 行.
+NOTIC: [8] Undefined index: default D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 46 行.
+NOTIC: [8] Undefined index: dey D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 47 行.
+NOTIC: [8] Undefined index: extra D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 48 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 42 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 43 行.
+NOTIC: [8] Undefined index: null D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 45 行.
+NOTIC: [8] Undefined index: default D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 46 行.
+NOTIC: [8] Undefined index: dey D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 47 行.
+NOTIC: [8] Undefined index: extra D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 48 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 42 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 43 行.
+NOTIC: [8] Undefined index: null D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 45 行.
+NOTIC: [8] Undefined index: default D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 46 行.
+NOTIC: [8] Undefined index: dey D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 47 行.
+NOTIC: [8] Undefined index: extra D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 48 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 42 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 43 行.
+NOTIC: [8] Undefined index: null D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 45 行.
+NOTIC: [8] Undefined index: default D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 46 行.
+NOTIC: [8] Undefined index: dey D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 47 行.
+NOTIC: [8] Undefined index: extra D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 48 行.
+SQL: SELECT COUNT(*) AS tp_count FROM tb_article WHERE ( channelid = '1' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM tb_article WHERE ( channelid = '1' ) ORDER BY time desc LIMIT 8 OFFSET 0   [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant allarticle - assumed 'allarticle' D:\wamp\www\web\Application\Admin\Controller\AdminController.class.php 第 28 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: page D:\wamp\www\web\Application\Runtime\Cache\Admin\cd83b6b4d7c17ce8df7512e5df2e51e4.php 第 84 行.
+NOTIC: [8] Undefined variable: page D:\wamp\www\web\Application\Runtime\Cache\Admin\cd83b6b4d7c17ce8df7512e5df2e51e4.php 第 85 行.
+NOTIC: [8] Undefined variable: page D:\wamp\www\web\Application\Runtime\Cache\Admin\cd83b6b4d7c17ce8df7512e5df2e51e4.php 第 86 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-09-22T14:58:26+08:00 ] ::1 /web/admin.php/Admin/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001001s ]
+NOTIC: [8] Undefined index: u D:\wamp\www\web\Application\Runtime\Cache\Admin\82f4efac697b2e42d74f6bbc51f1b0e1.php 第 131 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-09-22T14:59:40+08:00 ] ::1 /web/admin.php/Admin/addArticle
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: PRAGMA table_info( tb_article ) [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 42 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 43 行.
+NOTIC: [8] Undefined index: null D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 45 行.
+NOTIC: [8] Undefined index: default D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 46 行.
+NOTIC: [8] Undefined index: dey D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 47 行.
+NOTIC: [8] Undefined index: extra D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 48 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 42 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 43 行.
+NOTIC: [8] Undefined index: null D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 45 行.
+NOTIC: [8] Undefined index: default D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 46 行.
+NOTIC: [8] Undefined index: dey D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 47 行.
+NOTIC: [8] Undefined index: extra D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 48 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 42 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 43 行.
+NOTIC: [8] Undefined index: null D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 45 行.
+NOTIC: [8] Undefined index: default D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 46 行.
+NOTIC: [8] Undefined index: dey D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 47 行.
+NOTIC: [8] Undefined index: extra D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 48 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 42 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 43 行.
+NOTIC: [8] Undefined index: null D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 45 行.
+NOTIC: [8] Undefined index: default D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 46 行.
+NOTIC: [8] Undefined index: dey D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 47 行.
+NOTIC: [8] Undefined index: extra D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 48 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 42 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 43 行.
+NOTIC: [8] Undefined index: null D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 45 行.
+NOTIC: [8] Undefined index: default D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 46 行.
+NOTIC: [8] Undefined index: dey D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 47 行.
+NOTIC: [8] Undefined index: extra D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 48 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 42 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 43 行.
+NOTIC: [8] Undefined index: null D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 45 行.
+NOTIC: [8] Undefined index: default D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 46 行.
+NOTIC: [8] Undefined index: dey D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 47 行.
+NOTIC: [8] Undefined index: extra D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 48 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 42 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 43 行.
+NOTIC: [8] Undefined index: null D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 45 行.
+NOTIC: [8] Undefined index: default D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 46 行.
+NOTIC: [8] Undefined index: dey D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 47 行.
+NOTIC: [8] Undefined index: extra D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 48 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 42 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 43 行.
+NOTIC: [8] Undefined index: null D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 45 行.
+NOTIC: [8] Undefined index: default D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 46 行.
+NOTIC: [8] Undefined index: dey D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 47 行.
+NOTIC: [8] Undefined index: extra D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 48 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 42 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 43 行.
+NOTIC: [8] Undefined index: null D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 45 行.
+NOTIC: [8] Undefined index: default D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 46 行.
+NOTIC: [8] Undefined index: dey D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 47 行.
+NOTIC: [8] Undefined index: extra D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 48 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 42 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 43 行.
+NOTIC: [8] Undefined index: null D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 45 行.
+NOTIC: [8] Undefined index: default D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 46 行.
+NOTIC: [8] Undefined index: dey D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 47 行.
+NOTIC: [8] Undefined index: extra D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 48 行.
+SQL: INSERT INTO tb_article (channelid,content,title,author,summary,url,imgurl,time) VALUES ('1','<p>
+	编辑器测试，<strong>强大的功能</strong>
+</p>
+<p>
+	<strong></strong>22、
+</p>','测试','admin','编辑器测试','#','','2017-09-22 14:09:55') [ RunTime:0.1920s ]
+
+[ 2017-09-22T14:59:42+08:00 ] ::1 /web/admin.php/Admin/searchArticle/channelid/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: PRAGMA table_info( tb_article ) [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 42 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 43 行.
+NOTIC: [8] Undefined index: null D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 45 行.
+NOTIC: [8] Undefined index: default D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 46 行.
+NOTIC: [8] Undefined index: dey D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 47 行.
+NOTIC: [8] Undefined index: extra D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 48 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 42 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 43 行.
+NOTIC: [8] Undefined index: null D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 45 行.
+NOTIC: [8] Undefined index: default D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 46 行.
+NOTIC: [8] Undefined index: dey D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 47 行.
+NOTIC: [8] Undefined index: extra D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 48 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 42 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 43 行.
+NOTIC: [8] Undefined index: null D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 45 行.
+NOTIC: [8] Undefined index: default D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 46 行.
+NOTIC: [8] Undefined index: dey D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 47 行.
+NOTIC: [8] Undefined index: extra D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 48 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 42 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 43 行.
+NOTIC: [8] Undefined index: null D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 45 行.
+NOTIC: [8] Undefined index: default D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 46 行.
+NOTIC: [8] Undefined index: dey D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 47 行.
+NOTIC: [8] Undefined index: extra D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 48 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 42 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 43 行.
+NOTIC: [8] Undefined index: null D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 45 行.
+NOTIC: [8] Undefined index: default D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 46 行.
+NOTIC: [8] Undefined index: dey D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 47 行.
+NOTIC: [8] Undefined index: extra D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 48 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 42 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 43 行.
+NOTIC: [8] Undefined index: null D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 45 行.
+NOTIC: [8] Undefined index: default D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 46 行.
+NOTIC: [8] Undefined index: dey D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 47 行.
+NOTIC: [8] Undefined index: extra D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 48 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 42 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 43 行.
+NOTIC: [8] Undefined index: null D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 45 行.
+NOTIC: [8] Undefined index: default D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 46 行.
+NOTIC: [8] Undefined index: dey D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 47 行.
+NOTIC: [8] Undefined index: extra D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 48 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 42 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 43 行.
+NOTIC: [8] Undefined index: null D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 45 行.
+NOTIC: [8] Undefined index: default D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 46 行.
+NOTIC: [8] Undefined index: dey D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 47 行.
+NOTIC: [8] Undefined index: extra D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 48 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 42 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 43 行.
+NOTIC: [8] Undefined index: null D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 45 行.
+NOTIC: [8] Undefined index: default D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 46 行.
+NOTIC: [8] Undefined index: dey D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 47 行.
+NOTIC: [8] Undefined index: extra D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 48 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 42 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 43 行.
+NOTIC: [8] Undefined index: null D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 45 行.
+NOTIC: [8] Undefined index: default D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 46 行.
+NOTIC: [8] Undefined index: dey D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 47 行.
+NOTIC: [8] Undefined index: extra D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 48 行.
+SQL: SELECT COUNT(*) AS tp_count FROM tb_article WHERE ( channelid = '1' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM tb_article WHERE ( channelid = '1' ) ORDER BY time desc LIMIT 8 OFFSET 0   [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant allarticle - assumed 'allarticle' D:\wamp\www\web\Application\Admin\Controller\AdminController.class.php 第 28 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: page D:\wamp\www\web\Application\Runtime\Cache\Admin\cd83b6b4d7c17ce8df7512e5df2e51e4.php 第 84 行.
+NOTIC: [8] Undefined variable: page D:\wamp\www\web\Application\Runtime\Cache\Admin\cd83b6b4d7c17ce8df7512e5df2e51e4.php 第 85 行.
+NOTIC: [8] Undefined variable: page D:\wamp\www\web\Application\Runtime\Cache\Admin\cd83b6b4d7c17ce8df7512e5df2e51e4.php 第 86 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-09-22T14:59:44+08:00 ] ::1 /web/admin.php/Admin/searchArticleOne/newsId/31
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: PRAGMA table_info( tb_article ) [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 42 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 43 行.
+NOTIC: [8] Undefined index: null D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 45 行.
+NOTIC: [8] Undefined index: default D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 46 行.
+NOTIC: [8] Undefined index: dey D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 47 行.
+NOTIC: [8] Undefined index: extra D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 48 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 42 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 43 行.
+NOTIC: [8] Undefined index: null D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 45 行.
+NOTIC: [8] Undefined index: default D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 46 行.
+NOTIC: [8] Undefined index: dey D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 47 行.
+NOTIC: [8] Undefined index: extra D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 48 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 42 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 43 行.
+NOTIC: [8] Undefined index: null D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 45 行.
+NOTIC: [8] Undefined index: default D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 46 行.
+NOTIC: [8] Undefined index: dey D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 47 行.
+NOTIC: [8] Undefined index: extra D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 48 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 42 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 43 行.
+NOTIC: [8] Undefined index: null D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 45 行.
+NOTIC: [8] Undefined index: default D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 46 行.
+NOTIC: [8] Undefined index: dey D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 47 行.
+NOTIC: [8] Undefined index: extra D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 48 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 42 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 43 行.
+NOTIC: [8] Undefined index: null D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 45 行.
+NOTIC: [8] Undefined index: default D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 46 行.
+NOTIC: [8] Undefined index: dey D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 47 行.
+NOTIC: [8] Undefined index: extra D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 48 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 42 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 43 行.
+NOTIC: [8] Undefined index: null D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 45 行.
+NOTIC: [8] Undefined index: default D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 46 行.
+NOTIC: [8] Undefined index: dey D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 47 行.
+NOTIC: [8] Undefined index: extra D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 48 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 42 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 43 行.
+NOTIC: [8] Undefined index: null D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 45 行.
+NOTIC: [8] Undefined index: default D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 46 行.
+NOTIC: [8] Undefined index: dey D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 47 行.
+NOTIC: [8] Undefined index: extra D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 48 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 42 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 43 行.
+NOTIC: [8] Undefined index: null D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 45 行.
+NOTIC: [8] Undefined index: default D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 46 行.
+NOTIC: [8] Undefined index: dey D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 47 行.
+NOTIC: [8] Undefined index: extra D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 48 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 42 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 43 行.
+NOTIC: [8] Undefined index: null D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 45 行.
+NOTIC: [8] Undefined index: default D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 46 行.
+NOTIC: [8] Undefined index: dey D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 47 行.
+NOTIC: [8] Undefined index: extra D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 48 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 42 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 43 行.
+NOTIC: [8] Undefined index: null D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 45 行.
+NOTIC: [8] Undefined index: default D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 46 行.
+NOTIC: [8] Undefined index: dey D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 47 行.
+NOTIC: [8] Undefined index: extra D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 48 行.
+SQL: SELECT * FROM tb_article WHERE ( id = '31' ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: u D:\wamp\www\web\Application\Runtime\Cache\Admin\b64e0870e99206b74f3c41c0218e59fb.php 第 134 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-09-22T14:59:47+08:00 ] ::1 /web/admin.php/Admin/searchArticle/channelid/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: PRAGMA table_info( tb_article ) [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 42 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 43 行.
+NOTIC: [8] Undefined index: null D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 45 行.
+NOTIC: [8] Undefined index: default D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 46 行.
+NOTIC: [8] Undefined index: dey D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 47 行.
+NOTIC: [8] Undefined index: extra D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 48 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 42 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 43 行.
+NOTIC: [8] Undefined index: null D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 45 行.
+NOTIC: [8] Undefined index: default D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 46 行.
+NOTIC: [8] Undefined index: dey D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 47 行.
+NOTIC: [8] Undefined index: extra D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 48 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 42 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 43 行.
+NOTIC: [8] Undefined index: null D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 45 行.
+NOTIC: [8] Undefined index: default D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 46 行.
+NOTIC: [8] Undefined index: dey D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 47 行.
+NOTIC: [8] Undefined index: extra D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 48 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 42 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 43 行.
+NOTIC: [8] Undefined index: null D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 45 行.
+NOTIC: [8] Undefined index: default D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 46 行.
+NOTIC: [8] Undefined index: dey D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 47 行.
+NOTIC: [8] Undefined index: extra D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 48 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 42 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 43 行.
+NOTIC: [8] Undefined index: null D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 45 行.
+NOTIC: [8] Undefined index: default D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 46 行.
+NOTIC: [8] Undefined index: dey D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 47 行.
+NOTIC: [8] Undefined index: extra D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 48 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 42 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 43 行.
+NOTIC: [8] Undefined index: null D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 45 行.
+NOTIC: [8] Undefined index: default D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 46 行.
+NOTIC: [8] Undefined index: dey D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 47 行.
+NOTIC: [8] Undefined index: extra D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 48 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 42 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 43 行.
+NOTIC: [8] Undefined index: null D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 45 行.
+NOTIC: [8] Undefined index: default D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 46 行.
+NOTIC: [8] Undefined index: dey D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 47 行.
+NOTIC: [8] Undefined index: extra D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 48 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 42 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 43 行.
+NOTIC: [8] Undefined index: null D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 45 行.
+NOTIC: [8] Undefined index: default D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 46 行.
+NOTIC: [8] Undefined index: dey D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 47 行.
+NOTIC: [8] Undefined index: extra D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 48 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 42 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 43 行.
+NOTIC: [8] Undefined index: null D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 45 行.
+NOTIC: [8] Undefined index: default D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 46 行.
+NOTIC: [8] Undefined index: dey D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 47 行.
+NOTIC: [8] Undefined index: extra D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 48 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 42 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 43 行.
+NOTIC: [8] Undefined index: null D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 45 行.
+NOTIC: [8] Undefined index: default D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 46 行.
+NOTIC: [8] Undefined index: dey D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 47 行.
+NOTIC: [8] Undefined index: extra D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 48 行.
+SQL: SELECT COUNT(*) AS tp_count FROM tb_article WHERE ( channelid = '1' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM tb_article WHERE ( channelid = '1' ) ORDER BY time desc LIMIT 8 OFFSET 0   [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant allarticle - assumed 'allarticle' D:\wamp\www\web\Application\Admin\Controller\AdminController.class.php 第 28 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: page D:\wamp\www\web\Application\Runtime\Cache\Admin\cd83b6b4d7c17ce8df7512e5df2e51e4.php 第 84 行.
+NOTIC: [8] Undefined variable: page D:\wamp\www\web\Application\Runtime\Cache\Admin\cd83b6b4d7c17ce8df7512e5df2e51e4.php 第 85 行.
+NOTIC: [8] Undefined variable: page D:\wamp\www\web\Application\Runtime\Cache\Admin\cd83b6b4d7c17ce8df7512e5df2e51e4.php 第 86 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-09-22T14:59:52+08:00 ] ::1 /web/admin.php/Admin/deleteArticle
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: PRAGMA table_info( tb_article ) [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 42 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 43 行.
+NOTIC: [8] Undefined index: null D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 45 行.
+NOTIC: [8] Undefined index: default D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 46 行.
+NOTIC: [8] Undefined index: dey D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 47 行.
+NOTIC: [8] Undefined index: extra D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 48 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 42 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 43 行.
+NOTIC: [8] Undefined index: null D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 45 行.
+NOTIC: [8] Undefined index: default D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 46 行.
+NOTIC: [8] Undefined index: dey D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 47 行.
+NOTIC: [8] Undefined index: extra D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 48 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 42 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 43 行.
+NOTIC: [8] Undefined index: null D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 45 行.
+NOTIC: [8] Undefined index: default D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 46 行.
+NOTIC: [8] Undefined index: dey D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 47 行.
+NOTIC: [8] Undefined index: extra D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 48 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 42 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 43 行.
+NOTIC: [8] Undefined index: null D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 45 行.
+NOTIC: [8] Undefined index: default D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 46 行.
+NOTIC: [8] Undefined index: dey D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 47 行.
+NOTIC: [8] Undefined index: extra D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 48 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 42 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 43 行.
+NOTIC: [8] Undefined index: null D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 45 行.
+NOTIC: [8] Undefined index: default D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 46 行.
+NOTIC: [8] Undefined index: dey D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 47 行.
+NOTIC: [8] Undefined index: extra D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 48 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 42 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 43 行.
+NOTIC: [8] Undefined index: null D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 45 行.
+NOTIC: [8] Undefined index: default D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 46 行.
+NOTIC: [8] Undefined index: dey D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 47 行.
+NOTIC: [8] Undefined index: extra D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 48 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 42 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 43 行.
+NOTIC: [8] Undefined index: null D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 45 行.
+NOTIC: [8] Undefined index: default D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 46 行.
+NOTIC: [8] Undefined index: dey D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 47 行.
+NOTIC: [8] Undefined index: extra D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 48 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 42 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 43 行.
+NOTIC: [8] Undefined index: null D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 45 行.
+NOTIC: [8] Undefined index: default D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 46 行.
+NOTIC: [8] Undefined index: dey D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 47 行.
+NOTIC: [8] Undefined index: extra D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 48 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 42 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 43 行.
+NOTIC: [8] Undefined index: null D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 45 行.
+NOTIC: [8] Undefined index: default D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 46 行.
+NOTIC: [8] Undefined index: dey D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 47 行.
+NOTIC: [8] Undefined index: extra D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 48 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 42 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 43 行.
+NOTIC: [8] Undefined index: null D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 45 行.
+NOTIC: [8] Undefined index: default D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 46 行.
+NOTIC: [8] Undefined index: dey D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 47 行.
+NOTIC: [8] Undefined index: extra D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 48 行.
+SQL: DELETE FROM tb_article WHERE ( id = '31' ) [ RunTime:0.1800s ]
+
+[ 2017-09-22T15:00:33+08:00 ] ::1 /web/admin.php/Admin/searchArticle/channelid/2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: PRAGMA table_info( tb_article ) [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 42 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 43 行.
+NOTIC: [8] Undefined index: null D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 45 行.
+NOTIC: [8] Undefined index: default D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 46 行.
+NOTIC: [8] Undefined index: dey D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 47 行.
+NOTIC: [8] Undefined index: extra D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 48 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 42 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 43 行.
+NOTIC: [8] Undefined index: null D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 45 行.
+NOTIC: [8] Undefined index: default D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 46 行.
+NOTIC: [8] Undefined index: dey D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 47 行.
+NOTIC: [8] Undefined index: extra D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 48 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 42 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 43 行.
+NOTIC: [8] Undefined index: null D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 45 行.
+NOTIC: [8] Undefined index: default D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 46 行.
+NOTIC: [8] Undefined index: dey D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 47 行.
+NOTIC: [8] Undefined index: extra D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 48 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 42 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 43 行.
+NOTIC: [8] Undefined index: null D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 45 行.
+NOTIC: [8] Undefined index: default D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 46 行.
+NOTIC: [8] Undefined index: dey D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 47 行.
+NOTIC: [8] Undefined index: extra D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 48 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 42 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 43 行.
+NOTIC: [8] Undefined index: null D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 45 行.
+NOTIC: [8] Undefined index: default D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 46 行.
+NOTIC: [8] Undefined index: dey D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 47 行.
+NOTIC: [8] Undefined index: extra D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 48 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 42 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 43 行.
+NOTIC: [8] Undefined index: null D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 45 行.
+NOTIC: [8] Undefined index: default D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 46 行.
+NOTIC: [8] Undefined index: dey D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 47 行.
+NOTIC: [8] Undefined index: extra D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 48 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 42 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 43 行.
+NOTIC: [8] Undefined index: null D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 45 行.
+NOTIC: [8] Undefined index: default D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 46 行.
+NOTIC: [8] Undefined index: dey D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 47 行.
+NOTIC: [8] Undefined index: extra D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 48 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 42 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 43 行.
+NOTIC: [8] Undefined index: null D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 45 行.
+NOTIC: [8] Undefined index: default D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 46 行.
+NOTIC: [8] Undefined index: dey D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 47 行.
+NOTIC: [8] Undefined index: extra D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 48 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 42 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 43 行.
+NOTIC: [8] Undefined index: null D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 45 行.
+NOTIC: [8] Undefined index: default D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 46 行.
+NOTIC: [8] Undefined index: dey D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 47 行.
+NOTIC: [8] Undefined index: extra D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 48 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 42 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 43 行.
+NOTIC: [8] Undefined index: null D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 45 行.
+NOTIC: [8] Undefined index: default D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 46 行.
+NOTIC: [8] Undefined index: dey D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 47 行.
+NOTIC: [8] Undefined index: extra D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 48 行.
+SQL: SELECT COUNT(*) AS tp_count FROM tb_article WHERE ( channelid = '2' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM tb_article WHERE ( channelid = '2' ) ORDER BY time desc LIMIT 8 OFFSET 0   [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant allarticle - assumed 'allarticle' D:\wamp\www\web\Application\Admin\Controller\AdminController.class.php 第 28 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: page D:\wamp\www\web\Application\Runtime\Cache\Admin\cd83b6b4d7c17ce8df7512e5df2e51e4.php 第 84 行.
+NOTIC: [8] Undefined variable: page D:\wamp\www\web\Application\Runtime\Cache\Admin\cd83b6b4d7c17ce8df7512e5df2e51e4.php 第 85 行.
+NOTIC: [8] Undefined variable: page D:\wamp\www\web\Application\Runtime\Cache\Admin\cd83b6b4d7c17ce8df7512e5df2e51e4.php 第 86 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-09-22T15:00:35+08:00 ] ::1 /web/admin.php/Admin/searchArticleOne/newsId/30
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: PRAGMA table_info( tb_article ) [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 42 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 43 行.
+NOTIC: [8] Undefined index: null D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 45 行.
+NOTIC: [8] Undefined index: default D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 46 行.
+NOTIC: [8] Undefined index: dey D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 47 行.
+NOTIC: [8] Undefined index: extra D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 48 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 42 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 43 行.
+NOTIC: [8] Undefined index: null D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 45 行.
+NOTIC: [8] Undefined index: default D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 46 行.
+NOTIC: [8] Undefined index: dey D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 47 行.
+NOTIC: [8] Undefined index: extra D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 48 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 42 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 43 行.
+NOTIC: [8] Undefined index: null D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 45 行.
+NOTIC: [8] Undefined index: default D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 46 行.
+NOTIC: [8] Undefined index: dey D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 47 行.
+NOTIC: [8] Undefined index: extra D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 48 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 42 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 43 行.
+NOTIC: [8] Undefined index: null D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 45 行.
+NOTIC: [8] Undefined index: default D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 46 行.
+NOTIC: [8] Undefined index: dey D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 47 行.
+NOTIC: [8] Undefined index: extra D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 48 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 42 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 43 行.
+NOTIC: [8] Undefined index: null D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 45 行.
+NOTIC: [8] Undefined index: default D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 46 行.
+NOTIC: [8] Undefined index: dey D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 47 行.
+NOTIC: [8] Undefined index: extra D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 48 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 42 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 43 行.
+NOTIC: [8] Undefined index: null D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 45 行.
+NOTIC: [8] Undefined index: default D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 46 行.
+NOTIC: [8] Undefined index: dey D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 47 行.
+NOTIC: [8] Undefined index: extra D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 48 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 42 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 43 行.
+NOTIC: [8] Undefined index: null D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 45 行.
+NOTIC: [8] Undefined index: default D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 46 行.
+NOTIC: [8] Undefined index: dey D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 47 行.
+NOTIC: [8] Undefined index: extra D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 48 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 42 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 43 行.
+NOTIC: [8] Undefined index: null D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 45 行.
+NOTIC: [8] Undefined index: default D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 46 行.
+NOTIC: [8] Undefined index: dey D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 47 行.
+NOTIC: [8] Undefined index: extra D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 48 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 42 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 43 行.
+NOTIC: [8] Undefined index: null D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 45 行.
+NOTIC: [8] Undefined index: default D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 46 行.
+NOTIC: [8] Undefined index: dey D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 47 行.
+NOTIC: [8] Undefined index: extra D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 48 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 42 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 43 行.
+NOTIC: [8] Undefined index: null D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 45 行.
+NOTIC: [8] Undefined index: default D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 46 行.
+NOTIC: [8] Undefined index: dey D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 47 行.
+NOTIC: [8] Undefined index: extra D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 48 行.
+SQL: SELECT * FROM tb_article WHERE ( id = '30' ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: u D:\wamp\www\web\Application\Runtime\Cache\Admin\b64e0870e99206b74f3c41c0218e59fb.php 第 135 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-09-22T15:00:41+08:00 ] ::1 /web/admin.php/Admin/searchArticle/channelid/2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: PRAGMA table_info( tb_article ) [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 42 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 43 行.
+NOTIC: [8] Undefined index: null D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 45 行.
+NOTIC: [8] Undefined index: default D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 46 行.
+NOTIC: [8] Undefined index: dey D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 47 行.
+NOTIC: [8] Undefined index: extra D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 48 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 42 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 43 行.
+NOTIC: [8] Undefined index: null D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 45 行.
+NOTIC: [8] Undefined index: default D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 46 行.
+NOTIC: [8] Undefined index: dey D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 47 行.
+NOTIC: [8] Undefined index: extra D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 48 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 42 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 43 行.
+NOTIC: [8] Undefined index: null D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 45 行.
+NOTIC: [8] Undefined index: default D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 46 行.
+NOTIC: [8] Undefined index: dey D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 47 行.
+NOTIC: [8] Undefined index: extra D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 48 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 42 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 43 行.
+NOTIC: [8] Undefined index: null D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 45 行.
+NOTIC: [8] Undefined index: default D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 46 行.
+NOTIC: [8] Undefined index: dey D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 47 行.
+NOTIC: [8] Undefined index: extra D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 48 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 42 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 43 行.
+NOTIC: [8] Undefined index: null D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 45 行.
+NOTIC: [8] Undefined index: default D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 46 行.
+NOTIC: [8] Undefined index: dey D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 47 行.
+NOTIC: [8] Undefined index: extra D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 48 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 42 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 43 行.
+NOTIC: [8] Undefined index: null D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 45 行.
+NOTIC: [8] Undefined index: default D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 46 行.
+NOTIC: [8] Undefined index: dey D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 47 行.
+NOTIC: [8] Undefined index: extra D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 48 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 42 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 43 行.
+NOTIC: [8] Undefined index: null D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 45 行.
+NOTIC: [8] Undefined index: default D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 46 行.
+NOTIC: [8] Undefined index: dey D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 47 行.
+NOTIC: [8] Undefined index: extra D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 48 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 42 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 43 行.
+NOTIC: [8] Undefined index: null D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 45 行.
+NOTIC: [8] Undefined index: default D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 46 行.
+NOTIC: [8] Undefined index: dey D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 47 行.
+NOTIC: [8] Undefined index: extra D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 48 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 42 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 43 行.
+NOTIC: [8] Undefined index: null D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 45 行.
+NOTIC: [8] Undefined index: default D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 46 行.
+NOTIC: [8] Undefined index: dey D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 47 行.
+NOTIC: [8] Undefined index: extra D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 48 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 42 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 43 行.
+NOTIC: [8] Undefined index: null D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 45 行.
+NOTIC: [8] Undefined index: default D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 46 行.
+NOTIC: [8] Undefined index: dey D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 47 行.
+NOTIC: [8] Undefined index: extra D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 48 行.
+SQL: SELECT COUNT(*) AS tp_count FROM tb_article WHERE ( channelid = '2' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM tb_article WHERE ( channelid = '2' ) ORDER BY time desc LIMIT 8 OFFSET 0   [ RunTime:0.0010s ]
+NOTIC: [8] Use of undefined constant allarticle - assumed 'allarticle' D:\wamp\www\web\Application\Admin\Controller\AdminController.class.php 第 28 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: page D:\wamp\www\web\Application\Runtime\Cache\Admin\cd83b6b4d7c17ce8df7512e5df2e51e4.php 第 84 行.
+NOTIC: [8] Undefined variable: page D:\wamp\www\web\Application\Runtime\Cache\Admin\cd83b6b4d7c17ce8df7512e5df2e51e4.php 第 85 行.
+NOTIC: [8] Undefined variable: page D:\wamp\www\web\Application\Runtime\Cache\Admin\cd83b6b4d7c17ce8df7512e5df2e51e4.php 第 86 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-09-22T15:01:44+08:00 ] ::1 /web/admin.php/Admin/searchArticle/channelid/2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: PRAGMA table_info( tb_article ) [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 42 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 43 行.
+NOTIC: [8] Undefined index: null D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 45 行.
+NOTIC: [8] Undefined index: default D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 46 行.
+NOTIC: [8] Undefined index: dey D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 47 行.
+NOTIC: [8] Undefined index: extra D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 48 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 42 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 43 行.
+NOTIC: [8] Undefined index: null D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 45 行.
+NOTIC: [8] Undefined index: default D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 46 行.
+NOTIC: [8] Undefined index: dey D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 47 行.
+NOTIC: [8] Undefined index: extra D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 48 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 42 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 43 行.
+NOTIC: [8] Undefined index: null D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 45 行.
+NOTIC: [8] Undefined index: default D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 46 行.
+NOTIC: [8] Undefined index: dey D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 47 行.
+NOTIC: [8] Undefined index: extra D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 48 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 42 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 43 行.
+NOTIC: [8] Undefined index: null D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 45 行.
+NOTIC: [8] Undefined index: default D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 46 行.
+NOTIC: [8] Undefined index: dey D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 47 行.
+NOTIC: [8] Undefined index: extra D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 48 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 42 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 43 行.
+NOTIC: [8] Undefined index: null D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 45 行.
+NOTIC: [8] Undefined index: default D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 46 行.
+NOTIC: [8] Undefined index: dey D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 47 行.
+NOTIC: [8] Undefined index: extra D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 48 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 42 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 43 行.
+NOTIC: [8] Undefined index: null D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 45 行.
+NOTIC: [8] Undefined index: default D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 46 行.
+NOTIC: [8] Undefined index: dey D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 47 行.
+NOTIC: [8] Undefined index: extra D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 48 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 42 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 43 行.
+NOTIC: [8] Undefined index: null D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 45 行.
+NOTIC: [8] Undefined index: default D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 46 行.
+NOTIC: [8] Undefined index: dey D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 47 行.
+NOTIC: [8] Undefined index: extra D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 48 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 42 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 43 行.
+NOTIC: [8] Undefined index: null D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 45 行.
+NOTIC: [8] Undefined index: default D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 46 行.
+NOTIC: [8] Undefined index: dey D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 47 行.
+NOTIC: [8] Undefined index: extra D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 48 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 42 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 43 行.
+NOTIC: [8] Undefined index: null D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 45 行.
+NOTIC: [8] Undefined index: default D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 46 行.
+NOTIC: [8] Undefined index: dey D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 47 行.
+NOTIC: [8] Undefined index: extra D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 48 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 42 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 43 行.
+NOTIC: [8] Undefined index: null D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 45 行.
+NOTIC: [8] Undefined index: default D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 46 行.
+NOTIC: [8] Undefined index: dey D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 47 行.
+NOTIC: [8] Undefined index: extra D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 48 行.
+SQL: SELECT COUNT(*) AS tp_count FROM tb_article WHERE ( channelid = '2' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM tb_article WHERE ( channelid = '2' ) ORDER BY time desc LIMIT 8 OFFSET 0   [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant allarticle - assumed 'allarticle' D:\wamp\www\web\Application\Admin\Controller\AdminController.class.php 第 28 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: page D:\wamp\www\web\Application\Runtime\Cache\Admin\cd83b6b4d7c17ce8df7512e5df2e51e4.php 第 84 行.
+NOTIC: [8] Undefined variable: page D:\wamp\www\web\Application\Runtime\Cache\Admin\cd83b6b4d7c17ce8df7512e5df2e51e4.php 第 85 行.
+NOTIC: [8] Undefined variable: page D:\wamp\www\web\Application\Runtime\Cache\Admin\cd83b6b4d7c17ce8df7512e5df2e51e4.php 第 86 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-09-22T15:01:51+08:00 ] ::1 /web/admin.php/Admin/searchArticle/channelid/3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: PRAGMA table_info( tb_article ) [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 42 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 43 行.
+NOTIC: [8] Undefined index: null D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 45 行.
+NOTIC: [8] Undefined index: default D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 46 行.
+NOTIC: [8] Undefined index: dey D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 47 行.
+NOTIC: [8] Undefined index: extra D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 48 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 42 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 43 行.
+NOTIC: [8] Undefined index: null D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 45 行.
+NOTIC: [8] Undefined index: default D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 46 行.
+NOTIC: [8] Undefined index: dey D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 47 行.
+NOTIC: [8] Undefined index: extra D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 48 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 42 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 43 行.
+NOTIC: [8] Undefined index: null D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 45 行.
+NOTIC: [8] Undefined index: default D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 46 行.
+NOTIC: [8] Undefined index: dey D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 47 行.
+NOTIC: [8] Undefined index: extra D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 48 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 42 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 43 行.
+NOTIC: [8] Undefined index: null D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 45 行.
+NOTIC: [8] Undefined index: default D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 46 行.
+NOTIC: [8] Undefined index: dey D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 47 行.
+NOTIC: [8] Undefined index: extra D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 48 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 42 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 43 行.
+NOTIC: [8] Undefined index: null D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 45 行.
+NOTIC: [8] Undefined index: default D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 46 行.
+NOTIC: [8] Undefined index: dey D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 47 行.
+NOTIC: [8] Undefined index: extra D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 48 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 42 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 43 行.
+NOTIC: [8] Undefined index: null D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 45 行.
+NOTIC: [8] Undefined index: default D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 46 行.
+NOTIC: [8] Undefined index: dey D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 47 行.
+NOTIC: [8] Undefined index: extra D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 48 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 42 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 43 行.
+NOTIC: [8] Undefined index: null D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 45 行.
+NOTIC: [8] Undefined index: default D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 46 行.
+NOTIC: [8] Undefined index: dey D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 47 行.
+NOTIC: [8] Undefined index: extra D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 48 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 42 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 43 行.
+NOTIC: [8] Undefined index: null D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 45 行.
+NOTIC: [8] Undefined index: default D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 46 行.
+NOTIC: [8] Undefined index: dey D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 47 行.
+NOTIC: [8] Undefined index: extra D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 48 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 42 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 43 行.
+NOTIC: [8] Undefined index: null D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 45 行.
+NOTIC: [8] Undefined index: default D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 46 行.
+NOTIC: [8] Undefined index: dey D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 47 行.
+NOTIC: [8] Undefined index: extra D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 48 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 42 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 43 行.
+NOTIC: [8] Undefined index: null D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 45 行.
+NOTIC: [8] Undefined index: default D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 46 行.
+NOTIC: [8] Undefined index: dey D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 47 行.
+NOTIC: [8] Undefined index: extra D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 48 行.
+SQL: SELECT COUNT(*) AS tp_count FROM tb_article WHERE ( channelid = '3' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM tb_article WHERE ( channelid = '3' ) ORDER BY time desc LIMIT 8 OFFSET 0   [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant allarticle - assumed 'allarticle' D:\wamp\www\web\Application\Admin\Controller\AdminController.class.php 第 28 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: page D:\wamp\www\web\Application\Runtime\Cache\Admin\cd83b6b4d7c17ce8df7512e5df2e51e4.php 第 84 行.
+NOTIC: [8] Undefined variable: page D:\wamp\www\web\Application\Runtime\Cache\Admin\cd83b6b4d7c17ce8df7512e5df2e51e4.php 第 85 行.
+NOTIC: [8] Undefined variable: page D:\wamp\www\web\Application\Runtime\Cache\Admin\cd83b6b4d7c17ce8df7512e5df2e51e4.php 第 86 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-09-22T15:01:54+08:00 ] ::1 /web/admin.php/Admin/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: u D:\wamp\www\web\Application\Runtime\Cache\Admin\82f4efac697b2e42d74f6bbc51f1b0e1.php 第 131 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-09-22T15:02:01+08:00 ] ::1 /web/admin.php/Admin/searchArticle/channelid/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: PRAGMA table_info( tb_article ) [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 42 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 43 行.
+NOTIC: [8] Undefined index: null D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 45 行.
+NOTIC: [8] Undefined index: default D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 46 行.
+NOTIC: [8] Undefined index: dey D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 47 行.
+NOTIC: [8] Undefined index: extra D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 48 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 42 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 43 行.
+NOTIC: [8] Undefined index: null D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 45 行.
+NOTIC: [8] Undefined index: default D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 46 行.
+NOTIC: [8] Undefined index: dey D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 47 行.
+NOTIC: [8] Undefined index: extra D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 48 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 42 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 43 行.
+NOTIC: [8] Undefined index: null D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 45 行.
+NOTIC: [8] Undefined index: default D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 46 行.
+NOTIC: [8] Undefined index: dey D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 47 行.
+NOTIC: [8] Undefined index: extra D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 48 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 42 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 43 行.
+NOTIC: [8] Undefined index: null D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 45 行.
+NOTIC: [8] Undefined index: default D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 46 行.
+NOTIC: [8] Undefined index: dey D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 47 行.
+NOTIC: [8] Undefined index: extra D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 48 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 42 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 43 行.
+NOTIC: [8] Undefined index: null D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 45 行.
+NOTIC: [8] Undefined index: default D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 46 行.
+NOTIC: [8] Undefined index: dey D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 47 行.
+NOTIC: [8] Undefined index: extra D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 48 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 42 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 43 行.
+NOTIC: [8] Undefined index: null D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 45 行.
+NOTIC: [8] Undefined index: default D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 46 行.
+NOTIC: [8] Undefined index: dey D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 47 行.
+NOTIC: [8] Undefined index: extra D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 48 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 42 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 43 行.
+NOTIC: [8] Undefined index: null D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 45 行.
+NOTIC: [8] Undefined index: default D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 46 行.
+NOTIC: [8] Undefined index: dey D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 47 行.
+NOTIC: [8] Undefined index: extra D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 48 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 42 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 43 行.
+NOTIC: [8] Undefined index: null D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 45 行.
+NOTIC: [8] Undefined index: default D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 46 行.
+NOTIC: [8] Undefined index: dey D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 47 行.
+NOTIC: [8] Undefined index: extra D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 48 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 42 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 43 行.
+NOTIC: [8] Undefined index: null D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 45 行.
+NOTIC: [8] Undefined index: default D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 46 行.
+NOTIC: [8] Undefined index: dey D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 47 行.
+NOTIC: [8] Undefined index: extra D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 48 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 42 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 43 行.
+NOTIC: [8] Undefined index: null D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 45 行.
+NOTIC: [8] Undefined index: default D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 46 行.
+NOTIC: [8] Undefined index: dey D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 47 行.
+NOTIC: [8] Undefined index: extra D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 48 行.
+SQL: SELECT COUNT(*) AS tp_count FROM tb_article WHERE ( channelid = '1' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM tb_article WHERE ( channelid = '1' ) ORDER BY time desc LIMIT 8 OFFSET 0   [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant allarticle - assumed 'allarticle' D:\wamp\www\web\Application\Admin\Controller\AdminController.class.php 第 28 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: page D:\wamp\www\web\Application\Runtime\Cache\Admin\cd83b6b4d7c17ce8df7512e5df2e51e4.php 第 84 行.
+NOTIC: [8] Undefined variable: page D:\wamp\www\web\Application\Runtime\Cache\Admin\cd83b6b4d7c17ce8df7512e5df2e51e4.php 第 85 行.
+NOTIC: [8] Undefined variable: page D:\wamp\www\web\Application\Runtime\Cache\Admin\cd83b6b4d7c17ce8df7512e5df2e51e4.php 第 86 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-09-22T15:02:34+08:00 ] ::1 /web/admin.php/Admin/searchArticle/channelid/2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: PRAGMA table_info( tb_article ) [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 42 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 43 行.
+NOTIC: [8] Undefined index: null D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 45 行.
+NOTIC: [8] Undefined index: default D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 46 行.
+NOTIC: [8] Undefined index: dey D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 47 行.
+NOTIC: [8] Undefined index: extra D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 48 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 42 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 43 行.
+NOTIC: [8] Undefined index: null D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 45 行.
+NOTIC: [8] Undefined index: default D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 46 行.
+NOTIC: [8] Undefined index: dey D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 47 行.
+NOTIC: [8] Undefined index: extra D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 48 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 42 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 43 行.
+NOTIC: [8] Undefined index: null D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 45 行.
+NOTIC: [8] Undefined index: default D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 46 行.
+NOTIC: [8] Undefined index: dey D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 47 行.
+NOTIC: [8] Undefined index: extra D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 48 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 42 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 43 行.
+NOTIC: [8] Undefined index: null D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 45 行.
+NOTIC: [8] Undefined index: default D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 46 行.
+NOTIC: [8] Undefined index: dey D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 47 行.
+NOTIC: [8] Undefined index: extra D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 48 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 42 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 43 行.
+NOTIC: [8] Undefined index: null D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 45 行.
+NOTIC: [8] Undefined index: default D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 46 行.
+NOTIC: [8] Undefined index: dey D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 47 行.
+NOTIC: [8] Undefined index: extra D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 48 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 42 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 43 行.
+NOTIC: [8] Undefined index: null D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 45 行.
+NOTIC: [8] Undefined index: default D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 46 行.
+NOTIC: [8] Undefined index: dey D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 47 行.
+NOTIC: [8] Undefined index: extra D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 48 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 42 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 43 行.
+NOTIC: [8] Undefined index: null D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 45 行.
+NOTIC: [8] Undefined index: default D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 46 行.
+NOTIC: [8] Undefined index: dey D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 47 行.
+NOTIC: [8] Undefined index: extra D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 48 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 42 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 43 行.
+NOTIC: [8] Undefined index: null D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 45 行.
+NOTIC: [8] Undefined index: default D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 46 行.
+NOTIC: [8] Undefined index: dey D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 47 行.
+NOTIC: [8] Undefined index: extra D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 48 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 42 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 43 行.
+NOTIC: [8] Undefined index: null D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 45 行.
+NOTIC: [8] Undefined index: default D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 46 行.
+NOTIC: [8] Undefined index: dey D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 47 行.
+NOTIC: [8] Undefined index: extra D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 48 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 42 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 43 行.
+NOTIC: [8] Undefined index: null D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 45 行.
+NOTIC: [8] Undefined index: default D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 46 行.
+NOTIC: [8] Undefined index: dey D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 47 行.
+NOTIC: [8] Undefined index: extra D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 48 行.
+SQL: SELECT COUNT(*) AS tp_count FROM tb_article WHERE ( channelid = '2' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM tb_article WHERE ( channelid = '2' ) ORDER BY time desc LIMIT 8 OFFSET 0   [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant allarticle - assumed 'allarticle' D:\wamp\www\web\Application\Admin\Controller\AdminController.class.php 第 28 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: page D:\wamp\www\web\Application\Runtime\Cache\Admin\cd83b6b4d7c17ce8df7512e5df2e51e4.php 第 84 行.
+NOTIC: [8] Undefined variable: page D:\wamp\www\web\Application\Runtime\Cache\Admin\cd83b6b4d7c17ce8df7512e5df2e51e4.php 第 85 行.
+NOTIC: [8] Undefined variable: page D:\wamp\www\web\Application\Runtime\Cache\Admin\cd83b6b4d7c17ce8df7512e5df2e51e4.php 第 86 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-09-22T15:02:36+08:00 ] ::1 /web/admin.php/Admin/searchArticle/channelid/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: PRAGMA table_info( tb_article ) [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 42 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 43 行.
+NOTIC: [8] Undefined index: null D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 45 行.
+NOTIC: [8] Undefined index: default D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 46 行.
+NOTIC: [8] Undefined index: dey D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 47 行.
+NOTIC: [8] Undefined index: extra D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 48 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 42 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 43 行.
+NOTIC: [8] Undefined index: null D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 45 行.
+NOTIC: [8] Undefined index: default D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 46 行.
+NOTIC: [8] Undefined index: dey D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 47 行.
+NOTIC: [8] Undefined index: extra D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 48 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 42 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 43 行.
+NOTIC: [8] Undefined index: null D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 45 行.
+NOTIC: [8] Undefined index: default D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 46 行.
+NOTIC: [8] Undefined index: dey D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 47 行.
+NOTIC: [8] Undefined index: extra D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 48 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 42 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 43 行.
+NOTIC: [8] Undefined index: null D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 45 行.
+NOTIC: [8] Undefined index: default D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 46 行.
+NOTIC: [8] Undefined index: dey D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 47 行.
+NOTIC: [8] Undefined index: extra D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 48 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 42 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 43 行.
+NOTIC: [8] Undefined index: null D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 45 行.
+NOTIC: [8] Undefined index: default D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 46 行.
+NOTIC: [8] Undefined index: dey D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 47 行.
+NOTIC: [8] Undefined index: extra D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 48 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 42 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 43 行.
+NOTIC: [8] Undefined index: null D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 45 行.
+NOTIC: [8] Undefined index: default D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 46 行.
+NOTIC: [8] Undefined index: dey D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 47 行.
+NOTIC: [8] Undefined index: extra D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 48 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 42 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 43 行.
+NOTIC: [8] Undefined index: null D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 45 行.
+NOTIC: [8] Undefined index: default D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 46 行.
+NOTIC: [8] Undefined index: dey D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 47 行.
+NOTIC: [8] Undefined index: extra D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 48 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 42 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 43 行.
+NOTIC: [8] Undefined index: null D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 45 行.
+NOTIC: [8] Undefined index: default D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 46 行.
+NOTIC: [8] Undefined index: dey D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 47 行.
+NOTIC: [8] Undefined index: extra D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 48 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 42 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 43 行.
+NOTIC: [8] Undefined index: null D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 45 行.
+NOTIC: [8] Undefined index: default D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 46 行.
+NOTIC: [8] Undefined index: dey D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 47 行.
+NOTIC: [8] Undefined index: extra D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 48 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 42 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 43 行.
+NOTIC: [8] Undefined index: null D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 45 行.
+NOTIC: [8] Undefined index: default D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 46 行.
+NOTIC: [8] Undefined index: dey D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 47 行.
+NOTIC: [8] Undefined index: extra D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 48 行.
+SQL: SELECT COUNT(*) AS tp_count FROM tb_article WHERE ( channelid = '1' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM tb_article WHERE ( channelid = '1' ) ORDER BY time desc LIMIT 8 OFFSET 0   [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant allarticle - assumed 'allarticle' D:\wamp\www\web\Application\Admin\Controller\AdminController.class.php 第 28 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: page D:\wamp\www\web\Application\Runtime\Cache\Admin\cd83b6b4d7c17ce8df7512e5df2e51e4.php 第 84 行.
+NOTIC: [8] Undefined variable: page D:\wamp\www\web\Application\Runtime\Cache\Admin\cd83b6b4d7c17ce8df7512e5df2e51e4.php 第 85 行.
+NOTIC: [8] Undefined variable: page D:\wamp\www\web\Application\Runtime\Cache\Admin\cd83b6b4d7c17ce8df7512e5df2e51e4.php 第 86 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-09-22T15:03:13+08:00 ] ::1 /web/admin.php/Admin/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: u D:\wamp\www\web\Application\Runtime\Cache\Admin\82f4efac697b2e42d74f6bbc51f1b0e1.php 第 131 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-09-22T15:03:30+08:00 ] ::1 /web/admin.php/Admin/searchArticle/channelid/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: PRAGMA table_info( tb_article ) [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 42 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 43 行.
+NOTIC: [8] Undefined index: null D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 45 行.
+NOTIC: [8] Undefined index: default D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 46 行.
+NOTIC: [8] Undefined index: dey D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 47 行.
+NOTIC: [8] Undefined index: extra D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 48 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 42 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 43 行.
+NOTIC: [8] Undefined index: null D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 45 行.
+NOTIC: [8] Undefined index: default D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 46 行.
+NOTIC: [8] Undefined index: dey D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 47 行.
+NOTIC: [8] Undefined index: extra D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 48 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 42 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 43 行.
+NOTIC: [8] Undefined index: null D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 45 行.
+NOTIC: [8] Undefined index: default D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 46 行.
+NOTIC: [8] Undefined index: dey D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 47 行.
+NOTIC: [8] Undefined index: extra D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 48 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 42 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 43 行.
+NOTIC: [8] Undefined index: null D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 45 行.
+NOTIC: [8] Undefined index: default D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 46 行.
+NOTIC: [8] Undefined index: dey D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 47 行.
+NOTIC: [8] Undefined index: extra D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 48 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 42 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 43 行.
+NOTIC: [8] Undefined index: null D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 45 行.
+NOTIC: [8] Undefined index: default D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 46 行.
+NOTIC: [8] Undefined index: dey D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 47 行.
+NOTIC: [8] Undefined index: extra D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 48 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 42 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 43 行.
+NOTIC: [8] Undefined index: null D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 45 行.
+NOTIC: [8] Undefined index: default D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 46 行.
+NOTIC: [8] Undefined index: dey D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 47 行.
+NOTIC: [8] Undefined index: extra D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 48 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 42 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 43 行.
+NOTIC: [8] Undefined index: null D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 45 行.
+NOTIC: [8] Undefined index: default D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 46 行.
+NOTIC: [8] Undefined index: dey D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 47 行.
+NOTIC: [8] Undefined index: extra D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 48 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 42 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 43 行.
+NOTIC: [8] Undefined index: null D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 45 行.
+NOTIC: [8] Undefined index: default D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 46 行.
+NOTIC: [8] Undefined index: dey D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 47 行.
+NOTIC: [8] Undefined index: extra D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 48 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 42 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 43 行.
+NOTIC: [8] Undefined index: null D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 45 行.
+NOTIC: [8] Undefined index: default D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 46 行.
+NOTIC: [8] Undefined index: dey D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 47 行.
+NOTIC: [8] Undefined index: extra D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 48 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 42 行.
+NOTIC: [8] Undefined index: field D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 43 行.
+NOTIC: [8] Undefined index: null D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 45 行.
+NOTIC: [8] Undefined index: default D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 46 行.
+NOTIC: [8] Undefined index: dey D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 47 行.
+NOTIC: [8] Undefined index: extra D:\wamp\www\web\ThinkPHP\Library\Think\Db\Driver\Sqlite.class.php 第 48 行.
+SQL: SELECT COUNT(*) AS tp_count FROM tb_article WHERE ( channelid = '1' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM tb_article WHERE ( channelid = '1' ) ORDER BY time desc LIMIT 8 OFFSET 0   [ RunTime:0.0010s ]
+NOTIC: [8] Use of undefined constant allarticle - assumed 'allarticle' D:\wamp\www\web\Application\Admin\Controller\AdminController.class.php 第 28 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: page D:\wamp\www\web\Application\Runtime\Cache\Admin\cd83b6b4d7c17ce8df7512e5df2e51e4.php 第 84 行.
+NOTIC: [8] Undefined variable: page D:\wamp\www\web\Application\Runtime\Cache\Admin\cd83b6b4d7c17ce8df7512e5df2e51e4.php 第 85 行.
+NOTIC: [8] Undefined variable: page D:\wamp\www\web\Application\Runtime\Cache\Admin\cd83b6b4d7c17ce8df7512e5df2e51e4.php 第 86 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-09-22T15:03:32+08:00 ] ::1 /web/admin.php/Admin/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: u D:\wamp\www\web\Application\Runtime\Cache\Admin\82f4efac697b2e42d74f6bbc51f1b0e1.php 第 131 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
