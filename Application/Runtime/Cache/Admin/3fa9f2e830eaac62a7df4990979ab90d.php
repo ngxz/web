@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title>欢迎界面</title>
+		<title>袁茹兵个人网站后台管理页</title>
 		<link rel="icon" href="/web/Public/img/favicon.ico" type="image/x-icon">
 		<link rel="stylesheet" href="/web/Public/bs/css/bootstrap.min.css">
 		<link rel="stylesheet" href="/web/Public/css/global.css" />

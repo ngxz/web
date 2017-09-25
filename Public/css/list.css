@@ -1,5 +1,5 @@
 /*此文件为站内新闻、web、php页面文章列表list的修饰，仅此三页引入*/
-.listTitle{font-size: 32px;}
+.listTitle{font-size: 28px;}
 .listTime{font-size: 12px;color: darkgray;margin-left: 20px;}
 .listContent{line-height: 20px;margin-left: 20px;}
 /*面包屑距离顶部*/

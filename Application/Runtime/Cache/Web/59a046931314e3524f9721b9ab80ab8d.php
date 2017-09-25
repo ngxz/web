@@ -4,9 +4,9 @@
 		<meta charset="utf-8" />
 		<title>关于我 - 袁茹兵个人站点</title>
 		<meta name="keywords" content="袁茹兵，个人博客,网页开发,web前端，PHP学习" />
-		<meta name="description" content="主要分享个人网站搭建，web前端，php后台，博客建设等文章" />
-		<link rel="icon" href="/Public/img/favicon.ico" type="image/x-icon">
-		<link rel="stylesheet" href="/Public/css/global.css" />
+<meta name="description" content="主要分享个人网站搭建，web前端，php后台，博客建设等文章" />
+		<link rel="icon" href="/web/Public/img/favicon.ico" type="image/x-icon">
+		<link rel="stylesheet" href="/web/Public/css/global.css" />
 		<style type="text/css">
             h4{background-color:#c0c0c0;padding:5px;}
             h4 a{font-size:18px;}
@@ -21,22 +21,22 @@
             /*面包屑距离顶部*/
 			.bread{margin-top: 50px;}
        	</style>
-		<script type="text/javascript" src="/Public/js/jquery-1.9.1.min.js" ></script>
-		<script type="text/javascript" src="/Public/js/main.js" ></script>
+		<script type="text/javascript" src="/web/Public/js/jquery-1.9.1.min.js" ></script>
+		<script type="text/javascript" src="/web/Public/js/main.js" ></script>
 	</head>
 	<body>
 		<!--导航部分-->
 		<div class="navBoxbg">
 			<div class="navBox container">
-				<div class="logo floatl"><a href="/">Yuanrb.com</a></div>
+				<div class="logo floatl"><a href="/web/">Yuanrb.com</a></div>
 				<div class="nav floatr">
 					<ul>
-						<li><a href="/">首页</a></li>
-						<li><a href="/New/news.html">站内新闻</a></li>
-						<li><a href="/Web/web.html">WEB前端</a></li>
-						<li><a href="/Php/php.html">PHP学习</a></li>
-						<li><a href="/Feed/feed.html">留言板</a></li>
-						<li class="navActive"><a href="/index/about.html">关于我</a></li>
+						<li><a href="/web/">首页</a></li>
+						<li><a href="/web/New/news.html">站内新闻</a></li>
+						<li><a href="/web/Web/web.html">WEB前端</a></li>
+						<li><a href="/web/Php/php.html">PHP学习</a></li>
+						<li><a href="/web/Feed/feed.html">留言板</a></li>
+						<li class="navActive"><a href="/web/index/about.html">关于我</a></li>
 					</ul>
 				</div>
 			</div>
@@ -44,16 +44,18 @@
 		<!--本页独立内容-->
 		<div class="container">
 			<!--面包屑-->
-			<div class="bread">当前位置：<a href="/index/about.html">关于我</a></div>
+			<div class="bread">当前位置：<a href="/web/index/about.html">关于我</a></div>
 			<div class="about">
 				<!-- 主体左边 -->
 				<div class="floatl">
-					<img alt="头像" src="/Public/img/icon3.jpg">
+					<img alt="头像" src="/web/Public/img/icon3.jpg">
 					<ul>
-						<li><a href="/index/about.html#chapter1">基本资料</a></li>
-						<li><a href="/index/about.html#chapter2">详细信息</a></li>
-						<li><a href="/index/about.html#chapter3">个人经历</a></li>
-						<li><a href="/index/about.html#chapter4">联系方式</a></li>
+						<li><a href="/web/index/about.html#chapter1">基本资料</a></li>
+						<li><a href="/web/index/about.html#chapter2">详细信息</a></li>
+						<li><a href="/web/index/about.html#chapter3">个人经历</a></li>
+						<li><a href="/web/index/about.html#chapter4">联系方式</a></li>
+						<li><a href="#">微信二维码</a></li>
+						<li><img src=""/></li>
 					</ul>
 				</div>
 				<!-- 主体右边 -->
@@ -184,19 +186,20 @@
 		</div>
 		<!--底部-->
 		<div class="footerBoxbg">
-			<div class="footerBox container">
-				<div class="footer">
-					<!--友情链接-->
-					<ul class="link">
-						<li><a href="#">链接</a></li>
-						<li><a href="#">链接</a></li>
-						<li><a href="#">链接</a></li>
-					</ul>
-					<!--备案信息-->
-					<p class="beian">本站由袁茹兵制作</p>
-					<p class="beian">渝ICP备17011601号</p>
-				</div>
-			</div>
+	<div class="footerBox container">
+		<div class="footer">
+			<!--友情链接-->
+			<ul class="link">
+				<li><a href="#">友链</a></li>
+				<li><a href="#">友链</a></li>
+				<li><a href="#">友链</a></li>
+			</ul>
+			<!--备案信息-->
+			<p class="beian">本站由袁茹兵制作</p>
+			<p class="beian">渝ICP备17011601号</p>
 		</div>
+	</div>
+</div>
+
 	</body>
 </html>

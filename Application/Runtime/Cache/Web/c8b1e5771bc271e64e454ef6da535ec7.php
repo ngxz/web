@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title>首页 - 袁茹兵个人站点</title>
+		<title>袁茹兵个人网站 - 个人网站建设和web前端及php学习的文章分享</title>
 		<meta name="keywords" content="袁茹兵，个人博客,网页开发,web前端，PHP学习" />
 <meta name="description" content="主要分享个人网站搭建，web前端，php后台，博客建设等文章" />
 		<link rel="icon" href="/web/Public/img/favicon.ico" type="image/x-icon">
@@ -32,8 +32,9 @@
 		<div class="banBoxbg">
 			<div class="banBox">
 				<div class="ban">
-					<h1>本站博客系统即将上线</h1>
-					<p> </p>
+					<h1>欢迎!</h1>
+		  			<p>这里是袁茹兵的个人小站。这里将记录我的一点一滴成长之路！</p>
+		  			<br />
 					<!--<a href="http://blog.yuanrb.com" class="btn-white btn-big">博客空间</a>-->
 					<a href="/web/index/about.html" class="btn-white btn-big">关于我</a>
 				</div>
