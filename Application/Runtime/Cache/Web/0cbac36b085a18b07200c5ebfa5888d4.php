@@ -37,12 +37,12 @@
 		<div class="articleBoxbg">
 			<div class="articleBox container">
 				<!--面包屑-->
-				<div class="bread">当前位置：<a href="/web/New/news.html"><?php echo ($channel["name"]); ?></a>-<?php echo ($row["title"]); ?></div>
+				<div class="bread">当前位置：<a href="/web/New/news.html"><?php echo ($channel["name"]); ?></a> - <?php echo ($row["title"]); ?></div>
 				<div class="article">
 					<!--标题-->
 					<div class="title"><?php echo ($row["title"]); ?></div>
 					<!--分享-->
-					<span class="time"><?php echo ($row["time"]); ?>&nbsp;分享到：	</span>
+					<span class="time">发布时间：<?php echo ($row["time"]); ?>  &nbsp;作者：<?php echo ($row["author"]); ?> &nbsp;分享到：	</span>
 					<span class="share">
 						<div class="bdsharebuttonbox" data-tag="share_1">
 						    <a class="bds_weixin" data-cmd="weixin"></a>

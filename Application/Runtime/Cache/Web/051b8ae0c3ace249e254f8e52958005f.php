@@ -32,14 +32,21 @@
 		<div class="newsBoxbg">
 			<div class="newsBox container">
 				<!--面包屑-->
-				<div class="bread">当前位置：<a href="/web/New/news.html"><?php echo ($channel["name"]); ?></a>-站内新闻列表</div>
+				<div class="bread">当前位置：<a href="/web/New/news.html"><?php echo ($channel["name"]); ?></a> - 站内新闻列表</div>
+				<!--左边内容-->
 				<ul class="listUl">
 					<?php if(is_array($data["news"])): $i = 0; $__LIST__ = $data["news"];if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$news): $mod = ($i % 2 );++$i;?><li class="listLi">
 							<div class="listTitle"><a href="/web/detail/article/channelid/1/id/<?php echo ($news["id"]); ?>"><?php echo ($news["title"]); ?></a></div>
-							<div class="listTime"><?php echo ($news["time"]); ?></div>
-							<div class="listContent"><?php echo ($news["summary"]); ?></div>
+							<div class="listTime">发布时间：<?php echo ($news["time"]); ?></div>
+							<div class="listContent">摘要：<?php echo ($news["summary"]); ?></div>
 						</li><?php endforeach; endif; else: echo "" ;endif; ?>
 				</ul>
+				<!--右边分类-->
+				<!--<ul class="categoryUl">
+					<h1>分类</h1>
+					<li><a href="#">网站更新</a></li>
+					<li><a href="#">心得随笔</a></li>
+				</ul>-->
 			</div>
 		</div>
 		<!--分页-->

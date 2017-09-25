@@ -31,13 +31,13 @@
 		<div class="phpBoxbg">
 			<div class="phpBox container">
 				<!--面包屑-->
-				<div class="bread">当前位置：<a href="__ROOT__/Php/php.html">{$channel.name}</a>-PHP文章列表</div>
+				<div class="bread">当前位置：<a href="__ROOT__/Php/php.html">{$channel.name}</a> - PHP文章列表</div>
 				<ul class="listUl">
 					<volist name="data.php" id="php">
 						<li class="listLi">
 							<div class="listTitle"><a href="__ROOT__/detail/article/channelid/3/id/{$php.id}">{$php.title}</a></div>
-							<div class="listTime">{$php.time}</div>
-							<div class="listContent">{$php.summary}</div>
+							<div class="listTime">发布时间：{$php.time}</div>
+							<div class="listContent">摘要：{$php.summary}</div>
 						</li>
 					</volist>
 				</ul>

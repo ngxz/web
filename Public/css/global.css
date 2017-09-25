@@ -28,7 +28,7 @@ input{border: none;cursor: pointer;}
 .nav ul li{float: left;}
 .logo a,.nav ul li a{display: block;height: 50px;width: 80px;color:#fff;text-align: center;line-height: 50px;}
 /*nav活动样式*/
-.navActive{background: #333333;}
+.navActive{background: #555;}
 
 /*每个翻页按钮的修饰*/
 /*分页修饰*/

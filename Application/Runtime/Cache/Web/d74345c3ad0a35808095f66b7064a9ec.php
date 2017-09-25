@@ -32,12 +32,12 @@
 		<div class="phpBoxbg">
 			<div class="phpBox container">
 				<!--面包屑-->
-				<div class="bread">当前位置：<a href="/web/Php/php.html"><?php echo ($channel["name"]); ?></a>-PHP文章列表</div>
+				<div class="bread">当前位置：<a href="/web/Php/php.html"><?php echo ($channel["name"]); ?></a> - PHP文章列表</div>
 				<ul class="listUl">
 					<?php if(is_array($data["php"])): $i = 0; $__LIST__ = $data["php"];if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$php): $mod = ($i % 2 );++$i;?><li class="listLi">
 							<div class="listTitle"><a href="/web/detail/article/channelid/3/id/<?php echo ($php["id"]); ?>"><?php echo ($php["title"]); ?></a></div>
-							<div class="listTime"><?php echo ($php["time"]); ?></div>
-							<div class="listContent"><?php echo ($php["summary"]); ?></div>
+							<div class="listTime">发布时间：<?php echo ($php["time"]); ?></div>
+							<div class="listContent">摘要：<?php echo ($php["summary"]); ?></div>
 						</li><?php endforeach; endif; else: echo "" ;endif; ?>
 				</ul>
 			</div>
