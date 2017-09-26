@@ -93,7 +93,7 @@
 	   		</div>
 			<table class="table table-striped table-bordered table-condensed text-center table-hover">
 				<tr>
-					<th><input type="checkbox" name="nums"/></th><!--<th>所属频道</th>--><th>文章标题</th><th>文章作者</th><th>文章摘要</th><th>文章内容</th><th>图片地址</th><th>修改时间</th>
+					<th><input type="checkbox" name="nums"/></th><!--<th>所属频道</th>--><th>文章标题</th><th>文章作者</th><th>文章摘要</th><th>文章内容</th><th>所属栏目</th><th>修改时间</th>
 	
 				</tr>
 				<?php if(is_array($data["rows"])): $i = 0; $__LIST__ = $data["rows"];if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$row): $mod = ($i % 2 );++$i;?><tr>
@@ -103,7 +103,7 @@
 						<td><?php echo ($row["author"]); ?></td>
 						<td><?php echo ($row["summary"]); ?></td>
 						<td><?php echo (msubstr($row["content"],0,60,'utf-8',true)); ?></td>
-						<td><?php echo ($row["imgurl"]); ?></td>
+						<td><?php echo ($row["category"]); ?></td>
 						<td><?php echo ($row["time"]); ?></td>
 					</tr><?php endforeach; endif; else: echo "" ;endif; ?>
 			</table>

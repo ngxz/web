@@ -31,7 +31,13 @@
 		<div class="phpBoxbg">
 			<div class="phpBox container">
 				<!--面包屑-->
-				<div class="bread">当前位置：<a href="__ROOT__/Php/php.html">{$channel.name}</a> - PHP文章列表</div>
+				<div class="bread">当前位置：<a href="__ROOT__/Php/php.html">{$channel.name}</a> - 
+					<empty name="category">
+						全部PHP文章
+					<else />
+						{$category.name}
+					</empty>
+				</div>
 				<ul class="listUl">
 					<volist name="data.php" id="php">
 						<li class="listLi">
@@ -39,6 +45,14 @@
 							<div class="listTime">发布时间：{$php.time}</div>
 							<div class="listContent">摘要：{$php.summary}</div>
 						</li>
+					</volist>
+				</ul>
+				<!--右边分类-->
+				<ul class="categoryUl">
+					<h1>分类</h1>
+					<li><a href="__ROOT__/Php/php.html">全部文章</a></li>
+					<volist name="categorys" id="cate">
+						<li><a href="__ROOT__/Php/phpbycategory/category/{$cate.id}">{$cate.name}</a></li>
 					</volist>
 				</ul>
 			</div>

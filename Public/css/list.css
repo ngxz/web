@@ -6,10 +6,14 @@
 .bread{margin-top: 50px;}
 
 /*内容部分*/
-/*.newsBox{overflow: hidden;}*/
+.newsBox{overflow: hidden;}
+.webBox{overflow: hidden;}
+.phpBox{overflow: hidden;}
 /*左边内容*/
-.listUl{overflow: hidden;/*float: left;*/}
+.listUl{overflow: hidden;float: left;}
 .listLi{margin: 15px 0;}
 
 /*右边列表*/
-/*.categoryUl{width: 300px;float:right;background: gray;}*/
+.categoryUl{width: 300px;float:right;}
+.categoryUl h1{font-size: 28px;font-weight: normal;}
+.categoryUl li{margin: 5px 0;}

@@ -32,7 +32,11 @@
 		<div class="newsBoxbg">
 			<div class="newsBox container">
 				<!--面包屑-->
-				<div class="bread">当前位置：<a href="/web/New/news.html"><?php echo ($channel["name"]); ?></a> - 站内新闻列表</div>
+				<div class="bread">当前位置：<a href="/web/New/news.html"><?php echo ($channel["name"]); ?></a> - 
+					<?php if(empty($category)): ?>全部新闻
+					<?php else: ?>
+						<?php echo ($category["name"]); endif; ?>
+				</div>
 				<!--左边内容-->
 				<ul class="listUl">
 					<?php if(is_array($data["news"])): $i = 0; $__LIST__ = $data["news"];if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$news): $mod = ($i % 2 );++$i;?><li class="listLi">
@@ -42,11 +46,11 @@
 						</li><?php endforeach; endif; else: echo "" ;endif; ?>
 				</ul>
 				<!--右边分类-->
-				<!--<ul class="categoryUl">
+				<ul class="categoryUl">
 					<h1>分类</h1>
-					<li><a href="#">网站更新</a></li>
-					<li><a href="#">心得随笔</a></li>
-				</ul>-->
+					<li><a href="/web/New/news.html">全部新闻</a></li>
+					<?php if(is_array($categorys)): $i = 0; $__LIST__ = $categorys;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$cate): $mod = ($i % 2 );++$i;?><li><a href="/web/New/newsbycategory/category/<?php echo ($cate["id"]); ?>"><?php echo ($cate["name"]); ?></a></li><?php endforeach; endif; else: echo "" ;endif; ?>
+				</ul>
 			</div>
 		</div>
 		<!--分页-->

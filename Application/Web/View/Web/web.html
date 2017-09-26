@@ -31,7 +31,13 @@
 		<div class="webBoxbg">
 			<div class="webBox container">
 				<!--面包屑-->
-				<div class="bread">当前位置：<a href="__ROOT__/Web/web.html">{$channel.name}</a> - WEB文章列表</div>
+				<div class="bread">当前位置：<a href="__ROOT__/Web/web.html">{$channel.name}</a> - 
+					<empty name="category">
+						全部WEB文章
+					<else />
+						{$category.name}
+					</empty>
+				</div>
 				<ul class="listUl">
 					<volist name="data.web" id="web">
 						<li class="listLi">
@@ -39,6 +45,14 @@
 							<div class="listTime">发布时间：{$web.time}</div>
 							<div class="listContent">摘要：{$web.summary}</div>
 						</li>
+					</volist>
+				</ul>
+				<!--右边分类-->
+				<ul class="categoryUl">
+					<h1>分类</h1>
+					<li><a href="__ROOT__/Web/web.html">全部文章</a></li>
+					<volist name="categorys" id="cate">
+						<li><a href="__ROOT__/Web/webbycategory/category/{$cate.id}">{$cate.name}</a></li>
 					</volist>
 				</ul>
 			</div>

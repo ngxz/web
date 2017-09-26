@@ -74,7 +74,7 @@
 					"summary":$("#summary").val(),
 					"author":$("#author").val(),
 					"time":$("#time").val(),
-					"url":$("#url").val(),
+					"category":$("#category").val(),
 					"content":$("#content").val(),
 					"channelid":$("#channelid").val(),
 					"ctr":$("#ctr").val()
@@ -106,6 +106,15 @@
         	</div>
         	<div class="form-group">
 				<div class="input-group ">
+					<div class="input-group-addon">所属栏目</div>
+					<select name="category" id="category" class="form-control" style="width:237px">
+						<option value="-1">选择栏目</option>
+						<?php if(is_array($categorys)): $i = 0; $__LIST__ = $categorys;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$category): $mod = ($i % 2 );++$i;?><option value="<?php echo ($category["id"]); ?>"><?php echo ($category["id"]); ?> - <?php echo ($category["name"]); ?></option><?php endforeach; endif; else: echo "" ;endif; ?>
+					</select>
+				</div>
+			</div>
+        	<div class="form-group">
+				<div class="input-group ">
 					<div class="input-group-addon">文章标题</div>
 					<input id="title" name="title" type="text" class="form-control" placeholder="标题必填" />
 					<span class="glyphicon form-control-feedback"></span>
@@ -129,13 +138,6 @@
 				<div class="input-group ">
 					<div class="input-group-addon">文章作者</div>
 					<input id="author" name="author" type="text" class="form-control" value="<?php echo ($_SESSION['u']['uname']); ?>" />
-					<span class="glyphicon form-control-feedback"></span>
-				</div>
-			</div>
-			<div class="form-group">
-				<div class="input-group ">
-					<div class="input-group-addon">原文地址</div>
-					<input class="form-control" type="text" name="url" id="url" placeholder="转载的地址,原创请填写#">
 					<span class="glyphicon form-control-feedback"></span>
 				</div>
 			</div>
