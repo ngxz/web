@@ -46,8 +46,8 @@
 	        //获取ip时间等
 	        $Ips = new \Org\Net\IpLocation('UTFWry.dat'); // 实例化类 参数表示IP地址库文件
 	        $local = $Ips->getlocation(); // 获取某个IP地址所在的位置
-// 	        $local = mb_convert_encoding($local, "utf-8", "gb2312"); // 编码转换，否则乱码
- 	        $local = $local['country'];
+// 	        $local = mb_convert_encoding($local, "utf-8", "GBK"); // 编码转换，否则乱码
+ 	        $local = $local['area'];
 	        $time = date("Y-m-d H:i:s");
 	        $_SESSION['time']=$time;
 	        $_SESSION['local']=$local;

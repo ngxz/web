@@ -50,8 +50,8 @@
 	          <ul class="nav navbar-nav navbar-right">
 	          	<li><a onclick="javascript:openifram('admin.php/Login/adminMessage')">当前帐号：<?php echo (session('uid')); ?></a></li>
 	            <li><a href="#">登录时间:<?php echo (session('time')); ?></a></li>
-	            <li><a href="#">登录地区：<?php echo (session('local')); ?></a></li>
 	            <li><a href="/web/">网站首页</a></li>
+	            <li><a href="/web/admin.php/Login/home">后台首页</a></li>
 	            <li><a href="/web/admin.php/Login/logout">安全退出</a></li>
 	          </ul>
 	        </div>
