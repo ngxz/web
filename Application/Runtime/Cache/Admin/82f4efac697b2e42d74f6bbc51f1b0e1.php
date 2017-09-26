@@ -15,7 +15,7 @@
 			  width:100%!important;
 			  height:200%!important;
 			}
-			.ke-edit,.ke-edit-iframe{height: 200%!important;}
+			/*.ke-edit,.ke-edit-iframe{height: 200%!important;}*/
 		</style>
 		<script type="text/javascript" src="/web/Public/js/jquery-1.9.1.min.js"></script>
 		<script type="text/javascript" src="/web/Public/bs/js/bootstrap.min.js"></script>
@@ -43,7 +43,7 @@
 		            afterBlur:function(){  
 		                this.sync();  
 		            }  
-		        });  
+		        });
 		    });
 		    //点击上传
 			function btnclick(){

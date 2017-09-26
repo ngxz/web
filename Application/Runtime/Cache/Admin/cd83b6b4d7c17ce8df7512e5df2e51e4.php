@@ -104,7 +104,7 @@
 						<td><?php echo ($row["summary"]); ?></td>
 						<td><?php echo (msubstr($row["content"],0,60,'utf-8',true)); ?></td>
 						<td><?php echo ($row["category"]); ?></td>
-						<td><?php echo ($row["time"]); ?></td>
+						<td><?php echo (date("Y-m-d",$row["time"])); ?></td>
 					</tr><?php endforeach; endif; else: echo "" ;endif; ?>
 			</table>
 		</div>

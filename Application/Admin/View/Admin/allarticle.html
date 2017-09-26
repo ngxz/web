@@ -106,7 +106,7 @@
 						<td>{$row.summary}</td>
 						<td>{$row.content|msubstr=0,60,'utf-8',true}</td>
 						<td>{$row.category}</td>
-						<td>{$row.time}</td>
+						<td>{$row.time|date="Y/m/d",###}</td>
 					</tr>
 				</volist>
 			</table>
