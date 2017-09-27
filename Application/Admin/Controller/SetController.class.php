@@ -53,14 +53,50 @@ class SetController extends Controller
         $this->assign('links',$links);
         $this->display();
     }
+    /**
+     * 编辑链接
+     * @param unknown $id
+     * @param string $url
+     * @param string $name
+     * @param string $author
+     * @param string $phone
+     */
     public function editLink($id,$url='',$name='',$author='',$phone=''){
         $data=array(
             'name'=>$name,
-            'url'=>'http://'.$url,
+            'url'=>$url,
             'author'=>$author,
             'phone'=>$phone
         );
         $re = M("tb_link")->field("name,url,author,phone")->where("id = $id")->save($data);
+        $re?$sta['status'] = 1 : $sta['status'] = 0;
+        $this->ajaxReturn($sta);
+    }
+    /**
+     * 增加链接
+     * @param unknown $id
+     * @param string $url
+     * @param string $name
+     * @param string $author
+     * @param string $phone
+     */
+    public function addLink($id,$url='',$name='',$author='',$phone=''){
+        $data=array(
+            'id'=>$id,
+            'name'=>$name,
+            'url'=>$url,
+            'author'=>$author,
+            'phone'=>$phone
+        );
+        $re = M("tb_link")->field("id,name,url,author,phone")->add($data);
+        $re?$sta['status'] = 1 : $sta['status'] = 0;
+        $this->ajaxReturn($sta);
+    }
+    /**
+     * 删除链接
+     */
+    public function delLink($id){
+        $re = M("tb_link")->where("id = '$id'")->delete();
         $re?$sta['status'] = 1 : $sta['status'] = 0;
         $this->ajaxReturn($sta);
     }
