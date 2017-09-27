@@ -2,9 +2,9 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title>袁茹兵个人网站 - 个人网站建设和web前端及php学习的文章分享</title>
-		<meta name="keywords" content="袁茹兵，个人博客，网页开发，web前端，PHP学习" />
-<meta name="description" content="主要分享个人网站建设，网页开发，web前端，php后台，个人博客建设等文章" />
+		<title><?php echo ($config["name"]); ?> - 个人网站建设和web前端及php学习的文章分享</title>
+		<meta name="keywords" content="<?php echo ($config["keyword"]); ?>" />
+<meta name="description" content="<?php echo ($config["description"]); ?>" />
 		<link rel="icon" href="/web/Public/img/favicon.ico" type="image/x-icon">
 		<link rel="stylesheet" href="/web/Public/css/global.css" />
 		<link rel="stylesheet" href="/web/Public/css/main.css" />
@@ -75,13 +75,11 @@
 		<div class="footer">
 			<!--友情链接-->
 			<ul class="link">
-				<li><a href="#">友链</a></li>
-				<li><a href="#">友链</a></li>
-				<li><a href="#">友链</a></li>
+				<?php if(is_array($links)): $i = 0; $__LIST__ = $links;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$link): $mod = ($i % 2 );++$i;?><li><a href="<?php echo ($link["url"]); ?>"><?php echo ($link["name"]); ?></a></li><?php endforeach; endif; else: echo "" ;endif; ?>
 			</ul>
 			<!--备案信息-->
-			<p class="beian">本站由袁茹兵制作</p>
-			<p class="beian"><?php echo ($config["beian"]); ?></p>
+			<p class="beian">备案号：<?php echo ($config["beian"]); ?></p>
+			<p class="beian">站长邮箱：<?php echo ($config["mail"]); ?></p>
 		</div>
 	</div>
 </div>

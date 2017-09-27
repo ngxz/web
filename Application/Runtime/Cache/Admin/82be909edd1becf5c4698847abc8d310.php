@@ -10,7 +10,7 @@
 	</head>
 	<body>
 		<div class="container">
-			<form method="post" action="/web/index.php/Admin/Login/adminMessageEdit" class="text-center" enctype="multipart/form-data">
+			<form method="post" action="/web/admin.php/Login/adminMessageEdit" class="text-center" enctype="multipart/form-data">
         	<div class="form-group">
 				<div class="input-group ">
 					<div class="input-group-addon">用户帐号</div>
