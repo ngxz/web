@@ -10,6 +10,8 @@
 		<style type="text/css">
 			#iframe{width:100%;height:auto;min-height:90%; border:none;margin:0;padding:0;}
 			#navbar ul li{background-color: #222222!important;}
+			
+			.menuTitle{font-weight: bold;font-size: 15px;}
 		</style>
 		<script type="text/javascript" src="/web/Public/js/jquery-1.9.1.min.js"></script>
 		<script type="text/javascript" src="/web/Public/bs/js/bootstrap.min.js"></script>
@@ -62,7 +64,7 @@
 		        <div class="col-sm-3 col-md-2 sidebar" style="padding-left: 30px;">
 		        	<?php if(is_array($rows)): $i = 0; $__LIST__ = $rows;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$row1): $mod = ($i % 2 );++$i;?><ul>
 	        			<?php if($row1["level"] == 1): ?><li>
-	        					<span><?php echo ($row1["name"]); ?></span>
+	        					<span class="menuTitle"><?php echo ($row1["name"]); ?></span>
 	        					<ul class="nav nav-sidebar">
 	        						<?php $mid1 = $row1["id"]; ?>
 	        						<?php if(is_array($rows)): $i = 0; $__LIST__ = $rows;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$row2): $mod = ($i % 2 );++$i; if($row2["level"] == 2 AND $row2["parentid"] == $mid1): ?><li>

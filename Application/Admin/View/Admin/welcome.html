@@ -10,6 +10,8 @@
 		<style type="text/css">
 			#iframe{width:100%;height:auto;min-height:90%; border:none;margin:0;padding:0;}
 			#navbar ul li{background-color: #222222!important;}
+			
+			.menuTitle{font-weight: bold;font-size: 15px;}
 		</style>
 		<script type="text/javascript" src="__PUBLIC__/js/jquery-1.9.1.min.js"></script>
 		<script type="text/javascript" src="__PUBLIC__/bs/js/bootstrap.min.js"></script>
@@ -64,7 +66,7 @@
 		        		<ul>
 	        			<if condition="$row1.level eq 1">
 	        				<li>
-	        					<span>{$row1.name}</span>
+	        					<span class="menuTitle">{$row1.name}</span>
 	        					<ul class="nav nav-sidebar">
 	        						<assign name="mid1" value="$row1.id"/>
 	        						<volist name="rows" id="row2">

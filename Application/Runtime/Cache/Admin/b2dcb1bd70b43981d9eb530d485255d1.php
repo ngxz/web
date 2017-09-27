@@ -9,8 +9,8 @@
 	</head>
 	<body>
 		<div class="tongji">
-			<table class="table table-striped">
-				<tr><th>系统信息</th></tr>
+			<table class="table table-striped table-bordered">
+				<tr><th>系统信息</th><th>系统信息</th></tr>
 				<tr>
 					<td>操作系统：<?php echo ($info["操作系统"]); ?></td>
 					<td>运行环境：<?php echo ($info["运行环境"]); ?></td>
