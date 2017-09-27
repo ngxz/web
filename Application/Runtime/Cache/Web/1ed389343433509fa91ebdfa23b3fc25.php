@@ -3,8 +3,8 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>留言板 - 袁茹兵个人站点</title>
-		<meta name="keywords" content="袁茹兵，个人博客,网页开发,web前端，PHP学习" />
-<meta name="description" content="主要分享个人网站搭建，web前端，php后台，博客建设等文章" />
+		<meta name="keywords" content="<?php echo ($config["keyword"]); ?>" />
+<meta name="description" content="<?php echo ($config["description"]); ?>" />
 		<link rel="icon" href="/web/Public/img/favicon.ico" type="image/x-icon">
 		<link rel="stylesheet" href="/web/Public/css/global.css" />
 		<link rel="stylesheet" href="/web/Public/css/feedback.css" />
@@ -94,7 +94,7 @@
 			</ul>
 			<!--备案信息-->
 			<p class="beian">本站由袁茹兵制作</p>
-			<p class="beian">渝ICP备17011601号</p>
+			<p class="beian"><?php echo ($config["beian"]); ?></p>
 		</div>
 	</div>
 </div>

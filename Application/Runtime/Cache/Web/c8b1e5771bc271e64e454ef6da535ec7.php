@@ -81,7 +81,7 @@
 			</ul>
 			<!--备案信息-->
 			<p class="beian">本站由袁茹兵制作</p>
-			<p class="beian">渝ICP备17011601号</p>
+			<p class="beian"><?php echo ($config["beian"]); ?></p>
 		</div>
 	</div>
 </div>

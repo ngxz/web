@@ -49,4 +49,5 @@ function getpage($count, $pagesize = 8) {
     $p->lastSuffix = false;//最后一页不显示为总页数
     return $p;
 }
+
 ?>

@@ -23,6 +23,10 @@ class NewController extends Controller{
         //查询栏目列表
         $categorys = M("tb_category")->where("channel = 1")->select();
         $this->assign("categorys",$categorys);
+        
+        //调用加载配置方法
+        R("Admin/Set/webLoad");
+        
         //
         $this->assign("data",$data);
         $this->display("news");
@@ -49,6 +53,9 @@ class NewController extends Controller{
 	     //查询栏目列表
 	     $categorys = M("tb_category")->where("channel = 1")->select();
 	     $this->assign("categorys",$categorys);
+	     
+	     //调用加载配置方法
+	     R("Admin/Set/webLoad");
 	     
 	     $this->assign("data",$data);
 	     $this->display("news");

@@ -19,6 +19,10 @@ class FeedController extends Controller{
         //单独查询频道名字为面包屑
         $channel = M("tb_channel")->where("id = 4")->find();
         $this->assign("channel",$channel);
+        
+        //调用加载配置方法
+        R("Admin/Set/webLoad");
+        
         //输出模版
         $this->assign("data",$data);
         $this->display("feed");

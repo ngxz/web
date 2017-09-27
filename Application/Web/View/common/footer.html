@@ -3,13 +3,13 @@
 		<div class="footer">
 			<!--友情链接-->
 			<ul class="link">
-				<li><a href="#">友链</a></li>
-				<li><a href="#">友链</a></li>
-				<li><a href="#">友链</a></li>
+				<volist name="links" id="link">
+					<li><a href="{$link.url}">{$link.name}</a></li>
+				</volist>
 			</ul>
 			<!--备案信息-->
-			<p class="beian">本站由袁茹兵制作</p>
-			<p class="beian">渝ICP备17011601号</p>
+			<p class="beian">备案号：{$config.beian}</p>
+			<p class="beian">站长邮箱：{$config.mail}</p>
 		</div>
 	</div>
 </div>

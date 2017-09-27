@@ -19,6 +19,10 @@ class DetailController extends Controller{
         //查询下一页的标题和id
         $next = M("tb_article")->where("id > '$id' AND channelid = '$channelid'")->order("id desc")->limit('1')->find();
         $this->assign("next",$next);
+        
+        //调用加载配置方法
+        R("Admin/Set/webLoad");
+        
         //本页内容输出
         $this->assign("row",$row);
         $this->display("article");

@@ -12,6 +12,8 @@ class IndexController extends Controller {
         //首页显示图文
         $photos = M("tb_article")->where("channelid = 5")->order("time desc")->limit("4")->select();
         $this->assign("photos",$photos);
+        //调用加载配置方法
+        R("Admin/Set/webLoad");
     	//显示主页
     	$this->display();
     }
