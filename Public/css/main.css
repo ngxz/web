@@ -8,8 +8,8 @@
 
 /*banner*/
 .ban{min-width:1050px;height: 550px;text-align: center;background: url(../img/indexBanner_bg.jpg) no-repeat center center;color: #fff;}
-.ban h1{font-size: 26px;padding-top: 10%;}
-.ban p{margin: 1% auto;font-size: 22px;}
+.ban h1{font-size: 26px;padding-top: 10%;text-align: center;}
+.ban p{margin: 1% auto;font-size: 22px;text-align: center;}
 /*.ban span{font-size: 14px;display: block;}*/
 .ban a{color:#666;}
 

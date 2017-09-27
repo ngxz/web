@@ -21,6 +21,8 @@ class IndexController extends Controller {
      * 关于我
      */
     public function about(){
+    	//调用加载配置方法
+        R("Admin/Set/webLoad");
         $this->display("about");
     }
 }

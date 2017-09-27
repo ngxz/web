@@ -37,20 +37,22 @@
 					<?php else: ?>
 						<?php echo ($category["name"]); endif; ?>
 				</div>
-				<!--左边内容-->
-				<ul class="listUl">
-					<?php if(is_array($data["news"])): $i = 0; $__LIST__ = $data["news"];if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$news): $mod = ($i % 2 );++$i;?><li class="listLi">
-							<div class="listTitle"><a href="/web/detail/article/channelid/1/id/<?php echo ($news["id"]); ?>"><?php echo ($news["title"]); ?></a></div>
-							<div class="listTime">发布时间：<?php echo ($news["time"]); ?></div>
-							<div class="listContent">摘要：<?php echo ($news["summary"]); ?></div>
-						</li><?php endforeach; endif; else: echo "" ;endif; ?>
-				</ul>
-				<!--右边分类-->
-				<ul class="categoryUl">
-					<h1>分类</h1>
-					<li><a href="/web/New/news.html">全部新闻</a></li>
-					<?php if(is_array($categorys)): $i = 0; $__LIST__ = $categorys;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$cate): $mod = ($i % 2 );++$i;?><li><a href="/web/New/newsbycategory/category/<?php echo ($cate["id"]); ?>"><?php echo ($cate["name"]); ?></a></li><?php endforeach; endif; else: echo "" ;endif; ?>
-				</ul>
+				<div class="news">
+					<!--左边内容-->
+					<ul class="listUl">
+						<?php if(is_array($data["news"])): $i = 0; $__LIST__ = $data["news"];if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$news): $mod = ($i % 2 );++$i;?><li class="listLi">
+								<div class="listTitle"><a href="/web/detail/article/channelid/1/id/<?php echo ($news["id"]); ?>"><?php echo ($news["title"]); ?></a></div>
+								<div class="listTime">发布时间：<?php echo ($news["time"]); ?></div>
+								<div class="listContent">摘要：<?php echo ($news["summary"]); ?></div>
+							</li><?php endforeach; endif; else: echo "" ;endif; ?>
+					</ul>
+					<!--右边分类-->
+					<ul class="categoryUl">
+						<h1>分类</h1>
+						<li><a href="/web/New/news.html">全部新闻</a></li>
+						<?php if(is_array($categorys)): $i = 0; $__LIST__ = $categorys;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$cate): $mod = ($i % 2 );++$i;?><li><a href="/web/New/newsbycategory/category/<?php echo ($cate["id"]); ?>"><?php echo ($cate["name"]); ?></a></li><?php endforeach; endif; else: echo "" ;endif; ?>
+					</ul>
+				</div>
 			</div>
 		</div>
 		<!--分页-->

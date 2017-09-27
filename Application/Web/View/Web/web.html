@@ -38,23 +38,25 @@
 						{$category.name}
 					</empty>
 				</div>
-				<ul class="listUl">
-					<volist name="data.web" id="web">
-						<li class="listLi">
-							<div class="listTitle"><a href="__ROOT__/detail/article/channelid/2/id/{$web.id}">{$web.title}</a></div>
-							<div class="listTime">发布时间：{$web.time}</div>
-							<div class="listContent">摘要：{$web.summary}</div>
-						</li>
-					</volist>
-				</ul>
-				<!--右边分类-->
-				<ul class="categoryUl">
-					<h1>分类</h1>
-					<li><a href="__ROOT__/Web/web.html">全部文章</a></li>
-					<volist name="categorys" id="cate">
-						<li><a href="__ROOT__/Web/webbycategory/category/{$cate.id}">{$cate.name}</a></li>
-					</volist>
-				</ul>
+				<div class="web">
+					<ul class="listUl">
+						<volist name="data.web" id="web">
+							<li class="listLi">
+								<div class="listTitle"><a href="__ROOT__/detail/article/channelid/2/id/{$web.id}">{$web.title}</a></div>
+								<div class="listTime">发布时间：{$web.time}</div>
+								<div class="listContent">摘要：{$web.summary}</div>
+							</li>
+						</volist>
+					</ul>
+					<!--右边分类-->
+					<ul class="categoryUl">
+						<h1>分类</h1>
+						<li><a href="__ROOT__/Web/web.html">全部文章</a></li>
+						<volist name="categorys" id="cate">
+							<li><a href="__ROOT__/Web/webbycategory/category/{$cate.id}">{$cate.name}</a></li>
+						</volist>
+					</ul>
+				</div>
 			</div>
 		</div>
 		<!--分页-->

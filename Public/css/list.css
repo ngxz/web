@@ -6,9 +6,12 @@
 .bread{margin-top: 50px;}
 
 /*内容部分*/
-.newsBox{overflow: hidden;}
-.webBox{overflow: hidden;}
-.phpBox{overflow: hidden;}
+/*.newsBox{overflow: hidden;}*/
+.news{overflow: hidden;}
+/*.webBox{overflow: hidden;}
+.phpBox{overflow: hidden;}*/
+.web{overflow: hidden;}
+.php{overflow: hidden;}
 /*左边内容*/
 .listUl{overflow: hidden;float: left;}
 .listLi{margin: 15px 0;}
