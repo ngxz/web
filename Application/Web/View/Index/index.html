@@ -47,7 +47,7 @@
 					<ul>
 						<volist name="news" id="new">
 							<li>
-								<div class="storyTitle"><a href="__ROOT__/detail/article/channelid/1/id/{$new.id}">{$new.title}</a></div>
+								<div class="storyTitle"><a href="__ROOT__/detail/1/{$new.id}.html">{$new.title}</a></div>
 								<div class="storyDate">发布时间：{$new.time}</div>
 								<div class="storyContent">摘要 : {$new.summary}</div>
 							</li>
@@ -66,7 +66,7 @@
 							<li>
 								<img src="__PUBLIC__{$photo.imgurl}" />
 								<p>{$photo.title}</p>
-								<span><a href="__ROOT__/detail/article/channelid/5/id/{$photo.id}">{$photo.content}</a></span>
+								<span><a href="__ROOT__/detail/5/{$photo.id}.html">{$photo.content}</a></span>
 							</li>
 						</volist>
 					</ul>

@@ -5,6 +5,7 @@
 		<title>PHP文章 - <?php echo ($config["name"]); ?></title>
 		<meta name="keywords" content="<?php echo ($config["keyword"]); ?>" />
 <meta name="description" content="<?php echo ($config["description"]); ?>" />
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
 		<link rel="icon" href="/web/Public/img/favicon.ico" type="image/x-icon">
 		<link rel="stylesheet" href="/web/Public/css/global.css" />
 		<link rel="stylesheet" href="/web/Public/css/list.css" />
@@ -40,7 +41,7 @@
 				<div class="php">
 					<ul class="listUl">
 						<?php if(is_array($data["php"])): $i = 0; $__LIST__ = $data["php"];if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$php): $mod = ($i % 2 );++$i;?><li class="listLi">
-								<div class="listTitle"><a href="/web/detail/article/channelid/3/id/<?php echo ($php["id"]); ?>"><?php echo ($php["title"]); ?></a></div>
+								<div class="listTitle"><a href="/web/detail/3/<?php echo ($php["id"]); ?>.html"><?php echo ($php["title"]); ?></a></div>
 								<div class="listTime">发布时间：<?php echo ($php["time"]); ?></div>
 								<div class="listContent">摘要：<?php echo ($php["summary"]); ?></div>
 							</li><?php endforeach; endif; else: echo "" ;endif; ?>
@@ -49,7 +50,7 @@
 					<ul class="categoryUl">
 						<h1>分类</h1>
 						<li><a href="/web/Php/php.html">全部文章</a></li>
-						<?php if(is_array($categorys)): $i = 0; $__LIST__ = $categorys;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$cate): $mod = ($i % 2 );++$i;?><li><a href="/web/Php/phpbycategory/category/<?php echo ($cate["id"]); ?>"><?php echo ($cate["name"]); ?></a></li><?php endforeach; endif; else: echo "" ;endif; ?>
+						<?php if(is_array($categorys)): $i = 0; $__LIST__ = $categorys;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$cate): $mod = ($i % 2 );++$i;?><li><a href="/web/Php/<?php echo ($cate["id"]); ?>.html"><?php echo ($cate["name"]); ?></a></li><?php endforeach; endif; else: echo "" ;endif; ?>
 					</ul>
 				</div>
 			</div>

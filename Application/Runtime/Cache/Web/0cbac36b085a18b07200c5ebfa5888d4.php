@@ -5,6 +5,7 @@
 		<title><?php echo ($row["title"]); ?> - <?php echo ($config["name"]); ?></title>
 		<meta name="keywords" content="<?php echo ($config["keyword"]); ?>" />
 <meta name="description" content="<?php echo ($config["description"]); ?>" />
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
 		<link rel="icon" href="/web/Public/img/favicon.ico" type="image/x-icon">
 		<link rel="stylesheet" href="/web/Public/css/global.css" />
 		<link rel="stylesheet" href="/web/Public/css/article.css" />
@@ -72,10 +73,10 @@
 				<div class="preNext container">
 					<?php if(empty($pre)): ?><p><strong>上一篇：</strong>已经是第一篇</p>
 		         	<?php else: ?>
-		           		<p><strong>上一篇：</strong><a href="/web/detail/article/channelid/<?php echo ($channel["id"]); ?>/id/<?php echo ($pre["id"]); ?>" ><?php echo ($pre["title"]); ?></a></p><?php endif; ?>
+		           		<p><strong>上一篇：</strong><a href="/web/detail/<?php echo ($channel["id"]); ?>/<?php echo ($pre["id"]); ?>.html" ><?php echo ($pre["title"]); ?></a></p><?php endif; ?>
 					<?php if(empty($next)): ?><p><strong>下一篇：</strong>已经是最后一篇</p>
 		         	<?php else: ?>
-		           		<p><strong>下一篇：</strong><a href="/web/detail/article/channelid/<?php echo ($channel["id"]); ?>/id/<?php echo ($next["id"]); ?>" ><?php echo ($next["title"]); ?></a></p><?php endif; ?>
+		           		<p><strong>下一篇：</strong><a href="/web/detail/<?php echo ($channel["id"]); ?>/<?php echo ($next["id"]); ?>.html" ><?php echo ($next["title"]); ?></a></p><?php endif; ?>
 				</div>
 			</div>
 		</div>

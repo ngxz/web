@@ -48,7 +48,7 @@
 				<div class="story">
 					<ul>
 						<?php if(is_array($news)): $i = 0; $__LIST__ = $news;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$new): $mod = ($i % 2 );++$i;?><li>
-								<div class="storyTitle"><a href="/web/detail/article/channelid/1/id/<?php echo ($new["id"]); ?>"><?php echo ($new["title"]); ?></a></div>
+								<div class="storyTitle"><a href="/web/detail/1/<?php echo ($new["id"]); ?>.html"><?php echo ($new["title"]); ?></a></div>
 								<div class="storyDate">发布时间：<?php echo ($new["time"]); ?></div>
 								<div class="storyContent">摘要 : <?php echo ($new["summary"]); ?></div>
 							</li><?php endforeach; endif; else: echo "" ;endif; ?>
@@ -65,7 +65,7 @@
 						<?php if(is_array($photos)): $i = 0; $__LIST__ = $photos;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$photo): $mod = ($i % 2 );++$i;?><li>
 								<img src="/web/Public<?php echo ($photo["imgurl"]); ?>" />
 								<p><?php echo ($photo["title"]); ?></p>
-								<span><a href="/web/detail/article/channelid/5/id/<?php echo ($photo["id"]); ?>"><?php echo ($photo["content"]); ?></a></span>
+								<span><a href="/web/detail/5/<?php echo ($photo["id"]); ?>.html"><?php echo ($photo["content"]); ?></a></span>
 							</li><?php endforeach; endif; else: echo "" ;endif; ?>
 					</ul>
 				</div>

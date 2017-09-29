@@ -74,12 +74,12 @@
 					<empty name="pre">
 		   				<p><strong>上一篇：</strong>已经是第一篇</p>
 		         	<else />
-		           		<p><strong>上一篇：</strong><a href="__ROOT__/detail/article/channelid/{$channel.id}/id/{$pre.id}" >{$pre.title}</a></p>
+		           		<p><strong>上一篇：</strong><a href="__ROOT__/detail/{$channel.id}/{$pre.id}.html" >{$pre.title}</a></p>
 		          	</empty>
 					<empty name="next">
 		   				<p><strong>下一篇：</strong>已经是最后一篇</p>
 		         	<else />
-		           		<p><strong>下一篇：</strong><a href="__ROOT__/detail/article/channelid/{$channel.id}/id/{$next.id}" >{$next.title}</a></p>
+		           		<p><strong>下一篇：</strong><a href="__ROOT__/detail/{$channel.id}/{$next.id}.html" >{$next.title}</a></p>
 		          	</empty>
 				</div>
 			</div>

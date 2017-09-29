@@ -43,7 +43,7 @@
 					<ul class="listUl">
 						<volist name="data.news" id="news">
 							<li class="listLi">
-								<div class="listTitle"><a href="__ROOT__/detail/article/channelid/1/id/{$news.id}">{$news.title}</a></div>
+								<div class="listTitle"><a href="__ROOT__/detail/1/{$news.id}.html">{$news.title}</a></div>
 								<div class="listTime">发布时间：{$news.time}</div>
 								<div class="listContent">摘要：{$news.summary}</div>
 							</li>
@@ -54,7 +54,7 @@
 						<h1>分类</h1>
 						<li><a href="__ROOT__/New/news.html">全部新闻</a></li>
 						<volist name="categorys" id="cate">
-							<li><a href="__ROOT__/New/newsbycategory/category/{$cate.id}">{$cate.name}</a></li>
+							<li><a href="__ROOT__/New/{$cate.id}.html">{$cate.name}</a></li>
 						</volist>
 					</ul>
 				</div>
