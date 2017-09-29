@@ -2,9 +2,9 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title>PHP文章 - 袁茹兵个人站点</title>
-		<meta name="keywords" content="袁茹兵，个人博客,网页开发,web前端，PHP学习" />
-<meta name="description" content="主要分享个人网站搭建，web前端，php后台，博客建设等文章" />
+		<title>PHP文章 - <?php echo ($config["name"]); ?></title>
+		<meta name="keywords" content="<?php echo ($config["keyword"]); ?>" />
+<meta name="description" content="<?php echo ($config["description"]); ?>" />
 		<link rel="icon" href="/web/Public/img/favicon.ico" type="image/x-icon">
 		<link rel="stylesheet" href="/web/Public/css/global.css" />
 		<link rel="stylesheet" href="/web/Public/css/list.css" />
@@ -37,19 +37,21 @@
 					<?php else: ?>
 						<?php echo ($category["name"]); endif; ?>
 				</div>
-				<ul class="listUl">
-					<?php if(is_array($data["php"])): $i = 0; $__LIST__ = $data["php"];if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$php): $mod = ($i % 2 );++$i;?><li class="listLi">
-							<div class="listTitle"><a href="/web/detail/article/channelid/3/id/<?php echo ($php["id"]); ?>"><?php echo ($php["title"]); ?></a></div>
-							<div class="listTime">发布时间：<?php echo ($php["time"]); ?></div>
-							<div class="listContent">摘要：<?php echo ($php["summary"]); ?></div>
-						</li><?php endforeach; endif; else: echo "" ;endif; ?>
-				</ul>
-				<!--右边分类-->
-				<ul class="categoryUl">
-					<h1>分类</h1>
-					<li><a href="/web/Php/php.html">全部文章</a></li>
-					<?php if(is_array($categorys)): $i = 0; $__LIST__ = $categorys;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$cate): $mod = ($i % 2 );++$i;?><li><a href="/web/Php/phpbycategory/category/<?php echo ($cate["id"]); ?>"><?php echo ($cate["name"]); ?></a></li><?php endforeach; endif; else: echo "" ;endif; ?>
-				</ul>
+				<div class="php">
+					<ul class="listUl">
+						<?php if(is_array($data["php"])): $i = 0; $__LIST__ = $data["php"];if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$php): $mod = ($i % 2 );++$i;?><li class="listLi">
+								<div class="listTitle"><a href="/web/detail/article/channelid/3/id/<?php echo ($php["id"]); ?>"><?php echo ($php["title"]); ?></a></div>
+								<div class="listTime">发布时间：<?php echo ($php["time"]); ?></div>
+								<div class="listContent">摘要：<?php echo ($php["summary"]); ?></div>
+							</li><?php endforeach; endif; else: echo "" ;endif; ?>
+					</ul>
+					<!--右边分类-->
+					<ul class="categoryUl">
+						<h1>分类</h1>
+						<li><a href="/web/Php/php.html">全部文章</a></li>
+						<?php if(is_array($categorys)): $i = 0; $__LIST__ = $categorys;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$cate): $mod = ($i % 2 );++$i;?><li><a href="/web/Php/phpbycategory/category/<?php echo ($cate["id"]); ?>"><?php echo ($cate["name"]); ?></a></li><?php endforeach; endif; else: echo "" ;endif; ?>
+					</ul>
+				</div>
 			</div>
 		</div>
 		<!--分页-->
@@ -62,13 +64,11 @@
 		<div class="footer">
 			<!--友情链接-->
 			<ul class="link">
-				<li><a href="#">友链</a></li>
-				<li><a href="#">友链</a></li>
-				<li><a href="#">友链</a></li>
+				<?php if(is_array($links)): $i = 0; $__LIST__ = $links;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$link): $mod = ($i % 2 );++$i;?><li><a href="<?php echo ($link["url"]); ?>"><?php echo ($link["name"]); ?></a></li><?php endforeach; endif; else: echo "" ;endif; ?>
 			</ul>
 			<!--备案信息-->
-			<p class="beian">本站由袁茹兵制作</p>
-			<p class="beian">渝ICP备17011601号</p>
+			<p class="beian">备案号：<?php echo ($config["beian"]); ?></p>
+			<p class="beian">站长邮箱：<?php echo ($config["mail"]); ?></p>
 		</div>
 	</div>
 </div>

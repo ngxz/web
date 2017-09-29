@@ -5,6 +5,7 @@
 		<title>站内新闻 - <?php echo ($config["name"]); ?></title>
 		<meta name="keywords" content="<?php echo ($config["keyword"]); ?>" />
 <meta name="description" content="<?php echo ($config["description"]); ?>" />
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
 		<link rel="icon" href="/web/Public/img/favicon.ico" type="image/x-icon">
 		<link rel="stylesheet" href="/web/Public/css/global.css" />
 		<link rel="stylesheet" href="/web/Public/css/list.css" />

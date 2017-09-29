@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title>留言板 - 袁茹兵个人站点</title>
+		<title>留言板 - <?php echo ($config["name"]); ?></title>
 		<meta name="keywords" content="<?php echo ($config["keyword"]); ?>" />
 <meta name="description" content="<?php echo ($config["description"]); ?>" />
 		<link rel="icon" href="/web/Public/img/favicon.ico" type="image/x-icon">
@@ -88,13 +88,11 @@
 		<div class="footer">
 			<!--友情链接-->
 			<ul class="link">
-				<li><a href="#">友链</a></li>
-				<li><a href="#">友链</a></li>
-				<li><a href="#">友链</a></li>
+				<?php if(is_array($links)): $i = 0; $__LIST__ = $links;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$link): $mod = ($i % 2 );++$i;?><li><a href="<?php echo ($link["url"]); ?>"><?php echo ($link["name"]); ?></a></li><?php endforeach; endif; else: echo "" ;endif; ?>
 			</ul>
 			<!--备案信息-->
-			<p class="beian">本站由袁茹兵制作</p>
-			<p class="beian"><?php echo ($config["beian"]); ?></p>
+			<p class="beian">备案号：<?php echo ($config["beian"]); ?></p>
+			<p class="beian">站长邮箱：<?php echo ($config["mail"]); ?></p>
 		</div>
 	</div>
 </div>

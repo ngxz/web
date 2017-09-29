@@ -1,19 +1,19 @@
 /*此文件为站内新闻、web、php页面文章列表list的修饰，仅此三页引入*/
 .listTitle{font-size: 28px;}
-.listTime{font-size: 14px;color: darkgray;margin-left: 20px;}
-.listContent{margin-left: 20px;}
+.listTime{font-size: 14px;color: darkgray;margin-left: 15px;}
+.listContent{margin-left: 15px;color:#706F6F;}
 /*面包屑距离顶部*/
 .bread{margin-top: 50px;}
 
 /*内容部分*/
 /*.newsBox{overflow: hidden;}*/
-.news{overflow: hidden;}
+.news{overflow: hidden;padding-left:25px;}
 /*.webBox{overflow: hidden;}
 .phpBox{overflow: hidden;}*/
-.web{overflow: hidden;}
-.php{overflow: hidden;}
+.web{overflow: hidden;padding-left:25px;}
+.php{overflow: hidden;padding-left:25px;}
 /*左边内容*/
-.listUl{overflow: hidden;float: left;}
+.listUl{overflow: hidden;float: left;width: 600px;}
 .listLi{margin: 15px 0;}
 
 /*右边列表*/
