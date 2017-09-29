@@ -48,6 +48,7 @@
 					<ul>
 						<?php if(is_array($news)): $i = 0; $__LIST__ = $news;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$new): $mod = ($i % 2 );++$i;?><li>
 								<div class="storyTitle"><a href="/web/detail/article/channelid/1/id/<?php echo ($new["id"]); ?>"><?php echo ($new["title"]); ?></a></div>
+								<div class="storyDate">发布时间：<?php echo ($new["time"]); ?></div>
 								<div class="storyContent">摘要 : <?php echo ($new["summary"]); ?></div>
 							</li><?php endforeach; endif; else: echo "" ;endif; ?>
 					</ul>
