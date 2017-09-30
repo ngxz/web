@@ -84,7 +84,7 @@
 			</div>
 		</div>
 		<!--底部-->
-		<div class="footerBoxbg">
+		<div class="footerBoxbg" id="footer">
 	<div class="footerBox container">
 		<div class="footer">
 			<!--友情链接-->

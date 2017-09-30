@@ -13,54 +13,56 @@
 		<script type="text/javascript" src="/web/Public/js/main.js" ></script>
 	</head>
 	<body>
-		<!--导航部分-->
-		<div class="navBoxbg">
-			<div class="navBox container">
-				<div class="logo floatl"><a href="/web/">Yuanrb.com</a></div>
-				<div class="nav floatr">
-					<ul>
-						<li><a href="/web/">首页</a></li>
-						<li><a href="/web/New/news.html">站内新闻</a></li>
-						<li><a href="/web/Web/web.html">WEB前端</a></li>
-						<li class="navActive"><a href="/web/Php/php.html">PHP学习</a></li>
-						<li><a href="/web/Feed/feed.html">留言板</a></li>
-						<li><a href="/web/index/about.html">关于我</a></li>
-					</ul>
+		<div class="contents">
+			<!--导航部分-->
+			<div class="navBoxbg">
+				<div class="navBox container">
+					<div class="logo floatl"><a href="/web/">Yuanrb.com</a></div>
+					<div class="nav floatr">
+						<ul>
+							<li><a href="/web/">首页</a></li>
+							<li><a href="/web/New/news.html">站内新闻</a></li>
+							<li><a href="/web/Web/web.html">WEB前端</a></li>
+							<li class="navActive"><a href="/web/Php/php.html">PHP学习</a></li>
+							<li><a href="/web/Feed/feed.html">留言板</a></li>
+							<li><a href="/web/index/about.html">关于我</a></li>
+						</ul>
+					</div>
 				</div>
 			</div>
-		</div>
-		<!--php内容-->
-		<div class="phpBoxbg">
-			<div class="phpBox container">
-				<!--面包屑-->
-				<div class="bread">当前位置：<a href="/web/Php/php.html"><?php echo ($channel["name"]); ?></a> - 
-					<?php if(empty($category)): ?>全部PHP文章
-					<?php else: ?>
-						<?php echo ($category["name"]); endif; ?>
-				</div>
-				<div class="php">
-					<ul class="listUl">
-						<?php if(is_array($data["php"])): $i = 0; $__LIST__ = $data["php"];if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$php): $mod = ($i % 2 );++$i;?><li class="listLi">
-								<div class="listTitle"><a href="/web/detail/3/<?php echo ($php["id"]); ?>.html"><?php echo ($php["title"]); ?></a></div>
-								<div class="listTime">发布时间：<?php echo ($php["time"]); ?></div>
-								<div class="listContent">摘要：<?php echo ($php["summary"]); ?></div>
-							</li><?php endforeach; endif; else: echo "" ;endif; ?>
-					</ul>
-					<!--右边分类-->
-					<ul class="categoryUl">
-						<h1>分类</h1>
-						<li><a href="/web/Php/php.html">全部文章</a></li>
-						<?php if(is_array($categorys)): $i = 0; $__LIST__ = $categorys;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$cate): $mod = ($i % 2 );++$i;?><li><a href="/web/Php/<?php echo ($cate["id"]); ?>.html"><?php echo ($cate["name"]); ?></a></li><?php endforeach; endif; else: echo "" ;endif; ?>
-					</ul>
+			<!--php内容-->
+			<div class="phpBoxbg">
+				<div class="phpBox container">
+					<!--面包屑-->
+					<div class="bread">当前位置：<a href="/web/Php/php.html"><?php echo ($channel["name"]); ?></a> - 
+						<?php if(empty($category)): ?>全部PHP文章
+						<?php else: ?>
+							<?php echo ($category["name"]); endif; ?>
+					</div>
+					<div class="php">
+						<ul class="listUl">
+							<?php if(is_array($data["php"])): $i = 0; $__LIST__ = $data["php"];if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$php): $mod = ($i % 2 );++$i;?><li class="listLi">
+									<div class="listTitle"><a href="/web/detail/3/<?php echo ($php["id"]); ?>.html"><?php echo ($php["title"]); ?></a></div>
+									<div class="listTime">发布时间：<?php echo ($php["time"]); ?></div>
+									<div class="listContent">摘要：<?php echo ($php["summary"]); ?></div>
+								</li><?php endforeach; endif; else: echo "" ;endif; ?>
+						</ul>
+						<!--右边分类-->
+						<ul class="categoryUl">
+							<h1>分类</h1>
+							<li><a href="/web/Php/php.html">全部文章</a></li>
+							<?php if(is_array($categorys)): $i = 0; $__LIST__ = $categorys;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$cate): $mod = ($i % 2 );++$i;?><li><a href="/web/Php/<?php echo ($cate["id"]); ?>.html"><?php echo ($cate["name"]); ?></a></li><?php endforeach; endif; else: echo "" ;endif; ?>
+						</ul>
+					</div>
 				</div>
 			</div>
-		</div>
-		<!--分页-->
-		<div class="pages">
-			<?php echo ($data["show"]); ?>
+			<!--分页-->
+			<div class="pages">
+				<?php echo ($data["show"]); ?>
+			</div>
 		</div>
 		<!--底部-->
-		<div class="footerBoxbg">
+		<div class="footerBoxbg" id="footer">
 	<div class="footerBox container">
 		<div class="footer">
 			<!--友情链接-->

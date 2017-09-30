@@ -1,5 +1,6 @@
 *{margin: 0;padding: 0;}
-body{font-family: "微软雅黑";}
+body{font-family: "微软雅黑";height: 100%;}
+html{height: 100%;}
 ul,li,ol{list-style: none;}
 a{text-decoration: none;color: #111;cursor: pointer;}
 /*浮动*/
@@ -42,7 +43,14 @@ input{border: none;cursor: pointer;}
 
 
 /*底部*/
-.footerBoxbg{min-width:1050px;background-color: #111;height: 160px;}
+/*内容容器
+ * 固定页脚在底部
+ * */
+.contents{min-height: 100%;height: auto!important;}
+.photoBox,.feedFormbg,.pages,.articleBoxbg{padding-bottom: 200px;}
+
+
+.footerBoxbg{min-width:1050px;background-color: #111;height: 160px;margin-top: -160px;}
 
 .footerBox{padding-top: 3%;}
 

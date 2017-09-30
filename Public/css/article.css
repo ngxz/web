@@ -1,6 +1,8 @@
 /*本文件为文章详情的修饰*/
 /*整体*/
 .articleBox{margin-top: 50px;margin-bottom: 50px;}
+.bread a{color:#3D84B0;}
+
 /*标题*/
 .title{font-size: 30px;text-align: center;margin: 20px 0;}
 
@@ -11,6 +13,7 @@
 .share{}
 /*文章的内容*/
 .content{display: block;text-indent: 2em;margin: 20px 0;overflow: hidden;}
+.content a{color:#3D84B0;}
 
 /*内容中的图片*/
 .articleImg{float: right;}
@@ -18,3 +21,4 @@
 /*翻篇按钮*/
 .preNext{margin-top: 80px;}
 .preNext p{}
+

@@ -16,71 +16,73 @@
 		</script>
 	</head>
 	<body>
-		<!--导航部分-->
-		<div class="navBoxbg">
-			<div class="navBox container">
-				<div class="logo floatl"><a href="__ROOT__/">Yuanrb.com</a></div>
-				<div class="nav floatr">
-					<ul>
-						<li><a href="__ROOT__/">首页</a></li>
-						<li><a href="__ROOT__/New/news.html">站内新闻</a></li>
-						<li><a href="__ROOT__/Web/web.html">WEB前端</a></li>
-						<li><a href="__ROOT__/Php/php.html">PHP学习</a></li>
-						<li><a href="__ROOT__/Feed/feed.html">留言板</a></li>
-						<li><a href="__ROOT__/index/about.html">关于我</a></li>
-					</ul>
+		<div class="contents">
+			<!--导航部分-->
+			<div class="navBoxbg">
+				<div class="navBox container">
+					<div class="logo floatl"><a href="__ROOT__/">Yuanrb.com</a></div>
+					<div class="nav floatr">
+						<ul>
+							<li><a href="__ROOT__/">首页</a></li>
+							<li><a href="__ROOT__/New/news.html">站内新闻</a></li>
+							<li><a href="__ROOT__/Web/web.html">WEB前端</a></li>
+							<li><a href="__ROOT__/Php/php.html">PHP学习</a></li>
+							<li><a href="__ROOT__/Feed/feed.html">留言板</a></li>
+							<li><a href="__ROOT__/index/about.html">关于我</a></li>
+						</ul>
+					</div>
 				</div>
 			</div>
-		</div>
-		<!--本页文章内容-->
-		<div class="articleBoxbg">
-			<div class="articleBox container">
-				<!--面包屑-->
-				<div class="bread">当前位置：<a href="__ROOT__/New/news.html">{$channel.name}</a> - {$row.title}</div>
-				<div class="article">
-					<!--标题-->
-					<div class="title">{$row.title}</div>
-					<!--分享-->
-					<span class="time">发布时间：{$row.time}  &nbsp;作者：{$row.author} &nbsp;分享到：	</span>
-					<span class="share">
-						<div class="bdsharebuttonbox" data-tag="share_1">
-						    <a class="bds_weixin" data-cmd="weixin"></a>
-						    <a class="bds_qzone" data-cmd="qzone"></a>
-						    <a class="bds_tsina" data-cmd="tsina"></a>
-						    <a class="bds_sqq" data-cmd="sqq"></a>
-						    <a class="bds_more" data-cmd="more"></a>
-						</div>
-					</span>
-				</div>
-				<!--文章内容单独出来-->
-				<div class="content">
-					{$row.content}
+			<!--本页文章内容-->
+			<div class="articleBoxbg">
+				<div class="articleBox container">
+					<!--面包屑-->
+					<div class="bread">当前位置：<a href="__ROOT__/{$channel.url}.html">{$channel.name}</a> - <a href="__ROOT__/{$row.caurl}.html">{$row.name}</a> - {$row.title}</div>
+					<div class="article">
+						<!--标题-->
+						<div class="title">{$row.title}</div>
+						<!--分享-->
+						<span class="time">发布时间：{$row.time}  &nbsp;作者：{$row.author} &nbsp;分享到：	</span>
+						<span class="share">
+							<div class="bdsharebuttonbox" data-tag="share_1">
+							    <a class="bds_weixin" data-cmd="weixin"></a>
+							    <a class="bds_qzone" data-cmd="qzone"></a>
+							    <a class="bds_tsina" data-cmd="tsina"></a>
+							    <a class="bds_sqq" data-cmd="sqq"></a>
+							    <a class="bds_more" data-cmd="more"></a>
+							</div>
+						</span>
+					</div>
+					<!--文章内容单独出来-->
+					<div class="content">
+						{$row.content}
+						<!--
+						此处考虑到有图的文章公用此详情，判断图片地址为空则不显示图片，否则显示。
+						-->
+						<if condition='$row.imgurl eq ""'>	
+						<else />
+							<img class="articleImg" src="__PUBLIC__{$row.imgurl}" />
+						</if>
+					</div>
+					<!--上一条-->
 					<!--
-					此处考虑到有图的文章公用此详情，判断图片地址为空则不显示图片，否则显示。
+						注意：以下翻篇地址中，
+							此处加入查询出来的当前频道id加入翻篇的地址，防止翻篇跳转到其他频道，
+							此处频道id为面包屑处调用查询出来
+						
 					-->
-					<if condition='$row.imgurl eq ""'>	
-					<else />
-						<img class="articleImg" src="__PUBLIC__{$row.imgurl}" />
-					</if>
-				</div>
-				<!--上一条-->
-				<!--
-					注意：以下翻篇地址中，
-						此处加入查询出来的当前频道id加入翻篇的地址，防止翻篇跳转到其他频道，
-						此处频道id为面包屑处调用查询出来
-					
-				-->
-				<div class="preNext container">
-					<empty name="pre">
-		   				<p><strong>上一篇：</strong>已经是第一篇</p>
-		         	<else />
-		           		<p><strong>上一篇：</strong><a href="__ROOT__/detail/{$channel.id}/{$pre.id}.html" >{$pre.title}</a></p>
-		          	</empty>
-					<empty name="next">
-		   				<p><strong>下一篇：</strong>已经是最后一篇</p>
-		         	<else />
-		           		<p><strong>下一篇：</strong><a href="__ROOT__/detail/{$channel.id}/{$next.id}.html" >{$next.title}</a></p>
-		          	</empty>
+					<div class="preNext container">
+						<empty name="pre">
+			   				<p><strong>上一篇：</strong>已经是第一篇</p>
+			         	<else />
+			           		<p><strong>上一篇：</strong><a href="__ROOT__/detail/{$channel.id}/{$pre.id}.html" >{$pre.title}</a></p>
+			          	</empty>
+						<empty name="next">
+			   				<p><strong>下一篇：</strong>已经是最后一篇</p>
+			         	<else />
+			           		<p><strong>下一篇：</strong><a href="__ROOT__/detail/{$channel.id}/{$next.id}.html" >{$next.title}</a></p>
+			          	</empty>
+					</div>
 				</div>
 			</div>
 		</div>

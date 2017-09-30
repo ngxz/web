@@ -24,3 +24,7 @@
 /*表单按钮*/
 .formSend input{font-size:16px;padding: 8px 18px;border-radius: 8px;margin: 10px 5px;outline: none;}
 
+/*清除分页按钮下边距
+ * 为页脚居低
+ * */
+.pages{padding-bottom: 0;}

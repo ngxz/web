@@ -11,58 +11,60 @@
 		<script type="text/javascript" src="__PUBLIC__/js/main.js" ></script>
 	</head>
 	<body>
-		<!--导航部分-->
-		<div class="navBoxbg">
-			<div class="navBox container">
-				<div class="logo floatl"><a href="__ROOT__/">Yuanrb.com</a></div>
-				<div class="nav floatr">
-					<ul>
-						<li><a href="__ROOT__/">首页</a></li>
-						<li class="navActive"><a href="__ROOT__/New/news.html">站内新闻</a></li>
-						<li><a href="__ROOT__/Web/web.html">WEB前端</a></li>
-						<li><a href="__ROOT__/Php/php.html">PHP学习</a></li>
-						<li><a href="__ROOT__/Feed/feed.html">留言板</a></li>
-						<li><a href="__ROOT__/index/about.html">关于我</a></li>
-					</ul>
+		<div class="contents">
+			<!--导航部分-->
+			<div class="navBoxbg">
+				<div class="navBox container">
+					<div class="logo floatl"><a href="__ROOT__/">Yuanrb.com</a></div>
+					<div class="nav floatr">
+						<ul>
+							<li><a href="__ROOT__/">首页</a></li>
+							<li class="navActive"><a href="__ROOT__/New/news.html">站内新闻</a></li>
+							<li><a href="__ROOT__/Web/web.html">WEB前端</a></li>
+							<li><a href="__ROOT__/Php/php.html">PHP学习</a></li>
+							<li><a href="__ROOT__/Feed/feed.html">留言板</a></li>
+							<li><a href="__ROOT__/index/about.html">关于我</a></li>
+						</ul>
+					</div>
 				</div>
 			</div>
-		</div>
-		<!--news内容-->
-		<div class="newsBoxbg">
-			<div class="newsBox container">
-				<!--面包屑-->
-				<div class="bread">当前位置：<a href="__ROOT__/New/news.html">{$channel.name}</a> - 
-					<empty name="category">
-						全部新闻
-					<else />
-						{$category.name}
-					</empty>
-				</div>
-				<div class="news">
-					<!--左边内容-->
-					<ul class="listUl">
-						<volist name="data.news" id="news">
-							<li class="listLi">
-								<div class="listTitle"><a href="__ROOT__/detail/1/{$news.id}.html">{$news.title}</a></div>
-								<div class="listTime">发布时间：{$news.time}</div>
-								<div class="listContent">摘要：{$news.summary}</div>
-							</li>
-						</volist>
-					</ul>
-					<!--右边分类-->
-					<ul class="categoryUl">
-						<h1>分类</h1>
-						<li><a href="__ROOT__/New/news.html">全部新闻</a></li>
-						<volist name="categorys" id="cate">
-							<li><a href="__ROOT__/New/{$cate.id}.html">{$cate.name}</a></li>
-						</volist>
-					</ul>
+			<!--news内容-->
+			<div class="newsBoxbg">
+				<div class="newsBox container">
+					<!--面包屑-->
+					<div class="bread">当前位置：<a href="__ROOT__/New/news.html">{$channel.name}</a> - 
+						<empty name="category">
+							全部新闻
+						<else />
+							{$category.name}
+						</empty>
+					</div>
+					<div class="news">
+						<!--左边内容-->
+						<ul class="listUl">
+							<volist name="data.news" id="news">
+								<li class="listLi">
+									<div class="listTitle"><a href="__ROOT__/detail/1/{$news.id}.html">{$news.title}</a></div>
+									<div class="listTime">发布时间：{$news.time}</div>
+									<div class="listContent">摘要：{$news.summary}</div>
+								</li>
+							</volist>
+						</ul>
+						<!--右边分类-->
+						<ul class="categoryUl">
+							<h1>分类</h1>
+							<li><a href="__ROOT__/New/news.html">全部新闻</a></li>
+							<volist name="categorys" id="cate">
+								<li><a href="__ROOT__/New/{$cate.id}.html">{$cate.name}</a></li>
+							</volist>
+						</ul>
+					</div>
 				</div>
 			</div>
-		</div>
-		<!--分页-->
-		<div class="pages">
-			{$data.show}
+			<!--分页-->
+			<div class="pages">
+				{$data.show}
+			</div>
 		</div>
 		<!--底部-->
 		<include file="./Application/Web/View/common/footer.html"/>

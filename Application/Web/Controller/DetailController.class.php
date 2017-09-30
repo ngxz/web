@@ -9,10 +9,11 @@ class DetailController extends Controller{
      */
     public function article($id,$channelid){
         //查询本页内容
-        $row = M("tb_article")->where("id = '$id' AND channelid = '$channelid'")->find();
+        $row = M("tb_article")->join("tb_category ON tb_category.id = tb_article.category")->where("tb_article.id = '$id' AND channelid = '$channelid'")->find();
         //查询频道名字，面包屑用
         $channel = M("tb_channel")->where("id = '$channelid'")->find();
         $this->assign("channel",$channel);
+        
         //查询上一页的标题和id
         $pre = M("tb_article")->where("id < '$id' AND channelid = '$channelid'")->order("id desc")->limit('1')->find();
         $this->assign("pre",$pre);

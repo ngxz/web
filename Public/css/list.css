@@ -4,12 +4,10 @@
 .listContent{margin-left: 15px;color:#706F6F;}
 /*面包屑距离顶部*/
 .bread{margin-top: 50px;}
+.bread a{color:#3D84B0;}
 
 /*内容部分*/
-/*.newsBox{overflow: hidden;}*/
 .news{overflow: hidden;padding-left:25px;}
-/*.webBox{overflow: hidden;}
-.phpBox{overflow: hidden;}*/
 .web{overflow: hidden;padding-left:25px;}
 .php{overflow: hidden;padding-left:25px;}
 /*左边内容*/
@@ -20,3 +18,4 @@
 .categoryUl{width: 300px;float:right;}
 .categoryUl h1{font-size: 28px;font-weight: normal;}
 .categoryUl li{margin: 5px 0;}
+.categoryUl li a{color: #3D84B0;}

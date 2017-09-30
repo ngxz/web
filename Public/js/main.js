@@ -6,6 +6,11 @@ var _hmt = _hmt || [];
   var s = document.getElementsByTagName("script")[0]; 
   s.parentNode.insertBefore(hm, s);
 })();
+
+
+
+
+
 $(function(){
 	//首页图片区鼠标移入效果
 	$(".photo ul li").hover(function(){
@@ -14,6 +19,5 @@ $(function(){
 	},function(){
 		$(this).find('span').stop().animate({top:260},100);
 	});
-	
-	
+
 });

@@ -2,9 +2,10 @@
 <html>
 	<head>
 		<meta charset="utf-8" />
-		<title>关于我 - 袁茹兵个人站点</title>
-		<meta name="keywords" content="袁茹兵，个人博客,网页开发,web前端，PHP学习" />
-<meta name="description" content="主要分享个人网站搭建，web前端，php后台，博客建设等文章" />
+		<title>关于我 - <?php echo ($config["name"]); ?></title>
+		<meta name="keywords" content="<?php echo ($config["keyword"]); ?>" />
+<meta name="description" content="<?php echo ($config["description"]); ?>" />
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
 		<link rel="icon" href="/web/Public/img/favicon.ico" type="image/x-icon">
 		<link rel="stylesheet" href="/web/Public/css/global.css" />
 		<style type="text/css">
@@ -13,11 +14,12 @@
             table tr{height:24px;}
             table tr td span{margin-left:50px;}
             table tr td{padding-left:20px;}
-            .about{overflow: hidden;margin-top: 15px;margin-bottom: 50px;}
+            .about{overflow: hidden;margin-top: 15px;margin-bottom: 50px;padding-bottom: 200px;}
             .about li a{font-size:16px;margin:5px;}
 			.about ul li{text-align:center;margin-top:5px;}
             .about img{height:165px;}
-            .myNote p{text-indent: 2em;margin-left:20px;}
+            .myNote {width: 70%;}
+            .myNote p{text-indent: 2em;line-height: 30px;}
             /*面包屑距离顶部*/
 			.bread{margin-top: 50px;}
        	</style>
@@ -52,14 +54,12 @@
 					<ul>
 						<li><a href="/web/index/about.html#chapter1">基本资料</a></li>
 						<li><a href="/web/index/about.html#chapter2">详细信息</a></li>
-						<li><a href="/web/index/about.html#chapter3">个人经历</a></li>
-						<li><a href="/web/index/about.html#chapter4">联系方式</a></li>
-						<li><a href="#">微信二维码</a></li>
-						<li><img src=""/></li>
+						<li><a href="/web/index/about.html#chapter3">联系方式</a></li>
+						<li><a href="/web/index/about.html#chapter4">概况</a></li>
 					</ul>
 				</div>
 				<!-- 主体右边 -->
-				<div class="floatr">
+				<div class="floatr myNote">
 					<h4><a name="chapter1">基本资料</a></h4>
     				<table>
     					<tr>
@@ -75,22 +75,6 @@
     						<td>25岁</td>
     					</tr>
     					<tr>
-    						<td>生&nbsp;&nbsp;&nbsp;日：</td>
-    						<td>1992年12月</td>
-    					</tr>
-    					<tr>
-    						<td>电&nbsp;&nbsp;&nbsp;话：</td>
-    						<td>15800000000</td>
-    					</tr>
-    					<tr>
-    						<td>星&nbsp;&nbsp;&nbsp;座：</td>
-    						<td>射手座</td>
-    					</tr>
-    					<tr>
-    						<td>故&nbsp;&nbsp;&nbsp;乡：</td>
-    						<td>重庆市涪陵区</td>
-    					</tr>
-    					<tr>
     						<td>现居地：</td>
     						<td>重庆市渝中区</td>
     					</tr>
@@ -103,27 +87,15 @@
     				<table>
     					<tr>
     						<td>网&nbsp;&nbsp;&nbsp;名：</td>
-    						<td>Alone_Walk</td>
+    						<td>南广轩主</td>
     					</tr>
     					<tr>
     						<td>Q&nbsp;&nbsp;&nbsp;Q：</td>
     						<td>1433210198</td>
     					</tr>
     					<tr>
-    						<td>婚&nbsp;&nbsp;&nbsp;姻：</td>
-    						<td>单身</td>
-    					</tr>
-    					<tr>
-    						<td>学&nbsp;&nbsp;&nbsp;历：</td>
-    						<td>大专</td>
-    					</tr>
-    					<tr>
     						<td>工&nbsp;&nbsp;&nbsp;作：</td>
     						<td>计算机软件</td>
-    					</tr>
-    					<tr>
-    						<td>性&nbsp;&nbsp;&nbsp;格：</td>
-    						<td>真诚友善</td>
     					</tr>
     					<tr>
     						<td>爱&nbsp;&nbsp;&nbsp;好：</td>
@@ -134,36 +106,12 @@
     						<td>周鸿祎、雷军</td>
     					</tr>
     					<tr>
-    						<td>梦&nbsp;&nbsp;&nbsp;想：</td>
-    						<td>成为海贼王</td>
-    					</tr>
-    					<tr>
     						<td>座右铭：</td>
     						<td>有志者，事竟成，破釜沉舟，百二秦关终属楚；苦心人，天不负，卧薪尝胆，三千越甲可吞吴。</td>
     					</tr>
     				</table>
-    				<h4><a name="chapter3">个人经历</a></h4>
+    				<h4><a name="chapter3">联系方式</a></h4>
     				<table>
-    					
-    					<tr>
-    						<td>工&nbsp;&nbsp;&nbsp;作：</td>
-    						<td>重庆长安福特汽车有限公司<span>2015-2016</span></td>
-    					</tr>
-    					<tr>
-    						<td>大&nbsp;&nbsp;&nbsp;学：</td>
-    						<td>重庆工业职业技术学院<span>2012-2015</span></td>
-    					</tr>
-    					<tr>
-    						<td>高&nbsp;&nbsp;&nbsp;中：</td>
-    						<td>重庆市涪陵高级中学校<span>2009-2012</span></td>
-    					</tr>
-    				</table>
-    				<h4><a name="chapter4">联系方式</a></h4>
-    				<table>
-    					<tr>
-    						<td>电&nbsp;&nbsp;&nbsp;话：</td>
-    						<td>15800000000</td>
-    					</tr>
     					<tr>
     						<td>Q&nbsp;&nbsp;&nbsp;Q：</td>
     						<td>1433210198</td>
@@ -181,22 +129,26 @@
     						<td><a href="http://www.yuanrb.com" style="color:blue">www.yuanrb.com</a></td>
     					</tr>
     				</table>
+    				<h4><a name="chapter4">概况</a></h4>
+    				<p>
+    					南广轩主，真名袁茹兵，半路出家做程序，至今已经两年，现从事WEB前端和PHP开发。
+    					迷上网站便决心要做出自己的网站，本站内容都是自己一笔一笔写出来的，本站主旨分享我所涉及领域的文章给更多人。
+    					给用户更少的操作，更好的体验。
+    				</p>
 				</div>
 			</div>
 		</div>
 		<!--底部-->
-		<div class="footerBoxbg">
+		<div class="footerBoxbg" id="footer">
 	<div class="footerBox container">
 		<div class="footer">
 			<!--友情链接-->
 			<ul class="link">
-				<li><a href="#">友链</a></li>
-				<li><a href="#">友链</a></li>
-				<li><a href="#">友链</a></li>
+				<?php if(is_array($links)): $i = 0; $__LIST__ = $links;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$link): $mod = ($i % 2 );++$i;?><li><a href="<?php echo ($link["url"]); ?>"><?php echo ($link["name"]); ?></a></li><?php endforeach; endif; else: echo "" ;endif; ?>
 			</ul>
 			<!--备案信息-->
-			<p class="beian">本站由袁茹兵制作</p>
-			<p class="beian">渝ICP备17011601号</p>
+			<p class="beian">备案号：<?php echo ($config["beian"]); ?></p>
+			<p class="beian">站长邮箱：<?php echo ($config["mail"]); ?></p>
 		</div>
 	</div>
 </div>
