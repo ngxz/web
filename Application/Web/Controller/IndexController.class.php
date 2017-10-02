@@ -6,7 +6,7 @@ class IndexController extends Controller {
      * 首页
      */
     public function index(){
-        //首页显示故事，即站内新闻
+        //首页显示故事，即站内最新文章
         $news = M("tb_article")->where("channelid = 1")->order("time desc")->limit("5")->select();
         $this->assign("news",$news);
         //首页显示图文

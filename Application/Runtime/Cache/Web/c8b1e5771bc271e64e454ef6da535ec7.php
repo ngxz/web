@@ -61,7 +61,7 @@
 			</div>
 		</div>
 		<!--照片-->
-		<div class="photoBoxbg">
+		<!--<div class="photoBoxbg">
 			<div class="photoBox container">
 				<div class="indexChannel">照片</div>
 				<div class="photo">
@@ -74,7 +74,7 @@
 					</ul>
 				</div>
 			</div>
-		</div>
+		</div>-->
 		<!--底部-->
 		<div class="footerBoxbg" id="footer">
 	<div class="footerBox container">

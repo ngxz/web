@@ -47,7 +47,7 @@ input{border: none;cursor: pointer;}
  * 固定页脚在底部
  * */
 .contents{min-height: 100%;height: auto!important;}
-.photoBox,.feedFormbg,.pages,.articleBoxbg{padding-bottom: 200px;}
+.storyBox,.feedFormbg,.pages,.articleBoxbg{padding-bottom: 200px;}
 
 
 .footerBoxbg{min-width:1050px;background-color: #111;height: 160px;margin-top: -160px;}
