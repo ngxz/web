@@ -7,7 +7,7 @@ a{text-decoration: none;color: #111;cursor: pointer;}
 .floatl{float: left;}
 .floatr{float: right;}
 /*title*/
-h1,h2,h3,h4,h5,h6 {margin:0;padding:0;font-size:14px;}
+h1,h2,h3,h4,h5,h6 {margin:0;padding:0;font-size:14px;font-weight: normal;}
 
 /*居中*/
 .container{width: 1050px;margin: 0 auto;}
@@ -47,7 +47,7 @@ input{border: none;cursor: pointer;}
  * 固定页脚在底部
  * */
 .contents{min-height: 100%;height: auto!important;}
-.storyBox,.feedFormbg,.pages,.articleBoxbg{padding-bottom: 200px;}
+.feedFormbg,.pages,.articleBoxbg{padding-bottom: 200px;}
 
 
 .footerBoxbg{min-width:1050px;background-color: #111;height: 160px;margin-top: -160px;}

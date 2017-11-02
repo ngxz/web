@@ -3,9 +3,6 @@
 	<head>
 		<meta charset="UTF-8">
 		<title><?php echo ($row["title"]); ?> - <?php echo ($config["name"]); ?></title>
-		<meta name="keywords" content="<?php echo ($config["keyword"]); ?>" />
-<meta name="description" content="<?php echo ($config["description"]); ?>" />
-<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
 		<link rel="icon" href="/web/Public/img/favicon.ico" type="image/x-icon">
 		<link rel="stylesheet" href="/web/Public/css/global.css" />
 		<link rel="stylesheet" href="/web/Public/css/article.css" />
@@ -42,7 +39,7 @@
 					<div class="bread">当前位置：<a href="/web/<?php echo ($channel["url"]); ?>.html"><?php echo ($channel["name"]); ?></a> - <a href="/web/<?php echo ($row["caurl"]); ?>.html"><?php echo ($row["name"]); ?></a> - <?php echo ($row["title"]); ?></div>
 					<div class="article">
 						<!--标题-->
-						<div class="title"><?php echo ($row["title"]); ?></div>
+						<h1 class="title"><?php echo ($row["title"]); ?></h1>
 						<!--分享-->
 						<span class="time">发布时间：<?php echo ($row["time"]); ?>  &nbsp;作者：<?php echo ($row["author"]); ?> &nbsp;分享到：	</span>
 						<span class="share">

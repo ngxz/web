@@ -7,16 +7,30 @@
 /*.ban span{font-size: 14px;display: block;}*/
 .ban a{color:#666;}
 
+/*轮播部分*/
+.turnBox{width: 100%;height: 550px;text-align: center;overflow: hidden;}
+/*调节小圆圈位置*/
+.owl-dots{position: relative;top: -50px;}
+
+
 /*内容样式*/
 .indexChannel{font-size: 30px;}
 .storyTitle{font-size: 22px;}
-.storyTitle a:hover{color:#555;}
+.storyTitle a:hover{color:#D9534F;}
 .storyDate{font-size: 16px;color: darkgray;margin-left: 15px;}
 .storyContent{font-size: 16px;margin: 8px 0;color:#706F6F;margin-left: 15px;}
 /*故事*/
 .storyBox{margin-top: 30px;}
 .story ul li{margin: 12px 0;margin-left: 20px;}
 
+/*复制出来的文章*/
+.articleTitle{font-size: 22px;}
+.articleTitle a:hover{color:#D9534F;}
+.articleDate{font-size: 16px;color: darkgray;margin-left: 15px;}
+.articleContent{font-size: 16px;margin: 8px 0;color:#706F6F;margin-left: 15px;}
+/*文章*/
+.articleBox{margin-top: 30px;padding-bottom: 100px;}
+.article ul li{margin: 12px 0;margin-left: 20px;}
 
 /*图片区*/
 .photoBox{margin-top: 30px;}

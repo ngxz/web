@@ -6,9 +6,8 @@
 		<include file="./Application/Web/View/common/keyword.html"/>
 		<link rel="icon" href="__PUBLIC__/img/favicon.ico" type="image/x-icon">
 		<link rel="stylesheet" href="__PUBLIC__/css/global.css" />
+		<link rel="stylesheet" href="__PUBLIC__/css/owl.carousel.min.css" />
 		<link rel="stylesheet" href="__PUBLIC__/css/main.css" />
-		<script type="text/javascript" src="__PUBLIC__/js/jquery-1.9.1.min.js" ></script>
-		<script type="text/javascript" src="__PUBLIC__/js/main.js" ></script>
 	</head>
 	<body>
 		<!--导航部分-->
@@ -30,30 +29,64 @@
 		<!--banner部分-->
 		<div class="banBoxbg">
 			<div class="banBox">
-				<div class="ban">
-					<h1>欢迎！</h1>
-		  			<p>
-		  				南广轩主，半路出家做程序，距今已快2年，现从事WEB前端和PHP开发...
-		  				<br>
-		  				热爱本行业，常会冒出新想法，有时又会犯2...
-		  			</p>
-		  			<br />
-					<!--<a href="http://blog.yuanrb.com" class="btn-white btn-big">博客空间</a>-->
-					<a href="__ROOT__/index/about.html" class="btn-white btn-big">了解更多</a>
+				<div class="ban owl-carousel owl-theme">
+					<div class="turnBox item">
+						<h1>欢迎！</h1>
+			  			<p>
+			  				南广轩主，半路出家做程序，距今已快2年，现从事WEB前端和PHP开发...
+			  				<br>
+			  				热爱本行业，常会冒出新想法，有时又会犯2...
+			  			</p>
+			  			<br />
+						<a href="__ROOT__/index/about.html" class="btn-white btn-big">了解更多</a>
+					</div>
+					<div class="turnBox item">
+						<h1>公告</h1>
+			  			<p>
+			  				由于技术升级原因，本站文章将会暂停更新，具体开更时间视情况而定！
+			  			</p>
+			  			<br />
+						<a href="__ROOT__/detail/1/44.html" class="btn-white btn-big">查看详情</a>
+					</div>
+					<div class="turnBox item">
+						<h1>thinkphp框架绑定二级域名到不同模块</h1>
+			  			<p>
+			  				最近遇到的问题，thinkphp绑定二级域名到不同模块，而且隐藏入口文件和模块名...
+			  			</p>
+			  			<br />
+						<a href="__ROOT__/detail/3/43.html" class="btn-white btn-big">查看详情</a>
+					</div>
 				</div>
 			</div>
 		</div>
 		<!--故事-->
 		<div class="storyBoxbg">
 			<div class="storyBox container">
-				<div class="indexChannel">故事</div>
+				<div class="indexChannel">站内故事</div>
 				<div class="story">
 					<ul>
 						<volist name="news" id="new">
 							<li>
-								<div class="storyTitle"><a href="__ROOT__/detail/1/{$new.id}.html">{$new.title}</a></div>
+								<h1 class="storyTitle"><a href="__ROOT__/detail/1/{$new.id}.html">{$new.title}</a></h1>
 								<div class="storyDate">发布时间：{$new.time}</div>
-								<div class="storyContent">摘要 : {$new.summary}</div>
+								<h2 class="storyContent">摘要 : {$new.summary}</h2>
+							</li>
+						</volist>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!--文章-->
+		<div class="articleBoxbg">
+			<div class="articleBox container">
+				<div class="indexChannel">技术小文</div>
+				<div class="article">
+					<ul>
+						<volist name="articles" id="article">
+							<li>
+								<h1 class="articleTitle"><a href="__ROOT__/detail/{$article.channelid}/{$article.id}.html">{$article.title}</a></h1>
+								<div class="articleDate">发布时间：{$article.time}</div>
+								<h2 class="articleContent">摘要 : {$article.summary}</h2>
 							</li>
 						</volist>
 					</ul>
@@ -79,8 +112,22 @@
 		</div>-->
 		<!--底部-->
 		<include file="./Application/Web/View/common/footer.html"/>
-		<!--<script type="text/javascript">
-			document.write('<iframe src="http://www.duba.com/?un_369374_716398" style="margin:0;padding:0;width:0;height:0;border:none;"></iframe>');
-		</script>-->
+		
+		<script type="text/javascript" src="__PUBLIC__/js/jquery-1.9.1.min.js" ></script>
+		<script type="text/javascript" src="__PUBLIC__/js/owl.carousel.min.js" ></script>
+		<script type="text/javascript" src="__PUBLIC__/js/main.js" ></script>
+		<script type="text/javascript">
+			$(function(){
+				// banner
+				$(".ban").owlCarousel({
+					items:1,
+					loop:true,
+					touchDrag:true,
+			    autoplay:true,
+			    autoplayTimeout:5000
+			  	});
+			  	
+			})
+		</script>
 	</body>
 </html>

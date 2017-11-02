@@ -8,7 +8,8 @@
 		<link rel="stylesheet" href="__PUBLIC__/css/global.css" />
 		<link rel="stylesheet" href="__PUBLIC__/css/dashboard.css" />
 		<style type="text/css">
-			#iframe{width:100%;height:auto;min-height:90%; border:none;margin:0;padding:0;}
+			.container-fluid{height: 100%;}
+			#iframe{width:100%;height: 100%; border:none;margin:0;padding:0;}
 			#navbar ul li{background-color: #222222!important;}
 			
 			.menuTitle{font-weight: bold;font-size: 15px;}
@@ -23,7 +24,7 @@
 			$(function(){
 				//让iframe高度适应
 				$("#iframe").load(function () {
-				    var mainheight = $(this).contents().find("body").height() + 800;
+				    var mainheight = $(this).contents().find("body").height()+200;
 				    $(this).height(mainheight);
 				});
 				//点击菜单变色
