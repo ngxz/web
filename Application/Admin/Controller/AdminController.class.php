@@ -46,7 +46,6 @@ class AdminController extends Controller{
         $rows = M("tb_article")->where("id = '$newsId'")->find();
         $this->assign("newsId",$newsId);
         $this->assign("rows",$rows);
-        
         //循环查询栏目列表
     	$categorys = M("tb_category")->select();
 		$this->assign("categorys",$categorys);

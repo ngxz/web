@@ -67,7 +67,9 @@
 				//默认选中频道
 				var i = {$rows.channelid};
 				$("#channelid option").eq(i).attr("selected","selected");
-				
+				//默认选中栏目
+				var j = {$rows.category};
+				$("#category option").eq(j).attr("selected","selected");
 			});
 			//提交函数
 			function edit(){
