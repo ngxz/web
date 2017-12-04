@@ -32,11 +32,11 @@
 			<div class="phpBoxbg">
 				<div class="phpBox container">
 					<!--面包屑-->
-					<div class="bread">当前位置：<a href="__ROOT__/Php/php.html">{$channel.name}</a> - 
-						<empty name="category">
+					<div class="bread">当前位置：<a href="__ROOT__/Php/php.html">{$data.channel.name}</a> - 
+						<empty name="data.category">
 							全部PHP文章
 						<else />
-							{$category.name}
+							{$data.category.name}
 						</empty>
 					</div>
 					<div class="php">
@@ -53,7 +53,7 @@
 						<ul class="categoryUl">
 							<h1>分类</h1>
 							<li><a href="__ROOT__/Php/php.html">全部文章</a></li>
-							<volist name="categorys" id="cate">
+							<volist name="data.categorys" id="cate">
 								<li><a href="__ROOT__/Php/{$cate.id}.html">{$cate.name}</a></li>
 							</volist>
 						</ul>

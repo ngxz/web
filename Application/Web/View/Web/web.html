@@ -32,11 +32,11 @@
 			<div class="webBoxbg">
 				<div class="webBox container">
 					<!--面包屑-->
-					<div class="bread">当前位置：<a href="__ROOT__/Web/web.html">{$channel.name}</a> - 
-						<empty name="category">
+					<div class="bread">当前位置：<a href="__ROOT__/Web/web.html">{$data.channel.name}</a> - 
+						<empty name="data.category">
 							全部WEB文章
 						<else />
-							{$category.name}
+							{$data.category.name}
 						</empty>
 					</div>
 					<div class="web">
@@ -53,7 +53,7 @@
 						<ul class="categoryUl">
 							<h1>分类</h1>
 							<li><a href="__ROOT__/Web/web.html">全部文章</a></li>
-							<volist name="categorys" id="cate">
+							<volist name="data.categorys" id="cate">
 								<li><a href="__ROOT__/Web/{$cate.id}.html">{$cate.name}</a></li>
 							</volist>
 						</ul>

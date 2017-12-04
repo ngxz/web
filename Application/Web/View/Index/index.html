@@ -18,10 +18,10 @@
 					<ul>
 						<li class="navActive"><a href="__ROOT__/">首页</a></li>
 						<li><a href="__ROOT__/New/news.html">站内新闻</a></li>
-						<li><a href="__ROOT__/Web/web.html">WEB前端</a></li>
+						<li><a href="__ROOT__/index.php/Web/web.html">WEB前端</a></li>
 						<li><a href="__ROOT__/Php/php.html">PHP学习</a></li>
 						<li><a href="__ROOT__/Feed/feed.html">留言板</a></li>
-						<li><a href="__ROOT__/index/about.html">关于我</a></li>
+						<li><a href="__ROOT__/index.php/index/about.html">关于我</a></li>
 					</ul>
 				</div>
 			</div>
@@ -84,7 +84,7 @@
 					<ul>
 						<volist name="articles" id="article">
 							<li>
-								<h1 class="articleTitle"><a href="__ROOT__/detail/{$article.channelid}/{$article.id}.html">{$article.title}</a></h1>
+								<h1 class="articleTitle"><a href="__ROOT__/detail/{$article.channel_id}/{$article.id}.html">{$article.title}</a></h1>
 								<div class="articleDate">发布时间：{$article.time}</div>
 								<h2 class="articleContent">摘要 : {$article.summary}</h2>
 							</li>

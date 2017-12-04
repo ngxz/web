@@ -24,8 +24,9 @@
 			$(function(){
 				//让iframe高度适应
 				$("#iframe").load(function () {
-				    var mainheight = $(this).contents().find("body").height()+200;
-				    $(this).height(mainheight);
+				    //var mainheight = $(this).contents().find("body").height();
+				    var mainheight = $('body').height();
+				    $(this).height(mainheight-60);
 				});
 				//点击菜单变色
 				$(".container-fluid a").each(function(){

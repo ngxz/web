@@ -5,42 +5,45 @@
 	* 用户登录
 	*/
 	class LoginController extends Controller{
+	    public function _initialize(){
+	        $this->login_service = D('Login','Service');
+	    }
 	    /**
 	     * 跳转登录页
 	     */
 	    public function loginpage(){
-	        $this->display("login");
+	        if($_SESSION['uid']){
+	           redirect(U('home'));
+	        }
+	        echo "<script>";
+            echo "window.top.location.href = "."'".U('Login/login')."'";
+            echo "</script>";
 	    }
 		/**
 	     * 登录验证
 	     */
 	    public function login(){
-	        $uid = I("uid");
-	        $pwd = I("pwd");
-	        if (!uid){
-	            $this->redirect("Login:loginpage");
-	            exit();
-	        }else {
-	            $mod = M("tb_admin");
-	            $res = $mod->where("uid = '$uid'")->find();
-	            
-	            if (md5($pwd) == $res['pwd']){
-	                $tname = $res['tname'];
-	                //保存session
-	                $_SESSION['uid']=$uid;
-	                $_SESSION['tname']=$tname;
-	                $sta["status"] = 1;
-	            }else {
-	                //提示失败状态码
-	                $sta["status"] = 2;
+	        if (IS_POST){
+	            $result = $this->login_service->validlogin(I('post.'));
+	            if (!$result){
+	                $error['code'] = false;
+	                $error['message'] = $this->login_service->error;
+	                $this->ajaxReturn($error);
 	            }
-	            //返回状态
-	            $this->ajaxReturn($sta);
+	            $success['code'] = true;
+	            $success['message'] = '登录成功a';
+	            
+	            $this->ajaxReturn($success);
+	        }else {
+	            $this->display("login");
 	        }
+	        
 	    }
 	    public function home(){
-	        \Think\Hook::listen('islogin');
-	        $rows = M("tb_menus")->select();
+//     	    if(!$_SESSION['uid']){
+//                 redirect(U('loginpage'));
+//             }
+	        $rows = M("menus")->select();
 	        //获取登录地ip
 	        $ip = get_client_ip();
 	        //获取ip时间等
@@ -59,7 +62,7 @@
 	     */
 	    public function adminMessage(){
 	        $uid = $_SESSION['uid'];
-	        $user = M("tb_admin")->where("uid = '$uid'")->find();
+	        $user = M("admin")->where("uid = '$uid'")->find();
 	        $this->assign('user',$user);
 	        $this->display('adminMessage');
 	    }
@@ -80,9 +83,9 @@
 	            "pwd"=>$pwd
 	        );
 	        if ($pwd){
-	            M("tb_admin")->where("uid='$uid'")->field("tname,uname,email,icon,pwd")->save($data);
+	            M("admin")->where("uid='$uid'")->field("tname,uname,email,icon,pwd")->save($data);
 	        }else {
-	            M("tb_admin")->where("uid='$uid'")->field("tname,uname,email,icon")->save($data);
+	            M("admin")->where("uid='$uid'")->field("tname,uname,email,icon")->save($data);
 	        }
 	        $this->adminMessage();
 	        
@@ -92,7 +95,9 @@
 	     */
 	    public function logout(){
 	        session(null);
-	        $this->redirect("Login:loginpage");
+	        echo "<script>";
+            echo "window.top.location.href = "."'".U('Login/login')."'";
+            echo "</script>";
 	    }
 	}
 ?>

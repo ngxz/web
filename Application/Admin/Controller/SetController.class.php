@@ -1,26 +1,29 @@
 <?php
 namespace Admin\Controller;
 
-use Think\Controller;
-class SetController extends Controller
+use Admin\Controller\PublicController;
+class SetController extends PublicController
 {
+    public function _initialize(){
+        parent::_initialize();
+    }
     /**
      * 加载网站配置
      * 标题、备案号、联系方式、seo关键词等
      */
     public function webLoad(){
         //网站配置
-        $config = M("tb_config")->find();
+        $config = M("config")->find();
         $this->assign('config',$config);
         //友链
-        $links = M("tb_link")->select();
+        $links = M("link")->select();
         $this->assign('links',$links);
     }
     /**
      * 网站信息查询
      */
     public function webSet(){
-        $config = M("tb_config")->find();
+        $config = M("config")->find();
         $this->assign('config',$config);
         $this->display();
     }
@@ -41,7 +44,7 @@ class SetController extends Controller
             'mail'=>$mail,
             'beian'=>$beian
         );
-        $re = M("tb_config")->field("name,beian,contect,mail,keyword,description")->where("id = 1")->save($data);
+        $re = M("config")->field("name,beian,contect,mail,keyword,description")->where("id = 1")->save($data);
         $re?$sta['status'] = 1 : $sta['status'] = 0;
         $this->ajaxReturn($sta);
     }
@@ -49,7 +52,7 @@ class SetController extends Controller
      * 查询友链
      */
     public function linkSet(){
-        $links = M("tb_link")->select();
+        $links = M("link")->select();
         $this->assign('links',$links);
         $this->display();
     }
@@ -68,7 +71,7 @@ class SetController extends Controller
             'author'=>$author,
             'phone'=>$phone
         );
-        $re = M("tb_link")->field("name,url,author,phone")->where("id = $id")->save($data);
+        $re = M("link")->field("name,url,author,phone")->where("id = $id")->save($data);
         $re?$sta['status'] = 1 : $sta['status'] = 0;
         $this->ajaxReturn($sta);
     }
@@ -88,7 +91,7 @@ class SetController extends Controller
             'author'=>$author,
             'phone'=>$phone
         );
-        $re = M("tb_link")->field("id,name,url,author,phone")->add($data);
+        $re = M("link")->field("id,name,url,author,phone")->add($data);
         $re?$sta['status'] = 1 : $sta['status'] = 0;
         $this->ajaxReturn($sta);
     }
@@ -96,7 +99,7 @@ class SetController extends Controller
      * 删除链接
      */
     public function delLink($id){
-        $re = M("tb_link")->where("id = '$id'")->delete();
+        $re = M("link")->where("id = '$id'")->delete();
         $re?$sta['status'] = 1 : $sta['status'] = 0;
         $this->ajaxReturn($sta);
     }

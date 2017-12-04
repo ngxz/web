@@ -32,11 +32,11 @@
 			<div class="newsBoxbg">
 				<div class="newsBox container">
 					<!--面包屑-->
-					<div class="bread">当前位置：<a href="__ROOT__/New/news.html">{$channel.name}</a> - 
-						<empty name="category">
+					<div class="bread">当前位置：<a href="__ROOT__/New/news.html">{$data.channel.name}</a> - 
+						<empty name="data.category">
 							全部新闻
 						<else />
-							{$category.name}
+							{$data.category.name}
 						</empty>
 					</div>
 					<div class="news">
@@ -54,7 +54,7 @@
 						<ul class="categoryUl">
 							<h1>分类</h1>
 							<li><a href="__ROOT__/New/news.html">全部新闻</a></li>
-							<volist name="categorys" id="cate">
+							<volist name="data.categorys" id="cate">
 								<li><a href="__ROOT__/New/{$cate.id}.html">{$cate.name}</a></li>
 							</volist>
 						</ul>

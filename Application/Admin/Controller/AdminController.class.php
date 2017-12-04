@@ -1,8 +1,11 @@
 <?php
 namespace Admin\Controller;
 
-use Think\Controller;
-class AdminController extends Controller{
+use Admin\Controller\PublicController;
+class AdminController extends PublicController{
+    public function _initialize(){
+        parent::_initialize();
+    }
     /**
      * 按频道查看文章内容
      */
@@ -13,17 +16,18 @@ class AdminController extends Controller{
             $query['title'] = array("LIKE","%$stitle%");
         }
         if ($stime != "" && $stime != null){
-            $query['time'] = array("LIKE","%$query%");
+            $query['add_time'] = array("LIKE","%$query%");
         }
-        $mod = M("tb_article");
+        $mod = M("article");
         //总数目
-        $total = $mod->where($query)->where("channelid = '$channelid'")->count();
+        $total = $mod->where($query)->where("channel_id = '$channelid'")->count();
         $page = getpage($total,8);
         $show = $page->show();//显示分页
         //联表查询
-        $sql = "select c.name,a.id,a.title,a.author,a.summary,a.time,a.content,a.category from tb_article a join tb_category c on a.category = c.id";
-        $rows = $mod->where($sql)->where($query)->where("channelid = '$channelid'")->limit($page->firstRow.','.$page->listRows)->order("time desc")->select();
+//         $sql = "select c.name,a.id,a.title,a.author,a.summary,a.add_time,a.content,a.category from article a inner join category c on a.category = c.id";
+        $rows = $mod->join("tb_category ON tb_category.id = tb_article.category")->where($query)->where("channel_id = '$channelid'")->limit($page->firstRow.','.$page->listRows)->order("add_time desc")->select();
         $data = array("total"=>$total,"rows"=>$rows,"page"=>$show,"stitle"=>$stitle,"stime"=>$stime);
+//         var_dump($data);die();
         $this->assign("data",$data);
         $this->display(allarticle);
     }
@@ -33,7 +37,7 @@ class AdminController extends Controller{
      */
     public function deleteArticle($newsId){
         foreach ($newsId as $id){
-            $res = M("tb_article")->where("id = '$id'")->delete();
+            $res = M("article")->where("id = '$id'")->delete();
         }
         $res?$sta['status']=1:$sta['status']=0;
         $this->ajaxReturn($sta);
@@ -43,11 +47,11 @@ class AdminController extends Controller{
      * @param unknown $no
      */
     public function searchArticleOne($newsId){
-        $rows = M("tb_article")->where("id = '$newsId'")->find();
+        $rows = M("article")->where("id = '$newsId'")->find();
         $this->assign("newsId",$newsId);
         $this->assign("rows",$rows);
         //循环查询栏目列表
-    	$categorys = M("tb_category")->select();
+    	$categorys = M("category")->select();
 		$this->assign("categorys",$categorys);
 		
         $this->display("edit");
@@ -87,11 +91,11 @@ class AdminController extends Controller{
         );
         if ($ctr > 0){
 			//新增数据
-            $res = M("tb_article")->field("content,author,title,summary,category,imgurl,time,channelid")->add($data);
+            $res = M("article")->field("content,author,title,summary,category,imgurl,time,channelid")->add($data);
             $res?$sta['status']=1:$sta['status']=0;
         }else {
 			//修改数据
-            $res = M("tb_article")->field("content,author,title,summary,category,imgurl,time,channelid")->where("id='$newsId'")->save($data);
+            $res = M("article")->field("content,author,title,summary,category,imgurl,time,channelid")->where("id='$newsId'")->save($data);
             $res?$sta['status']=1:$sta['status']=0;
         }
         $this->ajaxReturn($sta);
@@ -125,14 +129,14 @@ class AdminController extends Controller{
     //增加文章
     public function add(){
     	//循环查询栏目列表
-    	$categorys = M("tb_category")->select();
+    	$categorys = M("category")->select();
 		$this->assign("categorys",$categorys);
         $this->display();
     }
     //修改文章
     public function edit(){
     	//循环查询栏目列表
-    	$categorys = M("tb_category")->select();
+    	$categorys = M("category")->select();
 		$this->assign("categorys",$categorys);
         $this->display();
     }
@@ -141,13 +145,13 @@ class AdminController extends Controller{
      * @param unknown $channelid
      */
     public function photo($channelid=''){
-        $mod = M("tb_article");
+        $mod = M("article");
         //总数目
         $total = $mod->where("channelid = '$channelid'")->count();
         $page = getpage($total,8);
         $show = $page->show();//显示分页
         //联表查询
-        $sql = "select c.name,a.id,a.title,a.author,a.summary,a.time,a.content,a.imgurl from tb_article a join tb_channel c on a.channelid = c.id";
+        $sql = "select c.name,a.id,a.title,a.author,a.summary,a.time,a.content,a.imgurl from article a join channel c on a.channelid = c.id";
         $rows = $mod->where($sql)->where("channelid = '$channelid'")->limit($page->firstRow.','.$page->listRows)->order("time desc")->select();
         $data = array("total"=>$total,"rows"=>$rows,"page"=>$show);
         $this->assign("data",$data);
@@ -190,7 +194,7 @@ class AdminController extends Controller{
             'time'=>$time
         );
         //新增数据
-        $res = M("tb_article")->field("content,author,title,summary,url,imgurl,time,channelid")->add($data);
+        $res = M("article")->field("content,author,title,summary,url,imgurl,time,channelid")->add($data);
         if ($res){
             echo "成功！";
             $this->photo("5");

@@ -7,17 +7,17 @@ class FeedController extends Controller{
      * 显示feed频道的文章
      */
     public function feed(){
-        $mod = M("tb_article");
+        $mod = M("article");
         //总条数
-        $total = $mod->where("channelid = 4")->count();
+        $total = $mod->where("channel_id = 4")->count();
         $page = getpage($total,10);
         //分页显示输出
         $show = $page->show();
         //只查询feed的数据按时间倒序
-        $feed = $mod->where("channelid = 4")->limit($page->firstRow.','.$page->listRows)->order("time desc")->select();
+        $feed = $mod->where("channel_id = 4")->limit($page->firstRow.','.$page->listRows)->order("add_time desc")->select();
         $data = array("show"=>$show,"feed"=>$feed);
         //单独查询频道名字为面包屑
-        $channel = M("tb_channel")->where("id = 4")->find();
+        $channel = M("channel")->where("id = 4")->find();
         $this->assign("channel",$channel);
         
         //调用加载配置方法
@@ -63,7 +63,7 @@ class FeedController extends Controller{
                 "author"=>"other",
                 "channelid"=>4
             );
-            $res = M("tb_article")->field("author,title,summary,content,channelid")->add($data);
+            $res = M("article")->field("author,title,summary,content,channelid")->add($data);
             if ($res){
                 $sta['status'] = 1;
                 $sta['message'] = "留言成功！";

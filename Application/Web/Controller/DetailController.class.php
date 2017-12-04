@@ -9,16 +9,16 @@ class DetailController extends Controller{
      */
     public function article($id,$channelid){
         //查询本页内容
-        $row = M("tb_article")->join("tb_category ON tb_category.id = tb_article.category")->where("tb_article.id = '$id' AND channelid = '$channelid'")->find();
+        $row = M("article")->join("tb_category ON tb_category.id = tb_article.category")->where("tb_article.id = '$id' AND channel_id = '$channelid'")->find();
         //查询频道名字，面包屑用
-        $channel = M("tb_channel")->where("id = '$channelid'")->find();
+        $channel = M("channel")->where("id = '$channelid'")->find();
         $this->assign("channel",$channel);
         
         //查询上一页的标题和id
-        $pre = M("tb_article")->where("id < '$id' AND channelid = '$channelid'")->order("id desc")->limit('1')->find();
+        $pre = M("article")->where("id < '$id' AND channel_id = '$channelid'")->order("id desc")->limit('1')->find();
         $this->assign("pre",$pre);
         //查询下一页的标题和id
-        $next = M("tb_article")->where("id > '$id' AND channelid = '$channelid'")->order("id desc")->limit('1')->find();
+        $next = M("article")->where("id > '$id' AND channel_id = '$channelid'")->order("id desc")->limit('1')->find();
         $this->assign("next",$next);
         
         //调用加载配置方法
