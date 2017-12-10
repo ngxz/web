@@ -51,7 +51,7 @@
 	<div class="form-group">
 		<div class="input-group ">
 			<div class="input-group-addon">文章内容</div>
-			 <script id="editor" name='content' type="text/plain" style="width: 100%;height: 200px;">{$result.content}</script>
+			 <textarea id="editor" name='content' type="text/plain" style="width: 100%;height: 200px;">{$result.content}</textarea>
 			<span class="glyphicon form-control-feedback"></span>
 		</div>
 	</div>
@@ -109,8 +109,8 @@
 			data['summary'] = $("input[name=summary]").val();
 			data['img_url'] = img_url;
 			//这样才能获取到
-			data['content'] = UE.getEditor('editor').getContentTxt();
-			console.log(data);return false;
+			data['content'] = UE.getEditor('editor').getContent();
+			
 			//发送
 			$.post(url,data,function(ref){
 				alert(ref.msg);

@@ -27,7 +27,7 @@
 						<!--标题-->
 						<h1 class="title">{$row.title}</h1>
 						<!--分享-->
-						<span class="time">发布时间：{$row.time}  &nbsp;作者：{$row.author} &nbsp;分享到：	</span>
+						<span class="time">发布时间：{$row.add_time|date='Y/m/d',###}  &nbsp;作者：{$row.author} &nbsp;分享到：	</span>
 						<span class="share">
 							<div class="bdsharebuttonbox" data-tag="share_1">
 							    <a class="bds_weixin" data-cmd="weixin"></a>
@@ -40,7 +40,8 @@
 					</div>
 					<!--文章内容单独出来-->
 					<div class="content">
-						{$row.content}
+						{$row.content|htmlspecialchars_decode}
+						
 						<!--
 						此处考虑到有图的文章公用此详情，判断图片地址为空则不显示图片，否则显示。
 						-->

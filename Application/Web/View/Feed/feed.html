@@ -33,7 +33,7 @@
 					<volist name="data.feed" id="feed">
 						<li>
 							<div class="feedTitle"><a href="#">{$feed.title}</a></div>
-							<div class="feedTime">{$feed.time}</div>
+							<div class="feedTime">{$feed.add_time|date='Y/m/d',###}</div>
 							<div class="feedContent">{$feed.content}</div>
 						</li>
 					</volist>

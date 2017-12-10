@@ -105,7 +105,7 @@
 			data['summary'] = $("input[name=summary]").val();
 			data['img_url'] = img_url;
 			//这样才能获取到
-			data['content'] = UE.getEditor('editor').getContentTxt();
+			data['content'] = UE.getEditor('editor').getContent();
 			//发送
 			$.post(url,data,function(ref){
 				alert(ref.msg);

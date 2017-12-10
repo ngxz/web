@@ -26,7 +26,7 @@
 				<li><a href="/web/New/news.html">站内新闻</a></li>
 				<li><a href="/web/index.php/Web/web.html">WEB前端</a></li>
 				<li><a href="/web/Php/php.html">PHP学习</a></li>
-				<li><a href="/web/Feed/feed.html">留言板</a></li>
+				<!--<li><a href="/web/Feed/feed.html">留言板</a></li>-->
 				<li><a href="/web/index.php/index/about.html">关于我</a></li>
 			</ul>
 		</div>
@@ -41,7 +41,7 @@
 						<!--标题-->
 						<h1 class="title"><?php echo ($row["title"]); ?></h1>
 						<!--分享-->
-						<span class="time">发布时间：<?php echo ($row["time"]); ?>  &nbsp;作者：<?php echo ($row["author"]); ?> &nbsp;分享到：	</span>
+						<span class="time">发布时间：<?php echo (date('Y/m/d',$row["add_time"])); ?>  &nbsp;作者：<?php echo ($row["author"]); ?> &nbsp;分享到：	</span>
 						<span class="share">
 							<div class="bdsharebuttonbox" data-tag="share_1">
 							    <a class="bds_weixin" data-cmd="weixin"></a>
@@ -54,7 +54,8 @@
 					</div>
 					<!--文章内容单独出来-->
 					<div class="content">
-						<?php echo ($row["content"]); ?>
+						<?php echo (htmlspecialchars_decode($row["content"])); ?>
+						
 						<!--
 						此处考虑到有图的文章公用此详情，判断图片地址为空则不显示图片，否则显示。
 						-->

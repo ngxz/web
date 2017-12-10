@@ -10,8 +10,9 @@ class ArticleListController extends Controller{
      * 按频道查看文章内容
      */
     public function article(){
+        //分页为get，未成功
         if (IS_POST){
-            $result = $this->article_service->articleList(I('post.'));
+            $result = $this->article_service->articleList(I('param.'));
             if (!$result){
                 $data['msg'] = $this->article_service->getError();
                 $this->assign('data',$data)->display();

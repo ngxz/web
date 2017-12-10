@@ -14,13 +14,18 @@ class ArticleService{
         $data = array();
         $data['channel_id'] = $params['id'];
         $data['status'] = 1;
+        
         //总数目
         $total = $this->model->where($data)->count();
         $page = getpage($total,8);
+        //分页跳转的时候保证查询条件
+        foreach($data as $key=>$val) {
+            $page->parameter[$key]   =   urlencode($val);
+        }
         $show = $page->show();//显示分页
         //联表查询
         $rows = $this->model->where($data)->limit($page->firstRow.','.$page->listRows)->order("add_time desc")->select();
-        $data = array("total"=>$total,"rows"=>$rows,"page"=>$show);
+        $data = array("total"=>$total,"rows"=>$rows,"page"=>$show,"channel_id"=>$data['channel_id']);
         if (!$rows){
             $this->error = '该频道没有文章哦';
             return false;

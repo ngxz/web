@@ -12,14 +12,14 @@
 .web{overflow: hidden;padding-left:25px;}
 .php{overflow: hidden;padding-left:25px;}
 /*左边内容*/
-.listUl{overflow: hidden;float: left;width: 600px;}
+.listUl{overflow: hidden;float: left;width: 700px;}
 .listLi{margin: 15px 0;}
 
 .zhaiyaoBox{overflow: hidden;width: 100%;margin-top: 5px;}
-.zhaiyao{display: inline-block;position: relative;top: -20px;}
-
+.zhaiyao{display: inline-block;width: 570px;position: relative;top: -15px;}
+/*.zhaiyao{display: inline-block;margin-top: -20px;}*/
 /*右边列表*/
-.categoryUl{width: 300px;float:right;}
+.categoryUl{width: 200px;float:right;}
 .categoryUl h1{font-size: 28px;font-weight: normal;}
 .categoryUl li{margin: 5px 0;}
 .categoryUl li a{color: #3D84B0;}
