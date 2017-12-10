@@ -18,20 +18,20 @@
 		<div class="contents">
 			<!--导航部分-->
 			<div class="navBoxbg">
-				<div class="navBox container">
-					<div class="logo floatl"><a href="/web/">Yuanrb.com</a></div>
-					<div class="nav floatr">
-						<ul>
-							<li><a href="/web/">首页</a></li>
-							<li><a href="/web/New/news.html">站内新闻</a></li>
-							<li><a href="/web/Web/web.html">WEB前端</a></li>
-							<li><a href="/web/Php/php.html">PHP学习</a></li>
-							<li><a href="/web/Feed/feed.html">留言板</a></li>
-							<li><a href="/web/index/about.html">关于我</a></li>
-						</ul>
-					</div>
-				</div>
-			</div>
+	<div class="navBox container">
+		<div class="logo floatl"><a href="/web/">Yuanrb.com</a></div>
+		<div class="nav floatr">
+			<ul>
+				<li class="navActive"><a href="/web/">首页</a></li>
+				<li><a href="/web/New/news.html">站内新闻</a></li>
+				<li><a href="/web/index.php/Web/web.html">WEB前端</a></li>
+				<li><a href="/web/Php/php.html">PHP学习</a></li>
+				<li><a href="/web/Feed/feed.html">留言板</a></li>
+				<li><a href="/web/index.php/index/about.html">关于我</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
 			<!--本页文章内容-->
 			<div class="articleBoxbg">
 				<div class="articleBox container">
@@ -85,11 +85,11 @@
 		<div class="footer">
 			<!--友情链接-->
 			<ul class="link">
-				<?php if(is_array($links)): $i = 0; $__LIST__ = $links;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$link): $mod = ($i % 2 );++$i;?><li><a href="<?php echo ($link["url"]); ?>"><?php echo ($link["name"]); ?></a></li><?php endforeach; endif; else: echo "" ;endif; ?>
+				<li><a href="http://so.mezw.com">MEZW搜索</a></li>
 			</ul>
 			<!--备案信息-->
-			<p class="beian">备案号：<?php echo ($config["beian"]); ?></p>
-			<p class="beian">站长邮箱：<?php echo ($config["mail"]); ?></p>
+			<p class="beian">备案号：渝ICP备17011601</p>
+			<p class="beian">站长邮箱：NGXZ92@163.COM</p>
 		</div>
 	</div>
 </div>

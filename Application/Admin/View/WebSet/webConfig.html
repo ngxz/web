@@ -1,0 +1,41 @@
+<form class="webConfig">
+	<table class="table table-striped table-bordered">
+		<tr><th>网站信息</th>
+			<th>内容</th>
+			<th>变量</th>
+		</tr>
+		<tr>
+			<td>网站名称：</td>
+			<td><input type="text" name="name" class="name" value="{$config.name}" required></td>
+			<td>$config.name</td>
+		</tr>
+		<tr>
+			<td>页面关键词：</td>
+			<td><input type="text" name="keyword" class="keyword" value="{$config.keyword}" required></td>
+			<td>$config.keyword</td>
+		</tr>
+		<tr>
+			<td>页面描述：</td>
+			<td><input type="text" name="description" class="description" value="{$config.description}" required></td>
+			<td>$config.description</td>
+		</tr>
+		<tr>
+			<td>备案号：</td>
+			<td><input type="text" name="beian" class="beian" value="{$config.beian}" required></td>
+			<td>$config.beian</td>
+		</tr>
+	</table>
+	<button type="button" class="btn btn-primary" onclick="edit()">修改</button>
+</form>
+<script type="text/javascript">
+			function edit(){
+				$.post("__ROOT__/admin.php/WebSet/webConfig",{
+					'name' : $(".name").val(),
+					'keyword' : $(".keyword").val(),
+					'description':$(".description").val(),
+					'beian' : $(".beian").val()
+				},function(ref){
+					alert(ref.msg);
+				},"json");
+			}
+		</script>

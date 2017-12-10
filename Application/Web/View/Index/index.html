@@ -2,8 +2,7 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title>{$config.name} - 个人网站建设和web前端及php学习的文章分享</title>
-		<include file="./Application/Web/View/common/keyword.html"/>
+		<title>南广轩主小站  - 个人网站建设和web前端及php学习的文章分享</title>
 		<link rel="icon" href="__PUBLIC__/img/favicon.ico" type="image/x-icon">
 		<link rel="stylesheet" href="__PUBLIC__/css/global.css" />
 		<link rel="stylesheet" href="__PUBLIC__/css/owl.carousel.min.css" />
@@ -11,21 +10,7 @@
 	</head>
 	<body>
 		<!--导航部分-->
-		<div class="navBoxbg">
-			<div class="navBox container">
-				<div class="logo floatl"><a href="__ROOT__/">Yuanrb.com</a></div>
-				<div class="nav floatr">
-					<ul>
-						<li class="navActive"><a href="__ROOT__/">首页</a></li>
-						<li><a href="__ROOT__/New/news.html">站内新闻</a></li>
-						<li><a href="__ROOT__/index.php/Web/web.html">WEB前端</a></li>
-						<li><a href="__ROOT__/Php/php.html">PHP学习</a></li>
-						<li><a href="__ROOT__/Feed/feed.html">留言板</a></li>
-						<li><a href="__ROOT__/index.php/index/about.html">关于我</a></li>
-					</ul>
-				</div>
-			</div>
-		</div>
+		<include file="./Application/Web/View/common/header.html"/>
 		<!--banner部分-->
 		<div class="banBoxbg">
 			<div class="banBox">
@@ -68,8 +53,13 @@
 						<volist name="news" id="new">
 							<li>
 								<h1 class="storyTitle"><a href="__ROOT__/detail/1/{$new.id}.html">{$new.title}</a></h1>
-								<div class="storyDate">发布时间：{$new.time}</div>
-								<h2 class="storyContent">摘要 : {$new.summary}</h2>
+								<div class="storyzhaiyao">
+									<img class="left" src="{$new.img_thumb}" />
+									<div class="zhaiyao left">
+										<div class="storyDate">发布时间：{$new.time}</div>
+										<h2 class="storyContent">摘要 : {$new.summary}</h2>
+									</div>
+								</div>
 							</li>
 						</volist>
 					</ul>
@@ -85,31 +75,19 @@
 						<volist name="articles" id="article">
 							<li>
 								<h1 class="articleTitle"><a href="__ROOT__/detail/{$article.channel_id}/{$article.id}.html">{$article.title}</a></h1>
-								<div class="articleDate">发布时间：{$article.time}</div>
-								<h2 class="articleContent">摘要 : {$article.summary}</h2>
+								<div class="articlezhaiyao">
+									<img class="left" src="{$article.img_thumb}" />
+									<div class="zhaiyao left">
+										<div class="articleDate">发布时间：{$article.time}</div>
+										<h2 class="articleContent">摘要 : {$article.summary}</h2>
+									</div>
+								</div>
 							</li>
 						</volist>
 					</ul>
 				</div>
 			</div>
 		</div>
-		<!--照片-->
-		<!--<div class="photoBoxbg">
-			<div class="photoBox container">
-				<div class="indexChannel">照片</div>
-				<div class="photo">
-					<ul>
-						<volist name="photos" id="photo">
-							<li>
-								<img src="__PUBLIC__{$photo.imgurl}" />
-								<p>{$photo.title}</p>
-								<span><a href="__ROOT__/detail/5/{$photo.id}.html">{$photo.content}</a></span>
-							</li>
-						</volist>
-					</ul>
-				</div>
-			</div>
-		</div>-->
 		<!--底部-->
 		<include file="./Application/Web/View/common/footer.html"/>
 		

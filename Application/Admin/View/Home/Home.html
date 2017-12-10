@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>袁茹兵个人网站后台管理页</title>
+		<link rel="icon" href="__PUBLIC__/img/favicon.ico" type="image/x-icon">
+		<link rel="stylesheet" href="__PUBLIC__/bs/css/bootstrap.min.css">
+		<link rel="stylesheet" href="__PUBLIC__/css/global.css" />
+		<link rel="stylesheet" href="__PUBLIC__/css/dashboard.css" />
+		<style type="text/css">
+			.container-fluid{height: 100%;}
+			#navbar ul li{background-color: #222222!important;}
+			.menuTitle{font-weight: bold;font-size: 15px;}
+			.table tr th{text-align:center;vertical-align: middle!important;min-width: 80px!important;}
+			.table tr td{text-align:center;vertical-align: middle!important;height: 50px!important;}
+			.table tr td img{height: 50px!important;}
+			.container-fluid .row{margin-top: 30px;}
+			/*网站信息配置页*/
+			.webConfig input{width: 100%;height: 100%;color: #000;}
+		</style>
+		<script type="text/javascript" src="__PUBLIC__/js/jquery-1.9.1.min.js"></script>
+		<script type="text/javascript" src="__PUBLIC__/bs/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="__PUBLIC__/uEdit/ueditor.config.js"></script>
+		<script type="text/javascript">
+			$(function(){
+				//点击菜单变色
+				$(".container-fluid a").each(function(){
+					$(this).click(function(){
+						$(".sidebar li").css("background","#f5f5f5");
+						$(this).parent().css("background","#e6e6e6");
+					});
+				});
+			});
+		</script>
+		 
+	</head>
+	<body>   
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+	      <div class="container-fluid">
+	        <div class="navbar-header">
+	          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+	            <span class="sr-only">Toggle navigation</span>
+	            <span class="icon-bar"></span>
+	            <span class="icon-bar"></span>
+	            <span class="icon-bar"></span>
+	          </button>
+	          <a class="navbar-brand" href="#">Yuanrb.com</a>
+	        </div>
+	        <div id="navbar" class="navbar-collapse collapse">
+	          <ul class="nav navbar-nav navbar-right">
+	          	<li><a onclick="javascript:openifram('admin.php/Login/adminMessage')">当前帐号：{$Think.session.uid}</a></li>
+	            <li><a href="#">登录时间:{$Think.session.time}</a></li>
+	            <li><a href="__ROOT__/">网站首页</a></li>
+	            <li><a href="__ROOT__/admin.php/Login/home">后台首页</a></li>
+	            <li><a href="__ROOT__/admin.php/Login/logout">安全退出</a></li>
+	          </ul>
+	        </div>
+	      </div>
+	    </nav>
+	    <div class="container-fluid">
+	      	<div class="row">
+		        <div class="col-sm-3 col-md-1" style="padding-left: 30px;">
+		        	<volist name="rows" id="row1">
+		        		<ul>
+	        			<if condition="$row1.level eq 1">
+	        				<li>
+	        					<span class="menuTitle">{$row1.name}</span>
+	        					<ul class="nav nav-sidebar">
+	        						<assign name="mid1" value="$row1.id"/>
+	        						<volist name="rows" id="row2">
+	        							<if condition="$row2.level eq 2 AND $row2.parentid eq $mid1">
+	        								<li>
+	        									<a onclick="javascript:openmain('{$row2.url}')">{$row2.name}</a>
+	        								</li>
+	        							</if>
+	        						</volist>
+	        					</ul>
+	        				</li>
+	        			</if>
+	        			</ul>
+	        		</volist>
+		        </div>
+		        <div class="col-sm-9 col-md-11 main">
+		        	
+		        </div>
+	      	</div>
+    	</div>	
+	</body>
+	<script type="text/javascript">
+	
+		//默认显示内容
+		var url = '__ROOT__/admin.php/Home/tongji';
+		$.post(url,function(ref){
+			$(".main").html(ref);
+		},'html');
+		/**
+		 * 左侧菜单点击后右边主题内容显示
+		 * 参数id
+		 * 文章管理是一位数
+		 * 网站信息配置是两位数
+		 * 其他规则待定
+		 * @param {Object} id
+		 */
+		function openmain(id){
+			//文章管理
+			if(id.length == 1){
+				var url = '__ROOT__/admin.php/ArticleList/article';
+				var data = {};
+				data['id'] = id;
+				$.post(url,data,function(ref){
+					$(".main").html(ref);
+				},'html');
+				return false;
+			}
+			//常规管理
+			if(id.length == 2){
+				var url = '__ROOT__/admin.php/WebSet/webConfig';
+				var data = {};
+				data['id'] = id;
+				$.get(url,data,function(ref){
+					$(".main").html(ref);
+				},'html');
+				return false;
+			}
+		}
+		//修改文章回填
+		$('body').on('click','input[name=edit]',function(){
+			var url = '__ROOT__/admin.php/ArticleList/edit';
+			var data = {};
+			data['id'] = $(this).attr('id');
+			$.get(url,data,function(ref){
+				$(".main").html(ref);
+			},'html');
+		});
+		//发布文章
+		$('body').on('click','button[name=addArticle]',function(){
+			var url = '__ROOT__/admin.php/ArticleList/add';
+			$.get(url,function(ref){
+				$(".main").html(ref);
+			},'html');
+		});
+		//删除文章
+		$('body').on('click','input[name=delete]',function(){
+			if(confirm('真的要删除吗')){
+				var url = '__ROOT__/admin.php/ArticleList/delete';
+				var data = {};
+				data['id'] = $(this).attr('id');
+				$.post(url,data,function(ref){
+					alert(ref.msg);
+				},'json');
+			}
+		});
+	</script>
+</html>

@@ -50,7 +50,7 @@ input{border: none;cursor: pointer;}
 .feedFormbg,.pages,.articleBoxbg{padding-bottom: 200px;}
 
 
-.footerBoxbg{min-width:1050px;background-color: #111;height: 160px;margin-top: -160px;}
+.footerBoxbg{min-width:1050px;background-color: #333333;height: 160px;margin-top: -160px;}
 
 .footerBox{padding-top: 3%;}
 

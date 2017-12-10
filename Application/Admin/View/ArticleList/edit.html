@@ -1,0 +1,121 @@
+<script type="text/javascript" src="__PUBLIC__/uEdit/ueditor.all.min.js"> </script>
+<!--建议手动加在语言，避免在ie下有时因为加载语言失败导致编辑器加载失败-->
+<!--这里加载的语言文件会覆盖你在配置项目里添加的语言类型，比如你在配置项目里配置的是英文，这里加载的中文，那最后就是中文-->
+<script type="text/javascript" src="__PUBLIC__/uEdit/lang/zh-cn/zh-cn.js"></script>
+<script type="text/javascript" src="__PUBLIC__/js/ajaxfileupload.js" ></script>
+<form class="text-center" enctype="multipart/form-data">
+	<div class="form-group" style="width:30%;display: inline-block;">
+		<div class="input-group ">
+			<div class="input-group-addon">所属频道</div>
+			<select name="channelid" class="form-control" >
+				<option value="0">选择频道</option>
+				<volist name='channel' id='c'>
+					<option value="{$c.id}">{$c.name}</option>
+				</volist>
+			</select>
+		</div>
+	</div>
+	<div class="form-group" style="width:30%;display: inline-block;">
+		<div class="input-group ">
+			<div class="input-group-addon">所属栏目</div>
+			<select name="category" class="form-control" >
+				<option value="0">选择栏目</option>
+				<volist name="category" id="c">
+					<option value="{$c.id}">{$c.id} - {$c.name}</option>
+				</volist>
+			</select>
+		</div>
+	</div>
+	<div class="form-group" style="width:30%;display: inline-block;">
+		<div class="input-group ">
+			<div class="input-group-addon">文章标题</div>
+			<input id="title" name="title" type="text" class="form-control" value="{$result.title}" placeholder="标题必填" />
+			<span class="glyphicon form-control-feedback"></span>
+		</div>
+	</div>
+	<div class="form-group" style="width:40%;display: inline-block;">
+		<div class="input-group ">
+			<div class="input-group-addon">文章摘要</div>
+			<input id="summary" name="summary" type="text" value="{$result.summary}" class="form-control"/>
+			<span class="glyphicon form-control-feedback"></span>
+		</div>
+	</div>
+	<div class="form-group" style="width:40%;display: inline-block;">
+		<div class="input-group ">
+			<div class="input-group-addon">封面图片</div>
+			<input type="file" id="pic" name="pic" style="display: none;" onchange="filenamechange()">
+		    <input type="text" class="form-control" style="width: 80%;float: left;" value="{$result.img_thumb}" />
+		    <a class="btn btn-default" onclick="btnclick()">选择图片</a>
+		</div>
+	</div>
+	<div class="form-group">
+		<div class="input-group ">
+			<div class="input-group-addon">文章内容</div>
+			 <script id="editor" name='content' type="text/plain" style="width: 100%;height: 200px;">{$result.content}</script>
+			<span class="glyphicon form-control-feedback"></span>
+		</div>
+	</div>
+	<div class="submitBtn">
+    	<button type="button" class="btn btn-default"><span aria-hidden="true">取消</span></button>
+    	<input type="button" class="btn btn-primary" id="{$result.id}" name="sendEdit" value="修改">
+  	</div>
+</form>
+<script type="text/javascript">
+	var img_url = "{$result.img_thumb}";
+	//点击上传
+	function btnclick(){
+		$("input[name=pic]").click();
+	}
+	//文件名上传图片
+	function filenamechange(){
+        $.ajaxFileUpload({
+                url: '__ROOT__/admin.php/ArticleList/uploadpic', 
+                secureuri: false, 
+                fileElementId: 'pic', 
+                dataType: 'json',
+                success: function (data){
+                	alert(data.msg);
+                	img_url = data.img_url;
+                },
+                error: function (data){
+                    alert('上传失败');
+                }
+            }
+       	)
+    	return false;
+	}
+	//默认选中频道
+	var i = {$result.channel_id};
+	$("select[name=channelid] option").eq(i).attr("selected","selected");
+	//默认选中栏目
+	var j = {$result.category};
+	$("select[name=category] option").eq(j).attr("selected","selected");
+	//实例化编辑器
+	var ue = UE.getEditor('editor');
+//	//对编辑器的操作最好在编辑器ready之后再做
+	ue.ready(function() {
+	    //获取html内容，返回: <p>hello</p>
+	    var html = ue.getContent();
+	    //获取纯文本内容，返回: hello
+	    var txt = ue.getContentTxt();
+	    //提交修改
+		$("body").on('click','input[name=sendEdit]',function(){
+			var url = '__ROOT__/admin.php/ArticleList/edit';
+			var data = {};
+			data['id'] = $(this).attr('id');
+			data['channelid'] = $("select[name=channelid]").val();
+			data['category'] = $("select[name=category]").val();
+			data['title'] = $("input[name=title]").val();
+			data['summary'] = $("input[name=summary]").val();
+			data['img_url'] = img_url;
+			//这样才能获取到
+			data['content'] = UE.getEditor('editor').getContentTxt();
+			console.log(data);return false;
+			//发送
+			$.post(url,data,function(ref){
+				alert(ref.msg);
+			},'json');
+		});
+	});
+	
+</script>

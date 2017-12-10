@@ -1,12 +1,15 @@
 <?php
 namespace Admin\Service;
 
-class LoginService
-{
+class LoginService{
     public function __construct(){
         $this->adminmodel = D('admin');
     }
-    public function validlogin($params){
+    /**
+     * 验证帐号密码
+     * @param unknown $params
+     */
+    public function login($params){
         $uid = $params['uid'];
         $pwd = $params['pwd'];
         if (!uid){

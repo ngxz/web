@@ -2,32 +2,20 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title>PHP文章 - {$config.name}</title>
+		<title>PHP文章 - 南广轩主小站</title>
 		<include file="./Application/Web/View/common/keyword.html"/>
-		<link rel="icon" href="__PUBLIC__/img/favicon.ico" type="image/x-icon">
-		<link rel="stylesheet" href="__PUBLIC__/css/global.css" />
-		<link rel="stylesheet" href="__PUBLIC__/css/list.css" />
-		<script type="text/javascript" src="__PUBLIC__/js/jquery-1.9.1.min.js" ></script>
-		<script type="text/javascript" src="__PUBLIC__/js/main.js" ></script>
+		<include file="./Application/Web/View/common/cssAndJs.html"/>
+		<script type="text/javascript">
+			$(function(){
+				$(".nav ul li").removeClass('navActive');
+				$(".nav ul li").eq(3).addClass('navActive');
+			});
+		</script>
 	</head>
 	<body>
 		<div class="contents">
 			<!--导航部分-->
-			<div class="navBoxbg">
-				<div class="navBox container">
-					<div class="logo floatl"><a href="__ROOT__/">Yuanrb.com</a></div>
-					<div class="nav floatr">
-						<ul>
-							<li><a href="__ROOT__/">首页</a></li>
-							<li><a href="__ROOT__/New/news.html">站内新闻</a></li>
-							<li><a href="__ROOT__/Web/web.html">WEB前端</a></li>
-							<li class="navActive"><a href="__ROOT__/Php/php.html">PHP学习</a></li>
-							<li><a href="__ROOT__/Feed/feed.html">留言板</a></li>
-							<li><a href="__ROOT__/index/about.html">关于我</a></li>
-						</ul>
-					</div>
-				</div>
-			</div>
+			<include file="./Application/Web/View/common/header.html"/>
 			<!--php内容-->
 			<div class="phpBoxbg">
 				<div class="phpBox container">
@@ -44,8 +32,13 @@
 							<volist name="data.php" id="php">
 								<li class="listLi">
 									<div class="listTitle"><a href="__ROOT__/detail/3/{$php.id}.html">{$php.title}</a></div>
-									<div class="listTime">发布时间：{$php.time}</div>
-									<div class="listContent">摘要：{$php.summary}</div>
+									<div class="zhaiyaoBox">
+										<img class="left" src="__ROOT__/{$php.img_thumb}" />
+										<div class="zhaiyao left">
+											<div class="listTime">发布时间：{$php.time}</div>
+											<div class="listContent">摘要：{$php.summary}</div>
+										</div>
+									</div>
 								</li>
 							</volist>
 						</ul>

@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50714
 File Encoding         : 65001
 
-Date: 2017-12-04 22:54:29
+Date: 2017-12-10 20:02:33
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -39,7 +39,7 @@ INSERT INTO `tb_admin` VALUES ('1', '1001', 'd28a3097fa7cf63ad01c4f328314e2f2', 
 -- ----------------------------
 DROP TABLE IF EXISTS `tb_article`;
 CREATE TABLE `tb_article` (
-  `id` int(10) NOT NULL,
+  `id` int(10) NOT NULL AUTO_INCREMENT,
   `title` varchar(100) DEFAULT NULL,
   `author` varchar(30) DEFAULT NULL COMMENT '文章作者',
   `summary` varchar(100) DEFAULT NULL,
@@ -50,13 +50,17 @@ CREATE TABLE `tb_article` (
   `category` int(2) DEFAULT NULL COMMENT '频道下边的分类',
   `add_time` int(10) DEFAULT NULL COMMENT '修改时间',
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=7 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of tb_article
 -- ----------------------------
-INSERT INTO `tb_article` VALUES ('1', 'web文章一', 'admin', '摘要', '内容', '展示略缩图', '2', '1', '3', null);
-INSERT INTO `tb_article` VALUES ('2', '新闻一', 'admin', '摘要', '内容', '略缩图', '1', '1', '1', null);
+INSERT INTO `tb_article` VALUES ('1', '新闻一', '南广轩主', '摘要新闻', '&lt;p&gt;修改测试&lt;/p&gt;', './Public/Uploads/2017-12-10/thumb_1512896705387305030.png', '3', '1', '6', '1512896720');
+INSERT INTO `tb_article` VALUES ('2', '新闻一', 'admin', '摘要', '内容', '略缩图', '1', '0', '1', null);
+INSERT INTO `tb_article` VALUES ('3', '发布更新', '南广轩主', '发布摘要', '发布文章内容测试', './Public/Uploads/2017-12-10/thumb_15128972801897099862.png', '1', '1', '1', '1512897385');
+INSERT INTO `tb_article` VALUES ('4', '前端文章测试', '南广轩主', '前端摘要测试', 'web频道测试', './Public/Uploads/2017-12-10/thumb_15128986051398907651.png', '2', '1', '4', '1512898623');
+INSERT INTO `tb_article` VALUES ('5', '留言测试', '自己', null, '留言测试内容', null, '4', '1', null, null);
+INSERT INTO `tb_article` VALUES ('6', '心得随笔', '南广轩主', '随笔摘要', '随笔内容22222', './Public/Uploads/2017-12-10/thumb_15129060261756907756.jpg', '1', '1', '2', '1512906038');
 
 -- ----------------------------
 -- Table structure for tb_category
@@ -118,7 +122,7 @@ CREATE TABLE `tb_config` (
 -- ----------------------------
 -- Records of tb_config
 -- ----------------------------
-INSERT INTO `tb_config` VALUES ('1', '南广轩主的小站', '渝ICP备17011601号', '南广轩主，个人博客，网页开发，WEB前端，PHP学习', '分享个人网站搭建，WEB前端，PHP开发，博客建设等文章的小站');
+INSERT INTO `tb_config` VALUES ('1', '南广轩主的小站啊', '渝ICP备17011601号-1', '南广轩主，个人博客，网页开发，WEB前端，PHP学习', '分享个人网站搭建，WEB前端，PHP开发，博客建设等文章的小站');
 
 -- ----------------------------
 -- Table structure for tb_link
@@ -156,12 +160,10 @@ CREATE TABLE `tb_menus` (
 -- Records of tb_menus
 -- ----------------------------
 INSERT INTO `tb_menus` VALUES ('1', '文章管理', '1', '#', '-1');
-INSERT INTO `tb_menus` VALUES ('2', '新闻', '2', 'admin.php/Admin/searchArticle/channelid/1', '1');
-INSERT INTO `tb_menus` VALUES ('3', 'WEB', '2', 'admin.php/Admin/searchArticle/channelid/2', '1');
-INSERT INTO `tb_menus` VALUES ('4', 'PHP', '2', 'admin.php/Admin/searchArticle/channelid/3', '1');
+INSERT INTO `tb_menus` VALUES ('2', '新闻', '2', '1', '1');
+INSERT INTO `tb_menus` VALUES ('3', 'WEB', '2', '2', '1');
+INSERT INTO `tb_menus` VALUES ('4', 'PHP', '2', '3', '1');
 INSERT INTO `tb_menus` VALUES ('5', '留言管理', '1', '#', '-1');
-INSERT INTO `tb_menus` VALUES ('6', '留言', '2', 'admin.php/Admin/searchArticle/channelid/4', '5');
+INSERT INTO `tb_menus` VALUES ('6', '留言', '2', '4', '5');
 INSERT INTO `tb_menus` VALUES ('7', '常规管理', '1', '#', '-1');
-INSERT INTO `tb_menus` VALUES ('8', '网站信息', '2', 'admin.php/Set/webSet/', '7');
-INSERT INTO `tb_menus` VALUES ('9', '菜单管理', '2', 'admin.php/Set/menuSet/', '7');
-INSERT INTO `tb_menus` VALUES ('10', '友链管理', '2', 'admin.php/Set/linkSet/', '7');
+INSERT INTO `tb_menus` VALUES ('8', '网站信息', '2', '01', '7');

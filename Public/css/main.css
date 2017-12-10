@@ -20,6 +20,8 @@
 .storyDate{font-size: 16px;color: darkgray;margin-left: 15px;}
 .storyContent{font-size: 16px;margin: 8px 0;color:#706F6F;margin-left: 15px;}
 /*故事*/
+.storyzhaiyao{overflow: hidden;width: 100%;margin-top: 5px;}
+.zhaiyao{display: inline-block;position: relative;top: -20px;}
 .storyBox{margin-top: 30px;}
 .story ul li{margin: 12px 0;margin-left: 20px;}
 
@@ -29,6 +31,8 @@
 .articleDate{font-size: 16px;color: darkgray;margin-left: 15px;}
 .articleContent{font-size: 16px;margin: 8px 0;color:#706F6F;margin-left: 15px;}
 /*文章*/
+.articlezhaiyao{overflow: hidden;width: 100%;margin-top: 5px;}
+.zhaiyao{display: inline-block;position: relative;top: -20px;}
 .articleBox{margin-top: 30px;padding-bottom: 100px;}
 .article ul li{margin: 12px 0;margin-left: 20px;}
 

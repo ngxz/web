@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title>留言板 - {$config.name}</title>
+		<title>留言板 - 南广轩主小站</title>
 		<include file="./Application/Web/View/common/keyword.html"/>
 		<link rel="icon" href="__PUBLIC__/img/favicon.ico" type="image/x-icon">
 		<link rel="stylesheet" href="__PUBLIC__/css/global.css" />
@@ -13,24 +13,16 @@
 			var ROOT = "__ROOT__";
 		</script>
 		<script type="text/javascript" src="__PUBLIC__/js/feedback.js" ></script>
+		<script type="text/javascript">
+			$(function(){
+				$(".nav ul li").removeClass('navActive');
+				$(".nav ul li").eq(4).addClass('navActive');
+			});
+		</script>
 	</head>
 	<body>
 		<!--导航部分-->
-		<div class="navBoxbg">
-			<div class="navBox container">
-				<div class="logo floatl"><a href="__ROOT__/">Yuanrb.com</a></div>
-				<div class="nav floatr">
-					<ul>
-						<li><a href="__ROOT__/">首页</a></li>
-						<li><a href="__ROOT__/New/news.html">站内新闻</a></li>
-						<li><a href="__ROOT__/Web/web.html">WEB前端</a></li>
-						<li><a href="__ROOT__/Php/php.html">PHP学习</a></li>
-						<li class="navActive"><a href="__ROOT__/Feed/feed.html">留言板</a></li>
-						<li><a href="__ROOT__/index/about.html">关于我</a></li>
-					</ul>
-				</div>
-			</div>
-		</div>
+		<include file="./Application/Web/View/common/header.html"/>
 		<!--留言内容-->
 		<div class="feedBoxbg">
 			<div class="feedBox container">

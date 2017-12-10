@@ -20,9 +20,6 @@ class FeedController extends Controller{
         $channel = M("channel")->where("id = 4")->find();
         $this->assign("channel",$channel);
         
-        //调用加载配置方法
-        R("Admin/Set/webLoad");
-        
         //输出模版
         $this->assign("data",$data);
         $this->display("feed");
