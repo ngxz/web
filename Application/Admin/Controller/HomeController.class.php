@@ -18,7 +18,7 @@ class HomeController extends Controller{
         $time = date("Y-m-d H:i:s");
         $_SESSION['time']=$time;
         $_SESSION['local']=$local;
-        $this->assign("rows",$rows)->display();
+        $this->assign("rows",$rows)->display('home');
     }
     /**
      * 默认的统计方法

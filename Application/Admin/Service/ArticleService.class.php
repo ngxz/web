@@ -17,11 +17,12 @@ class ArticleService{
         
         //总数目
         $total = $this->model->where($data)->count();
-        $page = getpage($total,8);
+		$page = new \Think\Ajaxpage($total, 8, 'turnPage');
+//      $page = getpage($total,8);
         //分页跳转的时候保证查询条件
-        foreach($data as $key=>$val) {
-            $page->parameter[$key]   =   urlencode($val);
-        }
+//      foreach($data as $key=>$val) {
+//          $page->parameter[$key]   =   urlencode($val);
+//      }
         $show = $page->show();//显示分页
         //联表查询
         $rows = $this->model->where($data)->limit($page->firstRow.','.$page->listRows)->order("add_time desc")->select();

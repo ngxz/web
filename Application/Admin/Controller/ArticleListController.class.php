@@ -11,7 +11,7 @@ class ArticleListController extends Controller{
      */
     public function article(){
         //分页为get，未成功
-        if (IS_POST){
+//      if (IS_POST){
             $result = $this->article_service->articleList(I('param.'));
             if (!$result){
                 $data['msg'] = $this->article_service->getError();
@@ -19,9 +19,9 @@ class ArticleListController extends Controller{
                 exit();
             }
             $this->assign("result",$result)->display();
-        }else {
-            $this->display();
-        }
+//      }else {
+//          $this->display();
+//      }
     }
     /**
      * 编辑文章
