@@ -1,14 +1,15 @@
 /*本文件是首页css*/
 
 /*banner*/
-.ban{min-width:1050px;height: 550px;text-align: center;background: url(../img/indexBanner_bg.jpg) no-repeat center center;color: #fff;}
-.ban h1{font-size: 26px;padding-top: 10%;text-align: center;}
-.ban p{margin: 1% auto;font-size: 22px;text-align: center;}
+.ban{min-width:1050px;text-align: center;color: #eee;}
+.ban h1{font-size: 26px;padding-top: 10%;text-align: center;color: #eee;}
+.ban p{margin: 1% auto;font-size: 22px;text-align: center;color: #eee;}
 /*.ban span{font-size: 14px;display: block;}*/
-.ban a{color:#666;}
+.ban a{color:#999;}
 
 /*轮播部分*/
-.turnBox{width: 100%;height: 550px;text-align: center;overflow: hidden;}
+.turnBox{width: 100%;text-align: center;overflow: hidden;position: relative;}
+.item-txt{position: absolute;top: 50%;left: 50%;margin-left: -350px;margin-top: -150px;}
 /*调节小圆圈位置*/
 .owl-dots{position: relative;top: -50px;}
 
@@ -19,6 +20,11 @@
 .storyTitle a:hover{color:#D9534F;}
 .storyDate{font-size: 16px;color: darkgray;margin-left: 15px;}
 .storyContent{font-size: 16px;margin: 8px 0;color:#706F6F;margin-left: 15px;}
+
+/*1212左右分布*/
+.contentBox{overflow: hidden;}
+.newArticleList{width: 80%;}
+.tjArticleList{width: 19%;}
 /*故事*/
 .storyzhaiyao{overflow: hidden;width: 100%;margin-top: 5px;}
 .zhaiyao{display: inline-block;position: relative;top: -20px;}

@@ -16,6 +16,9 @@ input{border: none;cursor: pointer;}
 /*白色按钮*/
 .btn-white{background-color: #fff;color: #000;border-radius: 5px;border: 1px darkgray solid;}
 .btn-white:hover{opacity: 0.8;}
+/*灰色按钮*/
+.btn-gray{background-color: #eee;color: #000;border-radius: 5px;border: 1px darkgray solid;}
+.btn-gray:hover{opacity: 0.8;}
 /*大按钮*/
 .btn-big{padding: 10px 15px;font-size: 22px;}
 /*中按钮*/

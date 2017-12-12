@@ -16,77 +16,97 @@
 			<div class="banBox">
 				<div class="ban owl-carousel owl-theme">
 					<div class="turnBox item">
-						<h1>欢迎！</h1>
-			  			<p>
-			  				南广轩主，半路出家做程序，距今已快2年，现从事WEB前端和PHP开发...
-			  				<br>
-			  				热爱本行业，常会冒出新想法，有时又会犯2...
-			  			</p>
-			  			<br />
-						<a href="__ROOT__/index/about.html" class="btn-white btn-big">了解更多</a>
+						<img src="__PUBLIC__/img/b1.jpg" />
+						<div class="item-txt">
+							<h1>欢迎！</h1>
+				  			<p>
+				  				南广轩主，半路出家做程序，距今已快2年，现从事WEB前端和PHP开发...
+				  				<br>
+				  				热爱本行业，常会冒出新想法，有时又会犯2...
+				  			</p>
+				  			<br />
+							<a href="__ROOT__/index/about.html" class="btn-gray btn-big">了解更多</a>
+						</div>
 					</div>
 					<div class="turnBox item">
-						<h1>公告</h1>
-			  			<p>
-			  				由于技术升级原因，本站文章将会暂停更新，具体开更时间视情况而定！
-			  			</p>
-			  			<br />
-						<a href="__ROOT__/detail/1/44.html" class="btn-white btn-big">查看详情</a>
+						<img src="__PUBLIC__/img/b2.jpg" />
+						<div class="item-txt">
+							<h1>公告</h1>
+				  			<p>
+				  				由于技术升级原因，本站文章将会暂停更新，具体开更时间视情况而定！
+				  			</p>
+				  			<br />
+							<a href="__ROOT__/detail/1/44.html" class="btn-gray btn-big">查看详情</a>
+						</div>
 					</div>
 					<div class="turnBox item">
-						<h1>thinkphp框架绑定二级域名到不同模块</h1>
-			  			<p>
-			  				最近遇到的问题，thinkphp绑定二级域名到不同模块，而且隐藏入口文件和模块名...
-			  			</p>
-			  			<br />
-						<a href="__ROOT__/detail/3/43.html" class="btn-white btn-big">查看详情</a>
+						<img src="__PUBLIC__/img/b3.jpg" />
+						<div class="item-txt">
+							<h1>thinkphp框架绑定二级域名到不同模块</h1>
+				  			<p>
+				  				最近遇到的问题，thinkphp绑定二级域名到不同模块，而且隐藏入口文件和模块名...
+				  			</p>
+				  			<br />
+							<a href="__ROOT__/detail/3/43.html" class="btn-gray btn-big">查看详情</a>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-		<!--故事-->
-		<div class="storyBoxbg">
-			<div class="storyBox container">
-				<div class="indexChannel">站内故事</div>
-				<div class="story">
-					<ul>
-						<volist name="news" id="new">
-							<li>
-								<h1 class="storyTitle"><a href="__ROOT__/detail/1/{$new.id}.html">{$new.title}</a></h1>
-								<div class="storyzhaiyao">
-									<img class="left" src="{$new.img_thumb}" />
-									<div class="zhaiyao left">
-										<div class="storyDate">发布时间：{$new.add_time|date='Y/m/d',###}</div>
-										<h2 class="storyContent">摘要 : {$new.summary}</h2>
-									</div>
-								</div>
-							</li>
-						</volist>
-					</ul>
+		<!--内容大容器
+			左边最新文章
+			右边推荐文章
+		-->
+		<div class="container contentBox">
+			<!--左最新列表-->
+			<div class="newArticleList floatl">
+				<!--故事-->
+				<div class="storyBoxbg">
+					<div class="storyBox">
+						<div class="indexChannel">站内故事</div>
+						<div class="story">
+							<ul>
+								<volist name="news" id="new">
+									<li>
+										<h1 class="storyTitle"><a href="__ROOT__/detail/1/{$new.id}.html">{$new.title}</a></h1>
+										<div class="storyzhaiyao">
+											<img class="left" src="{$new.img_thumb}" />
+											<div class="zhaiyao left">
+												<div class="storyDate">发布时间：{$new.add_time|date='Y/m/d',###}</div>
+												<h2 class="storyContent">摘要 : {$new.summary}</h2>
+											</div>
+										</div>
+									</li>
+								</volist>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<!--文章-->
+				<div class="articleBoxbg">
+					<div class="articleBox">
+						<div class="indexChannel">技术小文</div>
+						<div class="article">
+							<ul>
+								<volist name="articles" id="article">
+									<li>
+										<h1 class="articleTitle"><a href="__ROOT__/detail/{$article.channel_id}/{$article.id}.html">{$article.title}</a></h1>
+										<div class="articlezhaiyao">
+											<img class="left" src="{$article.img_thumb}" />
+											<div class="zhaiyao left">
+												<div class="articleDate">发布时间：{$article.add_time|date='Y/m/d',###}</div>
+												<h2 class="articleContent">摘要 : {$article.summary}</h2>
+											</div>
+										</div>
+									</li>
+								</volist>
+							</ul>
+						</div>
+					</div>
 				</div>
 			</div>
-		</div>
-		<!--文章-->
-		<div class="articleBoxbg">
-			<div class="articleBox container">
-				<div class="indexChannel">技术小文</div>
-				<div class="article">
-					<ul>
-						<volist name="articles" id="article">
-							<li>
-								<h1 class="articleTitle"><a href="__ROOT__/detail/{$article.channel_id}/{$article.id}.html">{$article.title}</a></h1>
-								<div class="articlezhaiyao">
-									<img class="left" src="{$article.img_thumb}" />
-									<div class="zhaiyao left">
-										<div class="articleDate">发布时间：{$article.add_time|date='Y/m/d',###}</div>
-										<h2 class="articleContent">摘要 : {$article.summary}</h2>
-									</div>
-								</div>
-							</li>
-						</volist>
-					</ul>
-				</div>
-			</div>
+			<!--右推荐列表-->
+			<div class="tjArticleList floatl">右边推荐</div>
 		</div>
 		<!--底部-->
 		<include file="./Application/Web/View/common/footer.html"/>
@@ -102,7 +122,7 @@
 					loop:true,
 					touchDrag:true,
 			    autoplay:true,
-			    autoplayTimeout:5000
+			    autoplayTimeout:50000
 			  	});
 			  	
 			})
