@@ -15,6 +15,9 @@ class IndexController extends Controller {
         //首页显示文章，除资讯外的最新文章
         $articles = $this->article_service->indexarticle();
         $this->assign("articles",$articles);
+        //首页右侧热文推荐
+        $recommend = $this->article_service->indexrecommend();
+        $this->assign("recommend",$recommend);
     	//显示主页
     	$this->display();
     }

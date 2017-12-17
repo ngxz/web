@@ -1,8 +1,14 @@
 <?php
 namespace Admin\Controller;
 
-use Think\Controller;
-class HomeController extends Controller{
+use Admin\Controller\PublicController;
+class HomeController extends PublicController{
+    /**
+     * 空方法
+     */
+    public function _empty(){
+        redirect(U('Admin/Home/home'),5,'该方法不存在，5秒后跳转调转到首页');
+    }
     /**
      * 后台首页
      */

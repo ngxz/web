@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title>{$row.title} - {$config.name}</title>
+		<title>{$rows.row.title} - 南广轩主小站</title>
 		<link rel="icon" href="__PUBLIC__/img/favicon.ico" type="image/x-icon">
 		<link rel="stylesheet" href="__PUBLIC__/css/global.css" />
 		<link rel="stylesheet" href="__PUBLIC__/css/article.css" />
@@ -11,7 +11,12 @@
 		<script type="text/javascript" id="bdshare_js" data="type=tools" ></script>
     	<script type="text/javascript" id="bdshell_js"></script>
 		<script type="text/javascript">
-			with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?cdnversion='+~(-new Date()/36e5)];    //加载本地JS后可不用段条代码 
+			with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?cdnversion='+~(-new Date()/36e5)];    //加载本地JS后可不用段条代码
+			$(function(){
+				var i = {$rows.channel.id};
+				$(".nav ul li").removeClass('navActive');
+				$(".nav ul li").eq(i).addClass('navActive');
+			});
 		</script>
 	</head>
 	<body>
@@ -22,12 +27,12 @@
 			<div class="articleBoxbg">
 				<div class="articleBox container">
 					<!--面包屑-->
-					<div class="bread">当前位置：<a href="__ROOT__/{$channel.url}.html">{$channel.name}</a> - <a href="__ROOT__/{$row.caurl}.html">{$row.name}</a> - {$row.title}</div>
+					<div class="bread">当前位置：<a href="__ROOT__/{$rows.channel.url}.html">{$rows.channel.name}</a> - <a href="__ROOT__/{$rows.row.caurl}.html">{$rows.row.name}</a> - {$rows.row.title}</div>
 					<div class="article">
 						<!--标题-->
-						<h1 class="title">{$row.title}</h1>
+						<h1 class="title">{$rows.row.title}</h1>
 						<!--分享-->
-						<span class="time">发布时间：{$row.add_time|date='Y/m/d',###}  &nbsp;作者：{$row.author} &nbsp;分享到：	</span>
+						<span class="time">发布时间：{$rows.row.add_time|date='Y/m/d',###}  &nbsp;&nbsp;分享到：	</span>
 						<span class="share">
 							<div class="bdsharebuttonbox" data-tag="share_1">
 							    <a class="bds_weixin" data-cmd="weixin"></a>
@@ -40,15 +45,15 @@
 					</div>
 					<!--文章内容单独出来-->
 					<div class="content">
-						{$row.content|htmlspecialchars_decode}
+						{$rows.row.content|htmlspecialchars_decode}
 						
 						<!--
 						此处考虑到有图的文章公用此详情，判断图片地址为空则不显示图片，否则显示。
 						-->
-						<if condition='$row.imgurl eq ""'>	
+						<!--<if condition='$rows.row.imgurl eq ""'>	
 						<else />
-							<img class="articleImg" src="__PUBLIC__{$row.imgurl}" />
-						</if>
+							<img class="articleImg" src="__PUBLIC__{$rows.row.imgurl}" />
+						</if>-->
 					</div>
 					<!--上一条-->
 					<!--
@@ -58,15 +63,15 @@
 						
 					-->
 					<div class="preNext container">
-						<empty name="pre">
+						<empty name="rows.pre">
 			   				<p><strong>上一篇：</strong>已经是第一篇</p>
 			         	<else />
-			           		<p><strong>上一篇：</strong><a href="__ROOT__/detail/{$channel.id}/{$pre.id}.html" >{$pre.title}</a></p>
+			           		<p><strong>上一篇：</strong><a href="__ROOT__/detail/{$rows.channel.id}/{$rows.pre.id}.html" >{$rows.pre.title}</a></p>
 			          	</empty>
-						<empty name="next">
+						<empty name="rows.next">
 			   				<p><strong>下一篇：</strong>已经是最后一篇</p>
 			         	<else />
-			           		<p><strong>下一篇：</strong><a href="__ROOT__/detail/{$channel.id}/{$next.id}.html" >{$next.title}</a></p>
+			           		<p><strong>下一篇：</strong><a href="__ROOT__/detail/{$rows.channel.id}/{$rows.next.id}.html" >{$rows.next.title}</a></p>
 			          	</empty>
 					</div>
 				</div>

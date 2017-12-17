@@ -46,6 +46,7 @@ class ArticleService{
             $this->error = '该文章不存在';
             return false;
         }
+        
         return $result;
     }
     /**
@@ -54,6 +55,7 @@ class ArticleService{
      * @param unknown $params
      */
     public function editOneArticle($params){
+        
         if (!$params['channelid']){
             $this->error = '请选择频道';
             return false;
@@ -82,6 +84,7 @@ class ArticleService{
         $data['title'] = $params['title'];
         $data['img_thumb'] = $params['img_url'];
         $data['summary'] = $params['summary'];
+        $data['is_hot'] = $params['is_hot'];
         $data['add_time'] = time();
         $data['content'] = $params['content'];
         $result = $this->model->where($sqlmap)->save($data);
@@ -122,6 +125,7 @@ class ArticleService{
         $data['category'] = $params['category'];
         $data['title'] = $params['title'];
         $data['summary'] = $params['summary'];
+        $data['is_hot'] = $params['is_hot'];
         $data['img_thumb'] = $params['img_url'];
         $data['add_time'] = time();
         $data['content'] = $params['content'];

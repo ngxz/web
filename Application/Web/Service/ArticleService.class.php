@@ -20,11 +20,18 @@ class ArticleService{
      * 获取新闻频道5条文章
      */
     public function indexarticle(){
-        
         $result = $this->model->where("channel_id = 2 or channel_id = 3")->order("add_time desc")->limit("5")->select();
         return $result;
     }
-    
+    /**
+     * 首页
+     * 查询热门文章推荐5条
+     */
+    public function indexrecommend(){
+        $sqlmap['is_hot'] = 1;
+        $result = $this->model->where($sqlmap)->order("add_time desc")->limit("5")->select();
+        return $result;
+    }
     /**
      * 查询新闻列表
      * @return unknown[]|mixed[]|boolean[]|string[]|NULL[]|object[]

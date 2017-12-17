@@ -72,7 +72,7 @@
 										<div class="storyzhaiyao">
 											<img class="left" src="{$new.img_thumb}" />
 											<div class="zhaiyao left">
-												<div class="storyDate">发布时间：{$new.add_time|date='Y/m/d',###}</div>
+												<div class="storyDate">发布于：{$new.add_time|date='Y/m/d',###}</div>
 												<h2 class="storyContent">摘要 : {$new.summary}</h2>
 											</div>
 										</div>
@@ -94,7 +94,7 @@
 										<div class="articlezhaiyao">
 											<img class="left" src="{$article.img_thumb}" />
 											<div class="zhaiyao left">
-												<div class="articleDate">发布时间：{$article.add_time|date='Y/m/d',###}</div>
+												<div class="articleDate">发布于：{$article.add_time|date='Y/m/d',###}</div>
 												<h2 class="articleContent">摘要 : {$article.summary}</h2>
 											</div>
 										</div>
@@ -106,7 +106,18 @@
 				</div>
 			</div>
 			<!--右推荐列表-->
-			<div class="tjArticleList floatl">右边推荐</div>
+			<div class="tjArticleList floatl">
+				<div class="indexChannel">热文推荐</div>
+				<div class="recommend">
+					<ul>
+						<volist name="recommend" id="rec">
+							<li>
+								<h1 class="recommendTitlle"><a href="__ROOT__/detail/{$rec.channel_id}/{$rec.id}.html">{$rec.title}</a></h1>
+							</li>
+						</volist>
+					</ul>
+				</div>
+			</div>
 		</div>
 		<!--底部-->
 		<include file="./Application/Web/View/common/footer.html"/>
@@ -122,7 +133,7 @@
 					loop:true,
 					touchDrag:true,
 			    autoplay:true,
-			    autoplayTimeout:50000
+			    autoplayTimeout:8000
 			  	});
 			  	
 			})

@@ -6,7 +6,7 @@ class PublicController extends Controller
 {
     public function _initialize(){
         if(!$_SESSION['uid']){
-            redirect(U('Admin/Login/loginpage'));
+            redirect(U('Admin/Login/login'));
         }
     }
 }

@@ -2,8 +2,8 @@
 namespace Admin\Controller;
 
 
-use Think\Controller;
-class WebSetController extends Controller{
+use Admin\Controller\PublicController;
+class WebSetController extends PublicController{
     public function _initialize(){
         $this->webset_service = D('WebSet','Service');
     }

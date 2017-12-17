@@ -1,6 +1,7 @@
 <?php
 namespace Admin\Service;
 
+use Admin\Controller\PublicController;
 class LoginService{
     public function __construct(){
         $this->adminmodel = D('admin');
@@ -35,6 +36,47 @@ class LoginService{
         $_SESSION['uid']=$uid;
         $_SESSION['user']=$result;
         return true;
+    }
+    /**
+     * 获取登录人信息
+     */
+    public function getUser(){
+        $sqlmap['uid'] = $_SESSION['uid'];
+        $result = $this->adminmodel->where($sqlmap)->find();
+        return $result;
+    }
+    /**
+     * 修改登录人信息
+     */
+    public function editUser($params){
+        if (!$params['tname']){
+            $this->error = '真实名字未填写！';
+            return false;
+        }
+        if (!$params['uname']){
+            $this->error = '昵称未填写！';
+            return false;
+        }
+        $sqlmap['uid'] = $_SESSION['uid'];
+        $data['tname'] = $params['tname'];
+        $data['uname'] = $params['uname'];
+        if ($params['pwd']){
+            $data['pwd'] = md5($params['pwd']);
+            $result = $this->adminmodel->where($sqlmap)->save($data);
+            if (!$result){
+                $this->error = "没有任何改变！";
+                return false;
+            }
+        }
+        $result = $this->adminmodel->where($sqlmap)->save($data);
+        if (!$result){
+            $this->error = "没有任何改变！";
+            return false;
+        }
+        return $result;
+    }
+    public function getError(){
+        return $this->error;
     }
 }
 

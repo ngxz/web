@@ -1,5 +1,6 @@
 /*此文件为站内新闻、web、php页面文章列表list的修饰，仅此三页引入*/
 .listTitle{font-size: 28px;}
+.listTitle a{color:#105cb6;}
 .listTitle a:hover{color:#D9534F;}
 .listTime{font-size: 14px;color: darkgray;margin-left: 15px;}
 .listContent{margin-left: 15px;color:#706F6F;}

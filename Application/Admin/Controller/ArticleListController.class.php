@@ -1,8 +1,8 @@
 <?php
 namespace Admin\Controller;
 
-use Think\Controller;
-class ArticleListController extends Controller{
+use Admin\Controller\PublicController;
+class ArticleListController extends PublicController{
     public function _initialize(){
         $this->article_service = D('Article','Service');
     }
