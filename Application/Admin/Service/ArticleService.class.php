@@ -85,7 +85,7 @@ class ArticleService{
         $data['img_thumb'] = $params['img_url'];
         $data['summary'] = $params['summary'];
         $data['is_hot'] = $params['is_hot'];
-        $data['add_time'] = time();
+//         $data['add_time'] = time();
         $data['content'] = $params['content'];
         $result = $this->model->where($sqlmap)->save($data);
         if (!$result){
