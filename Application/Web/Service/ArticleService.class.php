@@ -20,7 +20,9 @@ class ArticleService{
      * 获取新闻频道5条文章
      */
     public function indexarticle(){
-        $result = $this->model->where("channel_id = 2 or channel_id = 3")->order("add_time desc")->limit("5")->select();
+        $sqlmap['channel_id'] = array('IN','2,3');
+        $sqlmap['status'] = 1;
+        $result = $this->model->where($sqlmap)->order("add_time desc")->limit("5")->select();
         return $result;
     }
     /**
