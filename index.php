@@ -17,13 +17,13 @@ if(version_compare(PHP_VERSION,'5.3.0','<'))  die('require PHP > 5.3.0 !');
 // 开启调试模式 建议开发阶段开启 部署阶段注释或者设为false
 define('APP_DEBUG',true);
 
-if($_SERVER['HTTP_HOST'] == "test.yuanrb.com"){
+// if($_SERVER['HTTP_HOST'] == "m.yuanrb.com"){
     // 根据需求可绑定控制器，
-    define('BIND_MODULE','Test');
-}else{
-    //不是test则绑定web模块到此入口文件
-    define('BIND_MODULE','Web');
-}
+    define('BIND_MODULE','Mobile');
+// }else{
+//     //不是test则绑定web模块到此入口文件
+//     define('BIND_MODULE','Web');
+// }
 
 //绑定web模块到此入口文件
 //define('BIND_MODULE','Web');
