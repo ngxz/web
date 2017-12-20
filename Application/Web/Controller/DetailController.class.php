@@ -1,10 +1,11 @@
 <?php
 namespace Web\Controller;
 
-use Think\Controller;
-class DetailController extends Controller{
+use Web\Controller\CommonController;
+class DetailController extends CommonController{
     public function _initialize(){
         $this->detail_service = D('Detail','Service');
+        parent::_initialize();
     }
     /**
      * 查询当前点击的文章的id，显示详情页面

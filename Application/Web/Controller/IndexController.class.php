@@ -1,9 +1,11 @@
 <?php
-namespace Web\controller;
-use Think\Controller;
-class IndexController extends Controller {
+namespace Web\Controller;
+
+use Web\Controller\CommonController;
+class IndexController extends CommonController{
 	public function _initialize(){
 	    $this->article_service = D('Article','Service');
+	    parent::_initialize();
 	}
     /**
      * 首页

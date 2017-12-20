@@ -19,9 +19,9 @@ defined('THINK_PATH') or exit();
 return  array(
     /* 应用设定 */
     'APP_USE_NAMESPACE'     =>  true,    // 应用类库是否使用命名空间
-    'APP_SUB_DOMAIN_DEPLOY' =>  true,   // 是否开启子域名部署
+    'APP_SUB_DOMAIN_DEPLOY' =>  false,   // 是否开启子域名部署
     'APP_SUB_DOMAIN_RULES'  =>  array(
-		'm.yuanrb.com'		=>	'Mobile'
+// 		'm.yuanrb.com'		=>	'Mobile'
 	), // 子域名部署规则
     'APP_DOMAIN_SUFFIX'     =>  '', // 域名后缀 如果是com.cn net.cn 之类的后缀必须设置    
     'ACTION_SUFFIX'         =>  '', // 操作方法后缀
@@ -72,6 +72,11 @@ return  array(
 //  'DB_SLAVE_NO'           =>  '', // 指定从服务器序号
 	
 	/* 数据库设置 */
+//     'DB_TYPE'               =>  'mysql',     // 数据库类型
+//     'DB_HOST'               =>  'mysql.sql89.cdncenter.net', // 服务器地址
+//     'DB_NAME'               =>  'sq_mywebtp',          // 数据库名
+//     'DB_USER'               =>  'sq_mywebtp',      // 用户名
+//     'DB_PWD'                =>  'YRB9520',          // 密码
     'DB_TYPE'               =>  'mysql',     // 数据库类型
     'DB_HOST'               =>  'localhost', // 服务器地址
     'DB_NAME'               =>  'webdb',          // 数据库名

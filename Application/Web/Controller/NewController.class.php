@@ -1,10 +1,11 @@
 <?php
 namespace Web\Controller;
 
-use Think\Controller;
-class NewController extends Controller{
+use Web\Controller\CommonController;
+class NewController extends CommonController{
     public function _initialize(){
         $this->article_service = D('Article','Service');
+        parent::_initialize();
     }
     /**
      * 显示站内新闻
