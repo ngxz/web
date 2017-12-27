@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>{$rows.row.title} - 南广轩主小站</title>
+		<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+	    <link rel="shortcut icon" href="/favicon.ico">
+	    <meta name="apple-mobile-web-app-capable" content="yes">
+	    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+	
+	    <link rel="stylesheet" href="//g.alicdn.com/msui/sm/0.6.2/css/sm.min.css">
+	    <link rel="stylesheet" href="//g.alicdn.com/msui/sm/0.6.2/css/sm-extend.min.css">
+		<link rel="stylesheet" href="__PUBLIC__/Mobile/css/article.css">
+	</head>
+	<body>
+		<!--<header class="bar bar-nav">
+		  <h1 class="title">{$rows.row.title}</h1>
+		</header>-->
+		<!--主体内容-->
+		<div class="content">
+			<div class="add-time">
+				<span>更新于：{$rows.row.add_time|date='Y/m/d H:m:s',###}</span>
+			</div>
+			<!--文章内容-->
+			<div class="content-padded">
+			  {$rows.row.content|htmlspecialchars_decode}
+			</div>
+		</div>
+	</body>
+	<script type='text/javascript' src='//g.alicdn.com/sj/lib/zepto/zepto.min.js' charset='utf-8'></script>
+    <script type='text/javascript' src='//g.alicdn.com/msui/sm/0.6.2/js/sm.min.js' charset='utf-8'></script>
+    <script type='text/javascript' src='//g.alicdn.com/msui/sm/0.6.2/js/sm-extend.min.js' charset='utf-8'></script>
+</html>

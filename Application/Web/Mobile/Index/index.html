@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>手机站</title>
+    <title>南广轩主的小站  - 个人网站建设和web前端及php学习的文章分享</title>
     <meta name="viewport" content="initial-scale=1, maximum-scale=1">
     <link rel="shortcut icon" href="/favicon.ico">
     <meta name="apple-mobile-web-app-capable" content="yes">
@@ -11,7 +11,7 @@
 
     <link rel="stylesheet" href="//g.alicdn.com/msui/sm/0.6.2/css/sm.min.css">
     <link rel="stylesheet" href="//g.alicdn.com/msui/sm/0.6.2/css/sm-extend.min.css">
-
+		<link rel="stylesheet" href="__PUBLIC__/Mobile/css/index.css">
   </head>
   <body>
     <div class="page-group">
@@ -19,10 +19,10 @@
 	        <!-- 单个page ,第一个.page默认被展示-->
 	        <div class="page">
 	            <!-- 标题栏 -->
-	            <header class="bar bar-nav">
+	            <!--<header class="bar bar-nav">
 	                <a class="icon icon-me pull-left open-panel"></a>
 	                <h1 class="title">标题</h1>
-	            </header>
+	            </header>-->
 	
 	            <!-- 工具栏 -->
 	            <nav class="bar bar-tab">
@@ -45,9 +45,9 @@
 	                	<!--轮播图-->
 									  <div class="swiper-container" data-space-between='10'>
 									    <div class="swiper-wrapper">
-									      <div class="swiper-slide"><img src="__PUBLIC__/img/icon3.jpg" alt=""></div>
-									      <div class="swiper-slide"><img src="__PUBLIC__/img/icon3.jpg" alt=""></div>
-									      <div class="swiper-slide"><img src="__PUBLIC__/img/icon3.jpg" alt=""></div>
+									      <div class="swiper-slide"><img src="__PUBLIC__/img/b1.jpg" alt=""></div>
+									      <div class="swiper-slide"><img src="__PUBLIC__/img/b2.jpg" alt=""></div>
+									      <div class="swiper-slide"><img src="__PUBLIC__/img/b3.jpg" alt=""></div>
 									    </div>
 									    <div class="swiper-pagination"></div>
 									  </div>
@@ -57,40 +57,19 @@
 									    <div class="card-content">
 									      <div class="list-block media-list">
 									        <ul>
-									          <li class="item-content">
-									            <div class="item-media">
-									              <img src="http://gqianniu.alicdn.com/bao/uploaded/i4//tfscom/i3/TB10LfcHFXXXXXKXpXXXXXXXXXX_!!0-item_pic.jpg_250x250q60.jpg" width="44">
-									            </div>
-									            <div class="item-inner">
-									              <div class="item-title-row">
-									                <div class="item-title">标题</div>
-									              </div>
-									              <div class="item-subtitle">摘要</div>
-									            </div>
-									          </li>
-									          
-									          <li class="item-content">
-									            <div class="item-media">
-									              <img src="http://gqianniu.alicdn.com/bao/uploaded/i4//tfscom/i3/TB10LfcHFXXXXXKXpXXXXXXXXXX_!!0-item_pic.jpg_250x250q60.jpg" width="44">
-									            </div>
-									            <div class="item-inner">
-									              <div class="item-title-row">
-									                <div class="item-title">标题</div>
-									              </div>
-									              <div class="item-subtitle">子标题</div>
-									            </div>
-									          </li>
-									          <li class="item-content">
-									            <div class="item-media">
-									              <img src="http://gqianniu.alicdn.com/bao/uploaded/i4//tfscom/i3/TB10LfcHFXXXXXKXpXXXXXXXXXX_!!0-item_pic.jpg_250x250q60.jpg" width="44">
-									            </div>
-									            <div class="item-inner">
-									              <div class="item-title-row">
-									                <div class="item-title">标题</div>
-									              </div>
-									              <div class="item-subtitle">子标题</div>
-									            </div>
-									          </li>
+									        	<volist name='articles' id='article'>
+									        		<li class="item-content">
+										            <div class="item-media">
+										              <img src="{$article.img_thumb}" width="50">
+										            </div>
+										            <div class="item-inner">
+										              <div class="item-title-row">
+										                <div class="item-title"><a href="__ROOT__/detail/{$article.channel_id}/{$article.id}.html">{$article.title}</a></div>
+										              </div>
+										              <div class="item-subtitle">更新于：{$article.add_time|date='Y/m/d H:m:s',###}</div>
+										            </div>
+										          </li>
+									        	</volist>
 									        </ul>
 									      </div>
 									    </div>
@@ -98,44 +77,23 @@
 									  <!--新闻-->
 									  
 									  <div class="card">
-									    <div class="card-header">新闻</div>
+									    <div class="card-header">新闻随笔</div>
 									    <div class="card-content">
 									      <div class="list-block media-list">
 									        <ul>
-									          <li class="item-content">
-									            <div class="item-media">
-									              <img src="http://gqianniu.alicdn.com/bao/uploaded/i4//tfscom/i3/TB10LfcHFXXXXXKXpXXXXXXXXXX_!!0-item_pic.jpg_250x250q60.jpg" width="44">
-									            </div>
-									            <div class="item-inner">
-									              <div class="item-title-row">
-									                <div class="item-title">标题</div>
-									              </div>
-									              <div class="item-subtitle">摘要</div>
-									            </div>
-									          </li>
-									          
-									          <li class="item-content">
-									            <div class="item-media">
-									              <img src="http://gqianniu.alicdn.com/bao/uploaded/i4//tfscom/i3/TB10LfcHFXXXXXKXpXXXXXXXXXX_!!0-item_pic.jpg_250x250q60.jpg" width="44">
-									            </div>
-									            <div class="item-inner">
-									              <div class="item-title-row">
-									                <div class="item-title">标题</div>
-									              </div>
-									              <div class="item-subtitle">子标题</div>
-									            </div>
-									          </li>
-									          <li class="item-content">
-									            <div class="item-media">
-									              <img src="http://gqianniu.alicdn.com/bao/uploaded/i4//tfscom/i3/TB10LfcHFXXXXXKXpXXXXXXXXXX_!!0-item_pic.jpg_250x250q60.jpg" width="44">
-									            </div>
-									            <div class="item-inner">
-									              <div class="item-title-row">
-									                <div class="item-title">标题</div>
-									              </div>
-									              <div class="item-subtitle">子标题</div>
-									            </div>
-									          </li>
+									        	<volist name='news' id='new'>
+									        		<li class="item-content">
+										            <div class="item-media">
+										              <img src="{$new.img_thumb}" width="50">
+										            </div>
+										            <div class="item-inner">
+										              <div class="item-title-row">
+										                <div class="item-title"><a href="__ROOT__/detail/1/{$new.id}.html">{$new.title}</a></div>
+										              </div>
+										              <div class="item-subtitle">更新于：{$new.add_time|date='Y/m/d H:m:s',###}</div>
+										            </div>
+										          </li>
+									        	</volist>
 									        </ul>
 									      </div>
 									    </div>
@@ -150,14 +108,14 @@
 	    <!-- popup, panel 等放在这里 -->
 	    <div class="panel-overlay"></div>
 	    <!-- Left Panel with Reveal effect -->
-	    <div class="panel panel-left panel-reveal">
+	    <!--<div class="panel panel-left panel-reveal">
 	        <div class="content-block">
 	            <p>这是一个侧栏</p>
 	            <p></p>
-	            <!-- Click on link with "close-panel" class will close panel -->
+	            
 	            <p><a href="#" class="close-panel">关闭</a></p>
 	        </div>
-	    </div>
+	    </div>-->
     </div>
 
     <script type='text/javascript' src='//g.alicdn.com/sj/lib/zepto/zepto.min.js' charset='utf-8'></script>

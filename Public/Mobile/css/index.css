@@ -1,0 +1,19 @@
+*{margin: 0;padding: 0;}
+body{font-family: "微软雅黑";height: 100%;}
+html{height: 100%;}
+ul,li,ol{list-style: none;}
+a{text-decoration: none;color: #111;cursor: pointer;}
+/*浮动*/
+.floatl{float: left;}
+.floatr{float: right;}
+/*轮播图*/
+.swiper-container img{width: 120%;height: 8rem;}
+/*轮播圆圈*/
+.swiper-container{padding-bottom: 10px;}
+/*card-header*/
+
+.card-header{font-weight: bold;font-size: 1rem!important;}
+/*一级标题*/
+.item-title a{color: #105cb6;}
+/*二级标题*/
+.item-subtitle{font-size: 0.65rem!important;}
