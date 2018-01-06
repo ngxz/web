@@ -13,11 +13,13 @@
 		<link rel="stylesheet" href="__PUBLIC__/Mobile/css/article.css">
 	</head>
 	<body>
-		<!--<header class="bar bar-nav">
-		  <h1 class="title">{$rows.row.title}</h1>
-		</header>-->
+		
 		<!--主体内容-->
 		<div class="content">
+			<!-- 标题栏 -->
+            <header class="bar bar-nav">
+			  <h1 class="title">{$rows.row.title}</h1>
+			</header>
 			<div class="add-time">
 				<span>更新于：{$rows.row.add_time|date='Y/m/d H:m:s',###}</span>
 			</div>

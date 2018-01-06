@@ -1,0 +1,18 @@
+/*文章列表*/
+/*card边距*/
+.card{margin:0!important;}
+.card-header{font-weight: bold;font-size: 0.7rem!important;}
+/*一级标题*/
+.item-title a{color: #105cb6;font-size: 0.65rem!important;}
+/*二级标题*/
+.item-subtitle{font-size: 0.55rem!important;}
+
+/*每个翻页按钮的修饰*/
+/*分页修饰*/
+.pages{text-align: center;padding: 10px 0;font-size: 0.6rem;}
+.pages a,.pages span {display:inline-block;padding:2px 5px;margin:0 1px;border:1px solid #f0f0f0;-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px;}
+.pages a,.pages li {display:inline-block;text-decoration:none;color:#58A0D3;padding: 5px 10px;border:1px solid #f0f0f0;}
+.pages a.first,.pages a.prev,.pages a.next,.pages a.end{/*padding: 5px 10px;*/margin:0;}
+.pages a:hover{border-color:#50A8E6;}
+.pages a.num{padding: 5px 10px;}
+.pages span.current{background:#50A8E6;color:#FFF;font-weight:700;border-color:#50A8E6;}
