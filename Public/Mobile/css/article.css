@@ -1,5 +1,6 @@
 /*文章详情页面*/
 /*标题*/
+.bar-nav{top: 38px!important;}
 .title{font-size: 0.75rem!important;}
 /*主体内容*/
 .content{overflow-x: hidden;overflow-y: scroll;}

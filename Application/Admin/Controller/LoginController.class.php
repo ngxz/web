@@ -26,7 +26,7 @@
 	                $this->ajaxReturn($error);
 	            }
 	            $success['code'] = true;
-	            $success['message'] = '登录成功a';
+	            $success['message'] = '登录成功！';
 	            $this->ajaxReturn($success);
 	        }else {
 	            $this->display("login");

@@ -3,7 +3,9 @@
 		<div class="footer">
 			<!--友情链接-->
 			<ul class="link">
-				<li><a href="http://so.mezw.com">MEZW搜索</a></li>
+				<volist name='links' id='link'>
+					<li><a href="{$link.url}">{$link.name}</a></li>
+				</volist>
 			</ul>
 			<!--备案信息-->
 			<p class="beian">备案号：渝ICP备17011601</p>

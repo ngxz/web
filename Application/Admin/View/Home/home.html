@@ -73,6 +73,7 @@
 	</body>
 	<script type="text/javascript" src="__PUBLIC__/js/jquery-1.9.1.min.js"></script>
 	<script type="text/javascript" src="__PUBLIC__/bs/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="__PUBLIC__/js/layer/layer.js"></script>
 	<script type="text/javascript" src="__PUBLIC__/uEdit/ueditor.config.js"></script> 
 	<script type="text/javascript">
 		$(function(){
@@ -113,9 +114,15 @@
 				},'html');
 				return false;
 			}
-			//常规管理
+			//判断id长度，确认是常规管理
 			if(id.length == 2){
-				var url = '__ROOT__/admin.php/WebSet/webConfig';
+				//再次判断id数值，确认是常规管理下的哪个菜单
+				if(id == 01){
+					var url = '__ROOT__/admin.php/WebSet/webConfig';
+				}
+				if(id == 02){
+					var url = '__ROOT__/admin.php/WebSet/linkSet';
+				}
 				var data = {};
 				data['id'] = id;
 				$.get(url,data,function(ref){

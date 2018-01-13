@@ -51,39 +51,6 @@ class HomeController extends PublicController{
         );
         $this->assign('info',$info)->display();
     }
-    /**
-     * 获取当前用户的资料
-     */
-    public function adminMessage(){
-        $uid = $_SESSION['uid'];
-        $user = M("admin")->where("uid = '$uid'")->find();
-        $this->assign('user',$user);
-        $this->display('adminMessage');
-    }
-    /**
-     * 修改当前用户的资料
-     * @param unknown $uid
-     * @param string $tname
-     * @param string $uname
-     * @param string $email
-     * @param string $pwd
-     */
-    public function adminMessageEdit($uid,$tname='',$uname='',$email='',$pwd=''){
-        $pwd = md5($pwd);
-        $data=array(
-            "tname"=>$tname,
-            "uname"=>$uname,
-            "email"=>$email,
-            "pwd"=>$pwd
-        );
-        if ($pwd){
-            M("admin")->where("uid='$uid'")->field("tname,uname,email,icon,pwd")->save($data);
-        }else {
-            M("admin")->where("uid='$uid'")->field("tname,uname,email,icon")->save($data);
-        }
-        $this->adminMessage();
-         
-    }
 }
 
 ?>

@@ -1,7 +1,6 @@
 <?php
 namespace Admin\Service;
 
-use Admin\Controller\PublicController;
 class LoginService{
     public function __construct(){
         $this->adminmodel = D('admin');
@@ -35,6 +34,12 @@ class LoginService{
         //保存session
         $_SESSION['uid']=$uid;
         $_SESSION['user']=$result;
+        //录入登录时间
+        $sqlmap = array();
+        $sqlmap['uid'] = $uid;
+        $data = array();
+        $data[login_time] = time();
+        $this->adminmodel->where($sqlmap)->save($data);
         return true;
     }
     /**

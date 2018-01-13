@@ -7,6 +7,7 @@
 		<link rel="stylesheet" href="__PUBLIC__/css/global.css" />
 		<script type="text/javascript" src="__PUBLIC__/js/jquery-1.9.1.min.js"></script>
 		<script type="text/javascript" src="__PUBLIC__/bs/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="__PUBLIC__/js/layer/layer.js"></script>
 	</head>
 	<body>
 		<div class="container">
@@ -61,7 +62,7 @@
 			data['uname'] = $("input[name=uname]").val();
 			data['pwd'] = $("input[name=pwd]").val();
 			$.post(url,data,function(ref){
-				alert(ref.msg);
+				layer.msg(ref.msg);
 			},'json');
 		});
 	</script>

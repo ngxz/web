@@ -4,6 +4,8 @@
 		<meta charset="UTF-8">
 		<title>友情链接管理</title>
 		<link rel="stylesheet" href="__PUBLIC__/bs/css/bootstrap.min.css">
+		<link rel="stylesheet" href="__PUBLIC__/css/global.css" />
+		<link rel="stylesheet" href="__PUBLIC__/css/dashboard.css" />
 		<style type="text/css">
 			/*表格样式调节*/
 			.table tr td:first-child{width: 120px;}
@@ -14,46 +16,39 @@
 		<script type="text/javascript" src="__PUBLIC__/bs/js/bootstrap.min.js"></script>
 		<script type="text/javascript">
 			//编辑链接
-			function edit(obj){
-				$.post("__ROOT__/admin.php/Set/editLink",{
-					'id' : $(obj).parent().parent().find("#id").val(),
+			function edit(obj,id){
+				$.post("__ROOT__/admin.php/WebSet/linkSet",{
+					'id' : id,
 					'name' : $(obj).parent().parent().find(".name").val(),
 					'url' : $(obj).parent().parent().find(".url").val(),
 					'author':$(obj).parent().parent().find(".author").val(),
 					'phone' : $(obj).parent().parent().find(".phone").val()
 				},function(data){
-					if(data.status == 1){
-						alert("修改成功！");
-					}else{
-						alert("修改失败！");
-					}
+					layer.msg(data.msg);
 				},"json");
 			}
 			//新增链接
 			function add(){
-				$.post("__ROOT__/admin.php/Set/addLink",{
+				$.post("__ROOT__/admin.php/WebSet/addLink",{
 					'id' : $("#addid").val(),
 					'name' : $("#name").val(),
 					'url' : $("#url").val(),
 					'author':$("#author").val(),
 					'phone' : $("#phone").val()
 				},function(data){
-					if(data.status == 1){
-						alert("新增成功！");
-					}else{
-						alert("新增失败！");
-					}
+					layer.msg(data.msg);
+					$("#add").modal("hide");
 				},"json");
 			}
 			//删除
-			function del(obj){
-				$.post("__ROOT__/admin.php/Set/delLink",{
-					'id' : $(obj).parent().parent().find("#id").val()
+			function del(id){
+				$.post("__ROOT__/admin.php/WebSet/delLink",{
+					'id' : id
 				},function(data){
 					if(data.status == 1){
-						alert("删除成功！");
+						layer.msg("删除成功！");
 					}else{
-						alert("删除失败！");
+						layer.msg("删除失败！");
 					}
 				},"json");
 			}
@@ -83,8 +78,8 @@
 							<td><input type="text" name="url" class="url" value="{$link.url}" required></td>
 							<td><input type="text" name="author" class="author" value="{$link.author}"></td>
 							<td><input type="text" name="phone" class="phone" value="{$link.phone}"></td>
-							<td><input type="button" class="btn btn-primary" value="修改" onclick="edit(this)" /></td>
-							<td><input type="button" class="btn btn-primary" value="删除" onclick="del(this)" /></td>
+							<td><input type="button" class="btn btn-primary" value="修改" onclick="edit(this,{$link.id})" /></td>
+							<td><input type="button" class="btn btn-primary" value="删除" onclick="del({$link.id})" /></td>
 						</form>
 					</tr>
 				</volist>
@@ -101,13 +96,6 @@
 		      </div>
 		      <div class="modal-body">
 		        <form class="text-center">
-		        	<div class="form-group form-inline">
-						<div class="input-group ">
-							<div class="input-group-addon">编号</div>
-							<input id="addid" name="adid" type="text"  class="form-control" />
-							<span class="glyphicon form-control-feedback"></span>
-						</div>
-					</div>
 		        	<div class="form-group form-inline">
 						<div class="input-group ">
 							<div class="input-group-addon">链接名称</div>

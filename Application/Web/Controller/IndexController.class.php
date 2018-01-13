@@ -22,6 +22,7 @@ class IndexController extends CommonController{
         $this->assign("recommend",$recommend);
     	//显示主页
     	$this->display();
+    	
     }
     /**
      * 关于我
